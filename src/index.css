@@ -5,7 +5,7 @@
 @layer base {
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  html { scroll-behavior: smooth; cursor: none; }
+  html { scroll-behavior: smooth; }
 
   body {
     font-family: 'DM Mono', monospace;
