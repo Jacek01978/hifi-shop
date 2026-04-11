@@ -1,66 +1,116 @@
-import React from 'react'
-import { ACCENT, ACCENT_BAR } from '../data/products'
+import React, { useRef } from 'react'
 
-export default function ProductCard({ product, index }) {
-  const accentText = ACCENT[product.cat] ?? 'text-gold border-gold'
-  const accentBar  = ACCENT_BAR[product.cat] ?? 'bg-gold'
+const CAT_COLORS = {
+  kabel:        { text: 'text-gold',      border: 'border-gold',      bar: 'bg-gold',      glow: 'rgba(201,168,76,0.15)' },
+  sicherungen:  { text: 'text-blue-400',  border: 'border-blue-400',  bar: 'bg-blue-400',  glow: 'rgba(96,165,250,0.15)' },
+  absorber:     { text: 'text-emerald-400', border: 'border-emerald-400', bar: 'bg-emerald-400', glow: 'rgba(52,211,153,0.15)' },
+  reinigung:    { text: 'text-rose-400',  border: 'border-rose-400',  bar: 'bg-rose-400',  glow: 'rgba(251,113,133,0.15)' },
+}
+
+export default function ProductCard({ product, style }) {
+  const cardRef = useRef(null)
+  const colors  = CAT_COLORS[product.cat] ?? CAT_COLORS.kabel
+
+  const onMouseMove = (e) => {
+    const el   = cardRef.current
+    if (!el) return
+    const rect = el.getBoundingClientRect()
+    const x    = (e.clientX - rect.left) / rect.width  - 0.5
+    const y    = (e.clientY - rect.top)  / rect.height - 0.5
+    el.style.transform = `perspective(700px) rotateY(${x * 8}deg) rotateX(${-y * 8}deg) scale(1.015)`
+    el.style.boxShadow = `${-x * 20}px ${-y * 20}px 40px ${colors.glow}, 0 0 0 1px rgba(201,168,76,0.12)`
+    // Shine overlay
+    const shine = el.querySelector('.card-shine')
+    if (shine) {
+      shine.style.background = `radial-gradient(circle at ${(x + 0.5) * 100}% ${(y + 0.5) * 100}%, rgba(255,255,255,0.04) 0%, transparent 60%)`
+    }
+  }
+
+  const onMouseLeave = (e) => {
+    const el = cardRef.current
+    if (!el) return
+    el.style.transform = ''
+    el.style.boxShadow = ''
+    const shine = el.querySelector('.card-shine')
+    if (shine) shine.style.background = ''
+  }
 
   return (
     <article
-      className="group relative bg-obsidian flex flex-col gap-4 p-8 overflow-hidden animate-fade-up"
-      style={{ animationDelay: `${index * 0.07}s`, animationFillMode: 'both' }}
+      ref={cardRef}
+      className="reveal group relative flex flex-col gap-0 overflow-hidden bg-obsidian-50 border border-obsidian-200 transition-all duration-300"
+      style={{ ...style, willChange: 'transform' }}
+      onMouseMove={onMouseMove}
+      onMouseLeave={onMouseLeave}
     >
-      {/* Hover bottom bar */}
-      <div
-        className={`absolute bottom-0 left-0 w-full h-[2px] ${accentBar} scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100`}
-      />
+      {/* Shine layer */}
+      <div className="card-shine absolute inset-0 pointer-events-none z-10 transition-all duration-200" />
 
-      {/* Subtle hover bg */}
-      <div className="absolute inset-0 bg-obsidian-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+      {/* Top accent bar */}
+      <div className={`absolute top-0 left-0 w-full h-[1.5px] ${colors.bar} scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100`} />
 
       {/* Content */}
-      <div className="relative flex flex-col gap-4 flex-1">
-        {/* Tag */}
-        <span className={`flex items-center gap-2 text-[0.55rem] tracking-[0.25em] uppercase font-mono ${accentText.split(' ')[0]}`}>
-          <span className={`block w-4 h-px ${accentBar}`} />
-          {product.cat.charAt(0).toUpperCase() + product.cat.slice(1)}
-        </span>
+      <div className="relative z-20 flex flex-col gap-5 p-7 flex-1">
+
+        {/* Category tag */}
+        <div className="flex items-center gap-2.5">
+          <span className={`block w-4 h-px ${colors.bar}`} />
+          <span className={`font-mono text-[0.52rem] tracking-[0.3em] uppercase ${colors.text}`}>
+            {product.cat}
+          </span>
+        </div>
 
         {/* Icon */}
-        <span className="text-4xl leading-none select-none">{product.icon}</span>
+        <span
+          className="text-3xl leading-none select-none w-12 h-12 flex items-center justify-center rounded-full bg-obsidian-100 border border-obsidian-300 group-hover:border-gold/20 transition-colors duration-300"
+        >
+          {product.icon}
+        </span>
 
-        {/* Name */}
-        <h3 className="font-display text-xl font-normal text-cream leading-snug">
+        {/* Title */}
+        <h3 className="font-display text-[1.3rem] font-normal text-cream leading-snug tracking-[0.01em]">
           {product.name}
         </h3>
 
         {/* Description */}
-        <p className="text-[0.62rem] leading-[1.85] text-muted tracking-[0.04em] flex-1">
+        <p className="font-mono text-[0.6rem] leading-[1.9] text-muted tracking-[0.03em] flex-1">
           {product.desc}
         </p>
 
+        {/* Divider */}
+        <div className="h-px bg-obsidian-300 group-hover:bg-gold/20 transition-colors duration-300" />
+
         {/* Footer */}
-        <div className="flex items-center justify-between pt-4 border-t border-obsidian-200 mt-auto">
+        <div className="flex items-center justify-between">
           <div>
-            <span className="font-display text-2xl font-light text-gold">
-              {product.price} <span className="font-mono text-[0.65rem] text-muted align-middle">€</span>
+            <span className={`font-display text-[1.7rem] font-light ${colors.text}`}>
+              {product.price}
             </span>
-            <p className="text-[0.55rem] text-muted tracking-[0.08em] mt-1 opacity-60">* Affiliate-Link</p>
+            <span className="font-mono text-[0.6rem] text-muted ml-1">€</span>
+            <p className="font-mono text-[0.5rem] text-muted tracking-[0.06em] mt-0.5 opacity-50">
+              * Affiliate-Link
+            </p>
           </div>
 
           <a
             href={product.href}
             target="_blank"
             rel="noopener sponsored"
-            className="inline-flex items-center gap-2 font-mono text-[0.6rem] tracking-[0.18em] uppercase bg-gold text-obsidian px-4 py-2 no-underline transition-all duration-250 hover:bg-gold-light hover:-translate-y-px"
+            className={`shimmer-sweep relative inline-flex items-center gap-2 font-mono text-[0.58rem] tracking-[0.18em] uppercase bg-obsidian-100 ${colors.text} ${colors.border} border px-4 py-2.5 no-underline transition-all duration-300 hover:bg-gold/10 overflow-hidden`}
           >
-            Angebot
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" strokeWidth="1.5">
+            Zum Angebot
+            <svg width="9" height="9" viewBox="0 0 10 10" fill="none" stroke="currentColor" strokeWidth="1.5">
               <path d="M1 9L9 1M9 1H3M9 1V7" />
             </svg>
           </a>
         </div>
       </div>
+
+      {/* Bottom ambient glow on hover */}
+      <div
+        className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+        style={{ background: `linear-gradient(to top, ${colors.glow}, transparent)` }}
+      />
     </article>
   )
 }

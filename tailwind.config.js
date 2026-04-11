@@ -10,35 +10,32 @@ export default {
       colors: {
         gold: {
           DEFAULT: '#c9a84c',
-          light: '#e8c97a',
+          light: '#f0d98c',
           dim: '#8a6f30',
+          muted: 'rgba(201,168,76,0.15)',
         },
         obsidian: {
-          DEFAULT: '#0a0a0a',
-          50: '#111111',
-          100: '#1a1a1a',
-          200: '#222222',
+          DEFAULT: '#080808',
+          50: '#0f0f0f',
+          100: '#161616',
+          200: '#1e1e1e',
+          300: '#2a2a2a',
         },
         cream: '#f0ead8',
         stone: '#d4ccbb',
-        muted: '#5a5a5a',
+        muted: '#4a4a4a',
       },
-      keyframes: {
-        fadeUp: {
-          '0%': { opacity: '0', transform: 'translateY(24px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
-        },
-        spinSlow: {
-          to: { transform: 'rotate(360deg)' },
-        },
-        shimmer: {
-          '0%': { transform: 'scaleX(0)', transformOrigin: 'left' },
-          '100%': { transform: 'scaleX(1)', transformOrigin: 'left' },
-        },
+      backgroundImage: {
+        'gradient-gold': 'linear-gradient(135deg, #c9a84c 0%, #f0d98c 50%, #c9a84c 100%)',
+        'gradient-dark': 'linear-gradient(180deg, #080808 0%, #111111 100%)',
       },
-      animation: {
-        'fade-up': 'fadeUp 0.6s ease both',
-        'spin-slow': 'spinSlow 20s linear infinite',
+      backdropBlur: {
+        xs: '2px',
+      },
+      transitionDuration: {
+        400: '400ms',
+        600: '600ms',
+        800: '800ms',
       },
     },
   },
