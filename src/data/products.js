@@ -90,7 +90,7 @@ export const PRODUCTS = [
     iconComponent: 'DualRCAIcon',
     name: 'Supra Cables Dual RCA',
     desc: 'Das Supra Dual RCA überzeugt mit zwei parallel geführten, symmetrisch aufgebauten Cinch-Adern. Ideal für Stereo-Verbindungen mit minimalem Übersprechen zwischen den Kanälen.',
-    price: 'ab 59,–',
+    price: 'ab 79,–',
     href: amazon('Supra Cables Dual RCA Kabel HiFi Stereo'),
   },
 
