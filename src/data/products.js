@@ -130,7 +130,7 @@ export const PRODUCTS = [
     name: 'Audioquest Evergreen Kabel',
     desc: 'Das AudioQuest Evergreen ist ein hochwertiges Einsteiger-Cinch-Kabel mit Solid Long-Grain Copper Innenleitern und vergoldeten Steckern. Ideal für den audiophilen Einstieg.',
     price: 'ab 29,–',
-    href: amazon('Audioquest Evergreen Cinch Kabel RCA HiFi'),
+    href: `https://www.amazon.de/audioquest-Evergreen-Kabel-mit-Steckern/dp/B005T45C1E/ref=sr_1_56?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2HD12Y9IJTMSU&dib=eyJ2IjoiMSJ9.yW41SuaTYcqYCuM0HvoOKAghwGMM_hHFLkShjfqhC5CICNGnCBZ6_MNEHC8wFJTzw9RHgx8zx2Dg0vE1UWBx9RAMP42WsE-U8T3viibUaLxaej3BnumwyF4d8FjINPSdWiJ2eVhv6fAe1puldNqW5vAIIqO7PhXHCz-Fb2V_JjVy9a6239zb7g8AAwR_DLO9UTpTmOyWD6Kz_YsLo7eH3ciOhlVARlc6bGi0QjaWXD4vSvEPpTmDUU6MGJTxgsoirimSyNBPyqxqMoT3xINfj10Y5pJ3qBEj8-3qSCcRrps.WhunlpAwJmJkj_VNaSS-BAsMQZTHkCTm-wUNTpvQGhc&dib_tag=se&keywords=xlr%2Bkabel%2Baudioquest&qid=1776529503&sprefix=xlr%2Bkabel%2Baudioquest%2Caps%2C135&sr=8-56&xpid=PszzYp-sVb2dt&th=1&tag=${TAG}`,
   },
 
   // ── SICHERUNGEN ──
