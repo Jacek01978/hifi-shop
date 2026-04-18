@@ -66,6 +66,15 @@ export const PRODUCTS = [
     href: amazon('hifi netzkabel audiophil schuko'),
   },
   {
+    id: 17, cat: 'kabel', subcat: 'netz',
+    icon: '⚡',
+    iconComponent: 'PowerCableIcon',
+    name: 'Audioquest Monsoon High End Netzkabel',
+    desc: 'Das AudioQuest Monsoon ist ein High-End Netzkabel der Spitzenklasse. Drei getrennte Leiter für Phase, Neutral und Erde, geflochtener Kupferschirm und Kaltgeräteeinbaustecker für maximale Netzqualität.',
+    price: 'ab 499,–',
+    href: amazon('Audioquest Monsoon Netzkabel High End HiFi'),
+  },
+  {
     id: 4, cat: 'kabel', subcat: 'lautsprecher',
     icon: '🔗',
     iconComponent: 'SpeakerCableIcon',
