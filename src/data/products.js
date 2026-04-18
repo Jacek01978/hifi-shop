@@ -263,7 +263,7 @@ export const PRODUCTS = [
     id: 11, cat: 'reinigung', subcat: 'reiniger',
     icon: '🧹',
     iconComponent: 'ContactSprayIcon',
-    name: 'Kontaktspray Reiniger & Pflegemittel',
+    name: 'Pflegemittel',
     desc: 'Hochwertiges Kontaktspray für Cinch-Buchsen, Lautsprecherklemmen und Potentiometer. Beseitigt Oxidation, Kratzgeräusche und Übergangswiderstand.',
     price: 'ab 11,–',
     href: 'https://www.hifi-regler.de/p/hifi-regler-kabel-kontakt-fluid.html',
