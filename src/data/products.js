@@ -275,7 +275,7 @@ export const PRODUCTS = [
     name: 'Isopropanol 99,9 % Reinigungsalkohol',
     desc: 'Hochreiner Isopropylalkohol (IPA) zum Reinigen von Kontakten, Platinen und Steckverbindern. Rückstandsfrei, antistatisch und lösemittelverträglich – ideal als Basis für audiophile Kontaktpflege.',
     price: 'ab 8,–',
-    href: amazon('isopropanol 99 reinigungsalkohol elektronik kontakte'),
+    href: `https://www.amazon.de/Maxxi-Clean-Reinigungsalkohol-L%C3%B6sungsmittel-r%C3%BCckstandsfrei/dp/B0849YHNK5/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.bis9HKV0iByasT1Gs__hOoXDZkD0sOr_-Hmy4Y62fsDNB_GjetP0Z22tr5NE1xs44XG3_-G5KteKYyerm6C0NK9j4r9WZ5qIVoviH7Xs5v_XqccANKdlzjl0yKip9HWZ6pRUv8hxrlCwU3mRavAvFdtDcKnkfBPqGE5fvnT7Ln6VTtplmuoLD8oQVgOKoX_8gHOpDGIhwapOymYitXYE6SJNRZ7MTrzexBV1ijYZ8Kohofaa19sBm3wwQn05dQE3FPyG0wje7mZdd_vJ0IQSS6zhGVlDuvvE9phhdXtVhpc.a7hiNq1o3QfDB-vd0vpc_vCMzJ7i3lnNKs-pEcnM3jY&dib_tag=se&keywords=isopropanol%2B99%2Breinigungsalkohol%2Belektronik%2Bkontakte&qid=1776541750&sr=8-1-spons&aref=swIwwyKVRo&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&tag=${TAG}`,
   },
   {
     id: 25, cat: 'reinigung', subcat: 'fluid',
