@@ -72,7 +72,7 @@ export const PRODUCTS = [
     name: 'Audioquest Monsoon High End Netzkabel',
     desc: 'Das AudioQuest Monsoon ist ein High-End Netzkabel der Spitzenklasse. Drei getrennte Leiter für Phase, Neutral und Erde, geflochtener Kupferschirm und Kaltgeräteeinbaustecker für maximale Netzqualität.',
     price: 'ab 499,–',
-    href: amazon('Audioquest Monsoon Netzkabel High End HiFi'),
+    href: `https://www.amazon.de/AudioQuest-Monsoon-High-Netzkabel-Kaltger%C3%A4testecker/dp/B07VBMXF15/ref=sr_1_10?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1173098WT6UIE&dib=eyJ2IjoiMSJ9.kh8zmJ4ZXoqM5muy6TPTyXsam4xsRVjPPunT9Zjb4pSZzhSBEGp7KMkEVJACuJnbudBhDDNUaeHfrHU_O3e4l4V6r7aY6C7TRG2MjvxQXLrT82-ev-H32I3hICHnYMJDSbbf30EkgJw01N5zpJIovEIU0fRLTmwfkVtiA7ABS6y5XP5bq0pS5JSfjczGpjdNSQfQUq71lmVnX4H1WEQb3LdDcL2-bC1159U4wSDjeQ8.fd-qZCB2H263582ivsUyI-ePGVavQfZ3aJBl-peTM4M&dib_tag=se&keywords=audioquest+netzkabel&qid=1776528956&sprefix=audioquest+netzkabel%2Caps%2C115&sr=8-10&tag=${TAG}`,
   },
   {
     id: 4, cat: 'kabel', subcat: 'lautsprecher',
