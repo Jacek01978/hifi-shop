@@ -163,6 +163,16 @@ export const PRODUCTS = [
     href: `https://www.amazon.de/Supra-Cables-eff-ixlr-Pair-1-M/dp/B00E3WXKYO/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=7RJ31DBVJZ7H&dib=eyJ2IjoiMSJ9.q6khPeiplNESKo8BCrgdP7Eos6GuhG-fGj-a5YCVyG2w52jo7dDUy1j4A3LAjEtsbPGURvTfKePnRgpWPRHZG9zwDoAHwrefN1TfZvF0yS5m_EFHvKmoQNdOnlp2fMLX95XoEILuq7TZRLwRAQgeuM9x-bPvn0XN6gUPabNPN_oMNHu6pMNOXNlbtkLag19pG3aczgJPPyRqvBrJpVHHmbLE8Zx3u1vbFw_kyeq_RV1REyfHtak5c-dNmlNVcKUOHg36zJow78S1zz0nfT5nS_oxuRmTrUly0Iz_T1edxk8.6WyyO2TqU0G6SbMvP0_ZzdSqNdnoRzqmJPsT7mzwPKY&dib_tag=se&keywords=supra+xlr+kabel&qid=1776531286&sprefix=supra+xlr+kabel%2Caps%2C117&sr=8-1&tag=${TAG}`,
   },
 
+  {
+    id: 22, cat: 'kabel', subcat: 'xlr', groupId: 'xlr',
+    icon: '🎧',
+    iconComponent: 'XLRCableIcon',
+    name: 'enoaudio Mogami 2534 Quad Studio Kabel',
+    desc: 'Das Mogami 2534 Quad-Core XLR-Kabel gilt als Referenz im Profi-Studio. Vier verdrillte Innenleiter minimieren Einstreuungen auf ein Minimum – mit Neutrik-Steckern konfektioniert.',
+    price: 'ab 49,–',
+    href: `https://www.amazon.de/Mogami-Professionel-Symmetrische-Mikrofon-Neutrik/dp/B079K92PN6/ref=sr_1_20?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1ULITBI9P2JNP&dib=eyJ2IjoiMSJ9.fEgYS_ZSrs2RrY79yJI5cX-HFWBNJEX_fbfHEdKdk6kGIBhk3rKguY6ULlt6S9eWFu72v_U0VpRRTLh06s3qpyPxtrymom6Lbjghj5x2GFRdUgcQSFz1uhx0kpFY0ybKgeCftryeYUHUbP6GRW41FA3gSYsnDeqsCjp2FlC4RYuYGM4gWJvIk08dvc3PAPtCw9ivnD044WjIR9XRXFD5suK9sHJ3KMEdhFLcHuUZ0Kljf3E1zOLuDmcKHC_dZpYd1G5wSrd76GuTeJkza5Jq-OeFg1KLBIQtfP0q9bxEe5Y.ifE8oKonCpgujqRMvzoWo0554JYCQ9exM7cTp65kwM8&dib_tag=se&keywords=audioquest%2Bxlr&qid=1776531536&sprefix=audioquest%2Bxlr%2Caps%2C126&sr=8-20&th=1&tag=${TAG}`,
+  },
+
   // ── SICHERUNGEN ──
   {
     id: 5, cat: 'sicherungen',
