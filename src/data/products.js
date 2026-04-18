@@ -123,6 +123,16 @@ export const PRODUCTS = [
     href: amazon('AudioQuest Tower Cinch Kabel RCA HiFi'),
   },
 
+  {
+    id: 18, cat: 'kabel', subcat: 'cinch', groupId: 'cinch',
+    icon: '🔌',
+    iconComponent: 'CinchCableIcon',
+    name: 'Audioquest Evergreen Kabel',
+    desc: 'Das AudioQuest Evergreen ist ein hochwertiges Einsteiger-Cinch-Kabel mit Solid Long-Grain Copper Innenleitern und vergoldeten Steckern. Ideal für den audiophilen Einstieg.',
+    price: 'ab 29,–',
+    href: amazon('Audioquest Evergreen Cinch Kabel RCA HiFi'),
+  },
+
   // ── SICHERUNGEN ──
   {
     id: 5, cat: 'sicherungen',
