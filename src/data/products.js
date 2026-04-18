@@ -82,7 +82,7 @@ export const PRODUCTS = [
     name: 'Supra Cables Eff-ISL Cinch Kabel',
     desc: 'Hochwertiges Cinch-Kabel von Supra Cables mit Eff-ISL Technologie. Geringer Kapazitätsbelag, verdrillte Innenleiter und vergoldete Stecker für unverfärbte Signalübertragung.',
     price: 'ab 49,–',
-    href: amazon('Supra Cables Eff-ISL Cinch Kabel HiFi'),
+    href: `https://www.amazon.de/Supra-Cables-Eff-ISL-Chinch-Kabel/dp/B001AA11FM/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1B82BRGEOCGPR&dib=eyJ2IjoiMSJ9.A98Dm7dHUaD-WLUA-asfo-dWcGzKtq4w9N5dBRNKIPetVn5rstIGxnuk1SF9lDjF2ul38NDc85goSgsBM4yTnA5kXzKxNVQHSSxc4PtpFzENtLoUVzLJ9VcshNdZAS3fEYp8Q_6ODx815yR7YIqT2rim68Bl78w4n2VSj6EJxjmyD-wGdEd7eKJQsfvv3ePg_YzRtWkA9GsIa69aK6iPmhnEe0wmjfM05knti2Fr1ns.xqBW_FlYNUPrEbK-CoDqY4wCg4E7ASQZsg-zp-0AEPo&dib_tag=se&keywords=Supra+Cables+Eff-ISL+Cinch&qid=1776525587&sprefix=supra+cables+eff-isl+cinch+%2Caps%2C93&sr=8-1&tag=${TAG}`,
   },
   {
     id: 14, cat: 'kabel', subcat: 'cinch', groupId: 'cinch',
