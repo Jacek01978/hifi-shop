@@ -143,6 +143,16 @@ export const PRODUCTS = [
     href: `https://www.amazon.de/Supra-Cables-Netzkabel-LoRad-MKII/dp/B00MFUU1VQ/ref=sr_1_1_mod_primary_new?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=368FU9E9JDBO3&dib=eyJ2IjoiMSJ9.-OFAfWPPtF7mSDRONgIS8auo5fukRwXQQBA7gmDFFAC1RZ4vAZTDHSfy1EaTJJdYDvy89kTu3FVOSJ-ykQPiLZLiEdktmlmBBmf71J-hwy0YRpOSRzrABWqdSmnguYsShp1oamUJ2qNCQLFSekpeXQTUSipcY0dRNn61Dvj6WWrbUDpuMZc2h1Cc7SD9AUCGROMXDgct28j0TLqQmStWu35JFC6b8vsrE8y03qKrJp0.uS9E68N3Jb6xE4qTQI5IsgZ2Trxg77YzIPUL30IV6v0&dib_tag=se&keywords=supra+netzkabel&qid=1776530797&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=supra+netzkabel%2Caps%2C123&sr=8-1&tag=${TAG}`,
   },
 
+  {
+    id: 20, cat: 'kabel', subcat: 'netz', groupId: 'netz',
+    icon: '⚡',
+    iconComponent: 'PowerCableIcon',
+    name: 'AudioQuest NRG-X3 Netzkabel',
+    desc: 'Das AudioQuest NRG-X3 überzeugt mit drei Solid Long-Grain Copper Leitern, Kaltgeräteeinbaustecker C13 und einem geflochtenen Schirmgeflecht. Merklich ruhigerer Klangboden gegenüber Standardkabeln.',
+    price: 'ab 99,–',
+    href: `https://www.amazon.de/AudioQuest-Netzkabel-NRG-X3-Version-C-13/dp/B08B14Y3KK/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=25VTZXC50KZPI&dib=eyJ2IjoiMSJ9.til_bRnodLaM7nElw-te6jM1t9qxqlHWoagAT_prAYMzJjqGyJWsydObxEdeDJ2W_PI1jps9B7RXV6Mo_6AM9JzTXLGhF5ifu24Q5wF-E5aydTCcAYPX2lHBKgESlxwh_zsup1OL4Q1ylz1fgN4vzvzxMxgpJxHqQLg3p4hATwd6sQkjanybDJn5P-mozwXtlEvSorVD9DLXk4dScakxTA.nfk_f5HWe9nc-raaJ7dUY5RHK0Ni1xnXFV_HdD5lrA4&dib_tag=se&keywords=audioquest+nrg+x3&qid=1776531165&sprefix=audioquest+nrg+x3%2Caps%2C109&sr=8-1&tag=${TAG}`,
+  },
+
   // ── SICHERUNGEN ──
   {
     id: 5, cat: 'sicherungen',
