@@ -138,6 +138,39 @@ In einem HiFi-Gerät liegt der Transformator direkt an der Netzspannung. Je nach
 Die korrekte Phasenlage kostet nichts – und kann das Klangbild spürbar ruhiger und transparenter machen.`,
     readTime: '4 min',
   },
+  {
+    id: 8,
+    category: 'Reinigung & Pflege',
+    title: 'Kontakte reinigen lohnt sich',
+    teaser: 'Oxidierte und verschmutzte Kontakte sind einer der häufigsten Klangräuber in einer HiFi-Anlage – und einer der einfachsten zu beheben.',
+    body: `Im Laufe der Zeit oxidieren alle Metall-Kontakte. Cinch-Buchsen, XLR-Stecker, Lautsprecherklemmen, Potentiometer und sogar Sicherungshalter bilden eine dünne Oxidschicht, die den Übergangswiderstand erhöht. Das Ergebnis: dumpferer Klang, Kratzgeräusche beim Drehen von Reglern und im schlimmsten Fall Signalausfall.
+
+**Welche Kontakte sollten regelmäßig gereinigt werden?**
+- Cinch- und XLR-Stecker sowie deren Buchsen
+- Lautsprecherklemmen (Bananenbuchsen, Schraubklemmen)
+- Potentiometer (Lautstärkeregler, Balance)
+- Sicherungshalter und Sicherungskontakte
+- Netzstecker und Kaltgerätebuchsen
+
+**Die richtige Vorgehensweise:**
+- **Kontaktspray** auf ein Wattestäbchen oder direkt auf den Stecker auftragen
+- Stecker mehrfach ein- und ausstecken, um Oxidschicht mechanisch zu lösen
+- Bei Potentiometern: Spray in die Achsöffnung sprühen, Regler mehrfach drehen
+- Überschüssiges Spray nach einigen Minuten mit einem trockenen Tuch abtupfen
+
+**Was verwenden?**
+- **Kontaktreiniger (z.B. DeoxIT D5):** Löst Oxidation zuverlässig
+- **Kontaktpflegeöl (z.B. DeoxIT Gold G5):** Schützt gereinigte Kontakte langfristig vor Neuoxidation
+- **Kein WD-40:** Enthält Lösungsmittel, die Kunststoffteile angreifen und Rückstände hinterlassen
+
+**Wie oft?**
+- Cinch/XLR-Verbindungen: einmal jährlich
+- Potentiometer: bei ersten Kratzgeräuschen sofort
+- Lautsprecherklemmen: alle 2 Jahre oder bei Klangverschlechterung
+
+Eine gründliche Kontaktreinigung kostet wenig Zeit und kann klanglich so viel bewirken wie ein teures Upgrade.`,
+    readTime: '4 min',
+  },
 ]
 
 const CATEGORIES = ['Alle', ...new Set(TIPPS.map(t => t.category))]
