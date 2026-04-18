@@ -48,7 +48,7 @@ export const PRODUCTS = [
     href: amazon('cinch audiokabel ofc kupfer hifi'),
   },
   {
-    id: 2, cat: 'kabel', subcat: 'xlr',
+    id: 2, cat: 'kabel', subcat: 'xlr', groupId: 'xlr',
     icon: '🎧',
     iconComponent: 'XLRCableIcon',
     name: 'XLR Symmetrisches Audiokabel',
@@ -151,6 +151,16 @@ export const PRODUCTS = [
     desc: 'Das AudioQuest NRG-X3 überzeugt mit drei Solid Long-Grain Copper Leitern, Kaltgeräteeinbaustecker C13 und einem geflochtenen Schirmgeflecht. Merklich ruhigerer Klangboden gegenüber Standardkabeln.',
     price: 'ab 99,–',
     href: `https://www.amazon.de/AudioQuest-Netzkabel-NRG-X3-Version-C-13/dp/B08B14Y3KK/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=25VTZXC50KZPI&dib=eyJ2IjoiMSJ9.til_bRnodLaM7nElw-te6jM1t9qxqlHWoagAT_prAYMzJjqGyJWsydObxEdeDJ2W_PI1jps9B7RXV6Mo_6AM9JzTXLGhF5ifu24Q5wF-E5aydTCcAYPX2lHBKgESlxwh_zsup1OL4Q1ylz1fgN4vzvzxMxgpJxHqQLg3p4hATwd6sQkjanybDJn5P-mozwXtlEvSorVD9DLXk4dScakxTA.nfk_f5HWe9nc-raaJ7dUY5RHK0Ni1xnXFV_HdD5lrA4&dib_tag=se&keywords=audioquest+nrg+x3&qid=1776531165&sprefix=audioquest+nrg+x3%2Caps%2C109&sr=8-1&tag=${TAG}`,
+  },
+
+  {
+    id: 21, cat: 'kabel', subcat: 'xlr', groupId: 'xlr',
+    icon: '🎧',
+    iconComponent: 'XLRCableIcon',
+    name: 'Supra Cables EFF-IXLR HiFi Kabel',
+    desc: 'Das Supra EFF-IXLR ist ein symmetrisches XLR-Kabel mit verdrillten OFC-Innenleitern und Neutrik-kompatiblen XLR-Steckern. Ideal für störungsfreie Verbindungen zwischen Vorverstärker und Endverstärker.',
+    price: 'ab 196,–',
+    href: `https://www.amazon.de/Supra-Cables-eff-ixlr-Pair-1-M/dp/B00E3WXKYO/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=7RJ31DBVJZ7H&dib=eyJ2IjoiMSJ9.q6khPeiplNESKo8BCrgdP7Eos6GuhG-fGj-a5YCVyG2w52jo7dDUy1j4A3LAjEtsbPGURvTfKePnRgpWPRHZG9zwDoAHwrefN1TfZvF0yS5m_EFHvKmoQNdOnlp2fMLX95XoEILuq7TZRLwRAQgeuM9x-bPvn0XN6gUPabNPN_oMNHu6pMNOXNlbtkLag19pG3aczgJPPyRqvBrJpVHHmbLE8Zx3u1vbFw_kyeq_RV1REyfHtak5c-dNmlNVcKUOHg36zJow78S1zz0nfT5nS_oxuRmTrUly0Iz_T1edxk8.6WyyO2TqU0G6SbMvP0_ZzdSqNdnoRzqmJPsT7mzwPKY&dib_tag=se&keywords=supra+xlr+kabel&qid=1776531286&sprefix=supra+xlr+kabel%2Caps%2C117&sr=8-1&tag=${TAG}`,
   },
 
   // ── SICHERUNGEN ──

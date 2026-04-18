@@ -9,6 +9,7 @@ const SUBCAT_LABELS = Object.fromEntries(KABEL_SUBCATEGORIES.map(s => [s.id, s.l
 const GROUP_LABELS = {
   cinch: 'Cinch / RCA Kabel',
   netz:  'Netzkabel',
+  xlr:   'XLR Kabel',
 }
 
 export default function ProductGrid() {
