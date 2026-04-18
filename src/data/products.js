@@ -159,7 +159,7 @@ export const PRODUCTS = [
     iconComponent: 'XLRCableIcon',
     name: 'Supra Cables EFF-IXLR HiFi Kabel',
     desc: 'Das Supra EFF-IXLR ist ein symmetrisches XLR-Kabel mit verdrillten OFC-Innenleitern und Neutrik-kompatiblen XLR-Steckern. Ideal für störungsfreie Verbindungen zwischen Vorverstärker und Endverstärker.',
-    price: 'ab 196,–',
+    price: 'ab 169,–',
     href: `https://www.amazon.de/Supra-Cables-eff-ixlr-Pair-1-M/dp/B00E3WXKYO/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=7RJ31DBVJZ7H&dib=eyJ2IjoiMSJ9.q6khPeiplNESKo8BCrgdP7Eos6GuhG-fGj-a5YCVyG2w52jo7dDUy1j4A3LAjEtsbPGURvTfKePnRgpWPRHZG9zwDoAHwrefN1TfZvF0yS5m_EFHvKmoQNdOnlp2fMLX95XoEILuq7TZRLwRAQgeuM9x-bPvn0XN6gUPabNPN_oMNHu6pMNOXNlbtkLag19pG3aczgJPPyRqvBrJpVHHmbLE8Zx3u1vbFw_kyeq_RV1REyfHtak5c-dNmlNVcKUOHg36zJow78S1zz0nfT5nS_oxuRmTrUly0Iz_T1edxk8.6WyyO2TqU0G6SbMvP0_ZzdSqNdnoRzqmJPsT7mzwPKY&dib_tag=se&keywords=supra+xlr+kabel&qid=1776531286&sprefix=supra+xlr+kabel%2Caps%2C117&sr=8-1&tag=${TAG}`,
   },
 
