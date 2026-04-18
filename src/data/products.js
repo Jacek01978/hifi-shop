@@ -100,7 +100,7 @@ export const PRODUCTS = [
     iconComponent: 'CinchCableIcon',
     name: 'Audioquest Golden Gate',
     desc: 'Das AudioQuest Golden Gate Cinch-Kabel überzeugt mit Solid Long-Grain Copper (LGC) Innenleitern und Kaltschweißverbindungen. Minimale Verzerrung, warmer audiophiler Klang.',
-    price: 'ab 109,–',
+    price: 'ab 99,–',
     href: `https://www.amazon.de/Audioquest-Stereo-Kabel-Golden-RCA-Steckern/dp/B005TI0P0S/ref=sr_1_1?dib=eyJ2IjoiMSJ9.fd1i6yIfYB0QpNRU52PrwC9NDc8Ohsu0oV31yzOBtM2fDsHfnSijFqxtBJlmBtAvEBO7HGw1Iap5W64CJnki9MFMqoAyhDJAjyLp1CnB71zWUrQwN8lWHqcHUrllmPf4QfZlRLnXszLHA5RY841DmizGBAMV3TPRgxHdK8KGyjG7U9XM_9YjSUWz80On5dQWA5i4Cqh2qtdSpe-0G6iLZHPEX6MFFElnVZI7kPyTVdQ.Wxc4GhzZsyIJnPl8Im4z8JHo5_7yeNOicf2RYiu88sc&dib_tag=se&keywords=Audioquest+Golden+Gate+Cinch+Kabel+RCA+HiFi&qid=1776526644&sr=8-1&tag=${TAG}`,
   },
 
