@@ -22,6 +22,13 @@ export const KABEL_SUBCATEGORIES = [
   { id: 'lautsprecher', label: 'Lautsprecherkabel' },
 ]
 
+export const REINIGUNG_SUBCATEGORIES = [
+  { id: 'all',      label: 'Alle Mittel' },
+  { id: 'vinyl',    label: 'Vinyl & Nadel' },
+  { id: 'reiniger', label: 'Reinigungsmittel' },
+  { id: 'fluid',    label: 'Kontaktflüssigkeit' },
+]
+
 export const ACCENT = {
   kabel:       'text-gold border-gold',
   sicherungen: 'text-blue-400 border-blue-400',
@@ -244,7 +251,7 @@ export const PRODUCTS = [
 
   // ── REINIGUNG ──
   {
-    id: 10, cat: 'reinigung',
+    id: 10, cat: 'reinigung', subcat: 'vinyl',
     icon: '💿',
     iconComponent: 'VinylCleanerIcon',
     name: 'Vinyl-Schallplatten Reinigungsflüssigkeit',
@@ -253,7 +260,7 @@ export const PRODUCTS = [
     href: amazon('vinyl schallplatten reinigungsflussigkeit antistatisch'),
   },
   {
-    id: 11, cat: 'reinigung',
+    id: 11, cat: 'reinigung', subcat: 'reiniger',
     icon: '🧹',
     iconComponent: 'ContactSprayIcon',
     name: 'Kontaktspray Reiniger & Pflegemittel',
@@ -262,7 +269,25 @@ export const PRODUCTS = [
     href: 'https://www.hifi-regler.de/p/hifi-regler-kabel-kontakt-fluid.html',
   },
   {
-    id: 12, cat: 'reinigung',
+    id: 26, cat: 'reinigung', subcat: 'reiniger',
+    icon: '🧴',
+    iconComponent: 'ContactSprayIcon',
+    name: 'Isopropanol 99,9 % Reinigungsalkohol',
+    desc: 'Hochreiner Isopropylalkohol (IPA) zum Reinigen von Kontakten, Platinen und Steckverbindern. Rückstandsfrei, antistatisch und lösemittelverträglich – ideal als Basis für audiophile Kontaktpflege.',
+    price: 'ab 8,–',
+    href: amazon('isopropanol 99 reinigungsalkohol elektronik kontakte'),
+  },
+  {
+    id: 25, cat: 'reinigung', subcat: 'fluid',
+    icon: '💧',
+    iconComponent: 'ContactSprayIcon',
+    name: 'Kabel-Kontakt-Fluid',
+    desc: 'Spezielles Kabel-Kontakt-Fluid für die professionelle Pflege von Steckverbindern, Cinch-Buchsen und Lautsprecherklemmen. Verbessert die Leitfähigkeit, schützt vor Oxidation und sorgt für eine langanhaltende, rauscharme Verbindung.',
+    price: 'ab 15,–',
+    href: 'https://www.hifi-regler.de/p/hifi-regler-kabel-kontakt-fluid.html',
+  },
+  {
+    id: 12, cat: 'reinigung', subcat: 'vinyl',
     icon: '🎼',
     iconComponent: 'NeedleBrushIcon',
     name: 'Carbon-Tonabnehmerbürste',

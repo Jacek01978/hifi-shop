@@ -1,10 +1,12 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react'
-import { PRODUCTS, KABEL_SUBCATEGORIES } from '../data/products'
+import { PRODUCTS, KABEL_SUBCATEGORIES, REINIGUNG_SUBCATEGORIES } from '../data/products'
 import CategoryFilter from './CategoryFilter'
 import ProductCard from './ProductCard'
 import GroupCard from './GroupCard'
 
-const SUBCAT_LABELS = Object.fromEntries(KABEL_SUBCATEGORIES.map(s => [s.id, s.label]))
+const SUBCAT_LABELS = Object.fromEntries(
+  [...KABEL_SUBCATEGORIES, ...REINIGUNG_SUBCATEGORIES].map(s => [s.id, s.label])
+)
 
 const GROUP_LABELS = {
   cinch: 'Cinch / RCA Kabel',
@@ -24,7 +26,7 @@ export default function ProductGrid() {
 
   const filtered = useMemo(() => {
     let list = activeCategory === 'all' ? PRODUCTS : PRODUCTS.filter(p => p.cat === activeCategory)
-    if (activeCategory === 'kabel' && activeSub !== 'all') {
+    if ((activeCategory === 'kabel' || activeCategory === 'reinigung') && activeSub !== 'all') {
       list = list.filter(p => p.subcat === activeSub)
     }
     return list
@@ -46,9 +48,9 @@ export default function ProductGrid() {
     return result
   }, [filtered, activeCategory])
 
-  // Gruppen für Kabel-Ansicht (alle Kabel)
+  // Gruppen für Kabel- und Reinigung-Ansicht (alle Unterkategorien)
   const groups = useMemo(() => {
-    if (activeCategory !== 'kabel' || activeSub !== 'all') return null
+    if ((activeCategory !== 'kabel' && activeCategory !== 'reinigung') || activeSub !== 'all') return null
     const map = {}
     filtered.forEach(p => {
       if (!map[p.subcat]) map[p.subcat] = []
