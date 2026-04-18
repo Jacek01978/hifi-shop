@@ -1,5 +1,34 @@
 // Custom SVG Icons für alle HiFi-Produkte
 
+// ── Dual RCA (Supra Cables) ─────────────────────────────────────────
+export function DualRCAIcon({ size = 28, color = 'currentColor' }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      {/* Kabel oben */}
+      <rect x="1" y="7" width="9" height="4" rx="2" fill={color} opacity="0.5" />
+      {/* Stecker oben */}
+      <circle cx="17" cy="9" r="5.5" stroke={color} strokeWidth="1.4" opacity="0.9" />
+      <circle cx="17" cy="9" r="3.2" stroke={color} strokeWidth="0.9" opacity="0.4" />
+      <circle cx="17" cy="9" r="1.4" fill={color} opacity="0.95" />
+      <rect x="10" y="8" width="3" height="2" rx="1" fill={color} opacity="0.45" />
+
+      {/* Kabel unten */}
+      <rect x="1" y="21" width="9" height="4" rx="2" fill={color} opacity="0.5" />
+      {/* Stecker unten */}
+      <circle cx="17" cy="23" r="5.5" stroke={color} strokeWidth="1.4" opacity="0.9" />
+      <circle cx="17" cy="23" r="3.2" stroke={color} strokeWidth="0.9" opacity="0.4" />
+      <circle cx="17" cy="23" r="1.4" fill={color} opacity="0.95" />
+      <rect x="10" y="22" width="3" height="2" rx="1" fill={color} opacity="0.45" />
+
+      {/* Verbindungsmantel */}
+      <rect x="22" y="7" width="4" height="18" rx="2" fill={color} opacity="0.2" stroke={color} strokeWidth="0.8" />
+      {/* L / R Label */}
+      <text x="23.2" y="13" fontSize="3.2" fill={color} opacity="0.7" fontFamily="monospace">L</text>
+      <text x="23" y="22" fontSize="3.2" fill={color} opacity="0.7" fontFamily="monospace">R</text>
+    </svg>
+  )
+}
+
 // ── 1. Cinch / RCA Stecker ──────────────────────────────────────────
 export function CinchCableIcon({ size = 28, color = 'currentColor' }) {
   return (

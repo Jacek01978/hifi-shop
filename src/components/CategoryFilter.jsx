@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react'
-import { CATEGORIES } from '../data/products'
+import { CATEGORIES, KABEL_SUBCATEGORIES } from '../data/products'
 
-export default function CategoryFilter({ active, onChange }) {
+function FilterRow({ items, active, onChange, small = false }) {
   const containerRef = useRef(null)
   const btnRefs      = useRef({})
   const [indicator, setIndicator] = useState({ left: 0, width: 0, opacity: 0 })
@@ -12,44 +12,53 @@ export default function CategoryFilter({ active, onChange }) {
     if (!btn || !container) return
     const cr = container.getBoundingClientRect()
     const br = btn.getBoundingClientRect()
-    setIndicator({
-      left: br.left - cr.left + container.scrollLeft,
-      width: br.width,
-      opacity: 1,
-    })
+    setIndicator({ left: br.left - cr.left + container.scrollLeft, width: br.width, opacity: 1 })
   }, [active])
 
   return (
-    <div
-      ref={containerRef}
-      className="relative flex gap-2 overflow-x-auto px-8 lg:px-14 py-5 border-b border-obsidian-200"
-      style={{ scrollbarWidth: 'none' }}
-      id="products"
-    >
-      {/* Sliding gold indicator */}
+    <div ref={containerRef} className="relative flex gap-2 overflow-x-auto" style={{ scrollbarWidth: 'none' }}>
       <div
         className="absolute bottom-0 h-[1.5px] bg-gold transition-all duration-300 ease-out"
-        style={{
-          left: indicator.left,
-          width: indicator.width,
-          opacity: indicator.opacity,
-        }}
+        style={{ left: indicator.left, width: indicator.width, opacity: indicator.opacity }}
       />
-
-      {CATEGORIES.map((cat) => (
+      {items.map((item) => (
         <button
-          key={cat.id}
-          ref={(el) => { btnRefs.current[cat.id] = el }}
-          onClick={() => onChange(cat.id)}
-          className={`font-mono text-[0.58rem] tracking-[0.18em] uppercase px-5 py-2.5 border transition-all duration-250 whitespace-nowrap ${
-            active === cat.id
+          key={item.id}
+          ref={(el) => { btnRefs.current[item.id] = el }}
+          onClick={() => onChange(item.id)}
+          className={`font-mono tracking-[0.18em] uppercase border transition-all duration-250 whitespace-nowrap ${
+            small ? 'text-[0.52rem] px-3.5 py-1.5' : 'text-[0.58rem] px-5 py-2.5'
+          } ${
+            active === item.id
               ? 'border-gold/60 text-gold bg-gold/[0.06]'
               : 'border-obsidian-300 text-muted hover:border-gold/30 hover:text-stone hover:bg-obsidian-100'
           }`}
         >
-          {cat.label}
+          {item.label}
         </button>
       ))}
+    </div>
+  )
+}
+
+export default function CategoryFilter({ active, onChangeCategory, activeSub, onChangeSub }) {
+  const showSubs = active === 'kabel'
+
+  return (
+    <div id="products">
+      {/* Hauptkategorien */}
+      <div className="flex gap-2 overflow-x-auto px-8 lg:px-14 py-5 border-b border-obsidian-200" style={{ scrollbarWidth: 'none' }}>
+        <FilterRow items={CATEGORIES} active={active} onChange={onChangeCategory} />
+      </div>
+
+      {/* Unterkategorien – nur bei Kabel */}
+      <div className={`overflow-hidden transition-all duration-400 ${showSubs ? 'max-h-20 opacity-100' : 'max-h-0 opacity-0'}`}>
+        <div className="flex items-center gap-3 px-8 lg:px-14 py-3 border-b border-obsidian-200 bg-obsidian-50">
+          <span className="font-mono text-[0.48rem] tracking-[0.3em] uppercase text-gold/50 shrink-0">Kabeltyp</span>
+          <div className="w-px h-4 bg-obsidian-300" />
+          <FilterRow items={KABEL_SUBCATEGORIES} active={activeSub} onChange={onChangeSub} small />
+        </div>
+      </div>
     </div>
   )
 }

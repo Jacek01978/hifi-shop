@@ -5,12 +5,21 @@ import ProductCard from './ProductCard'
 
 export default function ProductGrid() {
   const [activeCategory, setActiveCategory] = useState('all')
+  const [activeSub, setActiveSub]           = useState('all')
   const gridRef = useRef(null)
 
-  const filtered = useMemo(
-    () => activeCategory === 'all' ? PRODUCTS : PRODUCTS.filter(p => p.cat === activeCategory),
-    [activeCategory]
-  )
+  const handleCategoryChange = (cat) => {
+    setActiveCategory(cat)
+    setActiveSub('all')
+  }
+
+  const filtered = useMemo(() => {
+    let list = activeCategory === 'all' ? PRODUCTS : PRODUCTS.filter(p => p.cat === activeCategory)
+    if (activeCategory === 'kabel' && activeSub !== 'all') {
+      list = list.filter(p => p.subcat === activeSub)
+    }
+    return list
+  }, [activeCategory, activeSub])
 
   // Intersection Observer for scroll reveal
   useEffect(() => {
@@ -33,7 +42,12 @@ export default function ProductGrid() {
 
   return (
     <section className="pb-20">
-      <CategoryFilter active={activeCategory} onChange={setActiveCategory} />
+      <CategoryFilter
+        active={activeCategory}
+        onChangeCategory={handleCategoryChange}
+        activeSub={activeSub}
+        onChangeSub={setActiveSub}
+      />
 
       {/* Section header */}
       <div className="flex items-baseline gap-6 px-8 lg:px-14 pt-14 pb-10">

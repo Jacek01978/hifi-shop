@@ -7,11 +7,19 @@ const amazon = (query) =>
 
 // ─── PRODUCTS ─────────────────────────────────────────────────────────────────
 export const CATEGORIES = [
-  { id: 'all',        label: 'Alle Produkte' },
-  { id: 'kabel',      label: 'Kabel' },
-  { id: 'sicherungen',label: 'Sicherungen' },
-  { id: 'absorber',   label: 'Absorber & Dämpfer' },
-  { id: 'reinigung',  label: 'Reinigungsmittel' },
+  { id: 'all',         label: 'Alle Produkte' },
+  { id: 'kabel',       label: 'Kabel' },
+  { id: 'sicherungen', label: 'Sicherungen' },
+  { id: 'absorber',    label: 'Absorber & Dämpfer' },
+  { id: 'reinigung',   label: 'Reinigungsmittel' },
+]
+
+export const KABEL_SUBCATEGORIES = [
+  { id: 'all',          label: 'Alle Kabel' },
+  { id: 'cinch',        label: 'Cinch / RCA' },
+  { id: 'xlr',          label: 'XLR' },
+  { id: 'netz',         label: 'Netzkabel' },
+  { id: 'lautsprecher', label: 'Lautsprecherkabel' },
 ]
 
 export const ACCENT = {
@@ -31,7 +39,7 @@ export const ACCENT_BAR = {
 export const PRODUCTS = [
   // ── KABEL ──
   {
-    id: 1, cat: 'kabel',
+    id: 1, cat: 'kabel', subcat: 'cinch',
     icon: '🔌',
     iconComponent: 'CinchCableIcon',
     name: 'Cinch-Stereo Audiokabel',
@@ -40,7 +48,7 @@ export const PRODUCTS = [
     href: amazon('cinch audiokabel ofc kupfer hifi'),
   },
   {
-    id: 2, cat: 'kabel',
+    id: 2, cat: 'kabel', subcat: 'xlr',
     icon: '🎧',
     iconComponent: 'XLRCableIcon',
     name: 'XLR Symmetrisches Audiokabel',
@@ -49,7 +57,7 @@ export const PRODUCTS = [
     href: amazon('xlr kabel neutrik hifi symmetrisch'),
   },
   {
-    id: 3, cat: 'kabel',
+    id: 3, cat: 'kabel', subcat: 'netz',
     icon: '⚡',
     iconComponent: 'PowerCableIcon',
     name: 'HiFi Netzkabel audiophil 2,5mm²',
@@ -58,13 +66,32 @@ export const PRODUCTS = [
     href: amazon('hifi netzkabel audiophil schuko'),
   },
   {
-    id: 4, cat: 'kabel',
+    id: 4, cat: 'kabel', subcat: 'lautsprecher',
     icon: '🔗',
     iconComponent: 'SpeakerCableIcon',
     name: 'Lautsprecherkabel OFC 2×2,5mm²',
     desc: 'Sauerstofffreies Kupfer in Bananencrimpausführung. Klarer, druckvoller Bassfundament durch minimierten Übergangswiderstand.',
     price: 'ab 34,–',
     href: amazon('lautsprecherkabel ofc 2x2.5mm hifi'),
+  },
+
+  {
+    id: 13, cat: 'kabel', subcat: 'cinch',
+    icon: '🔌',
+    iconComponent: 'CinchCableIcon',
+    name: 'Supra Cables Eff-ISL Cinch Kabel',
+    desc: 'Hochwertiges Cinch-Kabel von Supra Cables mit Eff-ISL Technologie. Geringer Kapazitätsbelag, verdrillte Innenleiter und vergoldete Stecker für unverfärbte Signalübertragung.',
+    price: 'ab 49,–',
+    href: amazon('Supra Cables Eff-ISL Cinch Kabel HiFi'),
+  },
+  {
+    id: 14, cat: 'kabel', subcat: 'cinch',
+    icon: '🔌',
+    iconComponent: 'DualRCAIcon',
+    name: 'Supra Cables Dual RCA',
+    desc: 'Das Supra Dual RCA überzeugt mit zwei parallel geführten, symmetrisch aufgebauten Cinch-Adern. Ideal für Stereo-Verbindungen mit minimalem Übersprechen zwischen den Kanälen.',
+    price: 'ab 59,–',
+    href: amazon('Supra Cables Dual RCA Kabel HiFi Stereo'),
   },
 
   // ── SICHERUNGEN ──
