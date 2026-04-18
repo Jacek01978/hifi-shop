@@ -173,6 +173,16 @@ export const PRODUCTS = [
     href: `https://www.amazon.de/Mogami-Stereo-Audio-Neutrik-Female/dp/B07BLLDD14/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=11HXMVNM8VJJJ&dib=eyJ2IjoiMSJ9.NrfCckUNeRQZ9P9jy5kS-NT4W95cksihwHsbTaIHIpBj_ELLG6pBdZS9LuoMZJkTRfAkYv2KAuHrAFLpt2I3HDziJ-OapcW5WJM6mr-zKzuBk60Dp-ftPAz7NWzVKZ_fgP_npMz37S7GIT3yZEkseHb2pLjQJt4xJmkJhlqWULKSDnnzB-eJfAqdrl-GNlnGzn51zUu3_QwARKMaWyzCBVSJbxcTTc0j762kRQVr5dvdW7j4HSjGzvO7VZj4vlNCpSx2Prl7u-xaAnlEC07CIIQ-SJPQCKoAWrCdGsRxpv4.KDyH40-7KNqtTUuQzCrGrp0SJWleORPmAc3xDo_WpEU&dib_tag=se&keywords=enoaudio%2BMogami%2B2534%2Bxlr&qid=1776531933&sprefix=enoaudio%2Bmogami%2B2534%2Bxlr%2Caps%2C149&sr=8-1&th=1&tag=${TAG}`,
   },
 
+  {
+    id: 23, cat: 'kabel', subcat: 'netz', groupId: 'netz',
+    icon: '⚡',
+    iconComponent: 'PowerCableIcon',
+    name: 'Lapp ÖLFLEX 110CY 3x2,5',
+    desc: 'Das Lapp ÖLFLEX 110CY ist ein industrielles Steuerkabel mit 3×2,5mm² Querschnitt und CY-Abschirmung. Beliebt in der audiophilen DIY-Szene als hochwertiges Netzkabel-Grundmaterial.',
+    price: 'ab 39,90',
+    href: 'https://www.ebay.de/itm/187292060195?var=0&_ul=DE&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5338973321&toolid=10029&customid=558139610362624402&loc_interest_ms=&loc_physical_ms=116084&gclid=e339075988311f1e508e6eba3500dec9',
+  },
+
   // ── SICHERUNGEN ──
   {
     id: 5, cat: 'sicherungen',
