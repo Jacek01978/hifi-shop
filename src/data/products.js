@@ -57,7 +57,7 @@ export const PRODUCTS = [
     href: amazon('xlr kabel neutrik hifi symmetrisch'),
   },
   {
-    id: 3, cat: 'kabel', subcat: 'netz',
+    id: 3, cat: 'kabel', subcat: 'netz', groupId: 'netz',
     icon: '⚡',
     iconComponent: 'PowerCableIcon',
     name: 'HiFi Netzkabel audiophil 2,5mm²',
@@ -66,7 +66,7 @@ export const PRODUCTS = [
     href: amazon('hifi netzkabel audiophil schuko'),
   },
   {
-    id: 17, cat: 'kabel', subcat: 'netz',
+    id: 17, cat: 'kabel', subcat: 'netz', groupId: 'netz',
     icon: '⚡',
     iconComponent: 'PowerCableIcon',
     name: 'Audioquest Monsoon High End Netzkabel',

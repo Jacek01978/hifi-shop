@@ -6,6 +6,11 @@ import GroupCard from './GroupCard'
 
 const SUBCAT_LABELS = Object.fromEntries(KABEL_SUBCATEGORIES.map(s => [s.id, s.label]))
 
+const GROUP_LABELS = {
+  cinch: 'Cinch / RCA Kabel',
+  netz:  'Netzkabel',
+}
+
 export default function ProductGrid() {
   const [activeCategory, setActiveCategory] = useState('all')
   const [activeSub, setActiveSub]           = useState('all')
@@ -100,8 +105,9 @@ export default function ProductGrid() {
               <GroupCard
                 key={item.groupId}
                 products={item.products}
+                groupLabel={GROUP_LABELS[item.groupId] ?? item.groupId}
                 style={{ transitionDelay: `${(i % 6) * 60}ms` }}
-                onShowVariants={() => { handleCategoryChange('kabel'); setActiveSub('cinch') }}
+                onShowVariants={() => { handleCategoryChange('kabel'); setActiveSub(item.groupId) }}
               />
             ) : (
               <ProductCard

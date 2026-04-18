@@ -49,7 +49,7 @@ export default function GroupCard({ products, groupLabel, style, onShowVariants 
           <div className="flex items-center gap-2.5">
             <span className={`block w-4 h-px ${colors.bar}`} />
             <span className={`font-mono text-[0.52rem] tracking-[0.3em] uppercase ${colors.text}`}>
-              Cinch / RCA
+              {groupLabel}
             </span>
           </div>
           <span className={`font-mono text-[0.5rem] tracking-[0.15em] uppercase px-2.5 py-1 border ${colors.border} ${colors.text} bg-gold/[0.06]`}>
@@ -66,7 +66,7 @@ export default function GroupCard({ products, groupLabel, style, onShowVariants 
 
         {/* Gruppenname */}
         <h3 className="font-display text-[1.3rem] font-normal text-cream leading-snug tracking-[0.01em]">
-          Cinch / RCA Kabel
+          {groupLabel}
         </h3>
 
         {/* Variantenliste */}
