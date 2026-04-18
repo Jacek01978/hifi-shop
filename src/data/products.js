@@ -183,6 +183,16 @@ export const PRODUCTS = [
     href: 'https://www.ebay.de/itm/187292060195?var=0&_ul=DE&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5338973321&toolid=10029&customid=558139610362624402&loc_interest_ms=&loc_physical_ms=116084&gclid=e339075988311f1e508e6eba3500dec9',
   },
 
+  {
+    id: 24, cat: 'kabel', subcat: 'netz', groupId: 'netz',
+    icon: '⚡',
+    iconComponent: 'PowerCableIcon',
+    name: 'Ultimate Netzkabel 3x2,5qmm Bals Schuko, Wattgate 320i',
+    desc: 'Hochwertiges konfektioniertes Netzkabel mit 3×2,5mm² Querschnitt, Bals Schuko-Stecker und Wattgate 320i Kaltgerätestecker. Audiophile DIY-Qualität für anspruchsvolle HiFi-Anlagen.',
+    price: 'ab 79,90',
+    href: 'https://www.ebay.de/itm/180833697125?itmmeta=01KPGYK2ARVM3J97D9BJNV6FVM&hash=item2a1a873d65:g:NkcAAOSwPkJab0NL',
+  },
+
   // ── SICHERUNGEN ──
   {
     id: 5, cat: 'sicherungen',
