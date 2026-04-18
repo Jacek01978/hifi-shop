@@ -104,6 +104,16 @@ export const PRODUCTS = [
     href: amazon('Audioquest Golden Gate Cinch Kabel RCA HiFi'),
   },
 
+  {
+    id: 16, cat: 'kabel', subcat: 'cinch', groupId: 'cinch',
+    icon: '🔌',
+    iconComponent: 'CinchCableIcon',
+    name: 'AudioQuest Tower Audiokabel',
+    desc: 'Das AudioQuest Tower ist ein erschwinglicher Einstieg in die audiophile Welt. Solid Long-Grain Copper Innenleiter, direkt versilberte Stecker und ein geflochtener Außenmantel für saubere Signalführung.',
+    price: 'ab 49,–',
+    href: amazon('AudioQuest Tower Cinch Kabel RCA HiFi'),
+  },
+
   // ── SICHERUNGEN ──
   {
     id: 5, cat: 'sicherungen',
