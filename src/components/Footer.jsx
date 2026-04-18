@@ -3,7 +3,7 @@ import React from 'react'
 const year = new Date().getFullYear()
 const FREQ_BARS = [4,7,10,14,11,8,6,12,9,5,13,7,10,4,8,11,6,9,5,12]
 
-export default function Footer() {
+export default function Footer({ onNavigate }) {
   return (
     <footer className="border-t border-obsidian-200 relative overflow-hidden">
       {/* Ambient glow */}
@@ -56,6 +56,13 @@ export default function Footer() {
               {item}
             </a>
           ))}
+          <button
+            onClick={() => onNavigate?.('tipps')}
+            className="group flex items-center gap-2 font-mono text-[0.58rem] text-muted mb-3 tracking-[0.05em] hover:text-gold transition-colors duration-300"
+          >
+            <span className="block w-0 h-px bg-gold/50 transition-all duration-300 group-hover:w-3" />
+            HiFi Tipps
+          </button>
         </div>
 
         {/* Legal */}

@@ -1,21 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import ProductGrid from './components/ProductGrid'
 import AffiliateDisclaimer from './components/AffiliateDisclaimer'
+import HifiTipps from './components/HifiTipps'
 import Footer from './components/Footer'
 
 export default function App() {
+  const [page, setPage] = useState('shop')
+
   return (
     <div className="min-h-screen bg-obsidian text-stone overflow-x-hidden">
       <div className="grain-overlay" aria-hidden="true" />
-      <Header />
+      <Header page={page} onNavigate={setPage} />
       <main>
-        <Hero />
-        <ProductGrid />
-        <AffiliateDisclaimer />
+        {page === 'shop' ? (
+          <>
+            <Hero onNavigate={setPage} />
+            <ProductGrid />
+            <AffiliateDisclaimer />
+          </>
+        ) : (
+          <HifiTipps />
+        )}
       </main>
-      <Footer />
+      <Footer onNavigate={setPage} />
     </div>
   )
 }

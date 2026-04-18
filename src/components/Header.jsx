@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 
 const NAV = ['Kabel', 'Sicherungen', 'Absorber', 'Reinigung']
 
-export default function Header() {
+export default function Header({ page, onNavigate }) {
   const [scrolled, setScrolled] = useState(false)
   const [visible, setVisible]   = useState(true)
   const lastY = useRef(0)
@@ -41,7 +41,7 @@ export default function Header() {
 
         {/* Nav */}
         <nav className="hidden md:flex items-center gap-8">
-          {NAV.map((item) => (
+          {page === 'shop' && NAV.map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
@@ -51,9 +51,21 @@ export default function Header() {
               <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-gold transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
-          <span className="font-mono text-[0.55rem] tracking-[0.12em] uppercase border border-gold/40 text-gold px-3 py-1.5 hover:bg-gold/8 transition-colors duration-300">
-            Affiliate Shop
-          </span>
+          <button
+            onClick={() => onNavigate(page === 'tipps' ? 'shop' : 'tipps')}
+            className={`group relative font-mono text-[0.6rem] tracking-[0.22em] uppercase transition-colors duration-300 ${
+              page === 'tipps' ? 'text-gold' : 'text-muted hover:text-stone'
+            }`}
+          >
+            HiFi Tipps
+            <span className={`absolute -bottom-0.5 left-0 h-px bg-gold transition-all duration-300 ${page === 'tipps' ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+          </button>
+          <button
+            onClick={() => onNavigate('shop')}
+            className="font-mono text-[0.55rem] tracking-[0.12em] uppercase border border-gold/40 text-gold px-3 py-1.5 hover:bg-gold/8 transition-colors duration-300"
+          >
+            {page === 'tipps' ? '← Shop' : 'Affiliate Shop'}
+          </button>
         </nav>
       </div>
 
