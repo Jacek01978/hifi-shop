@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect, useRef } from 'react'
 import { PRODUCTS, KABEL_SUBCATEGORIES } from '../data/products'
 import CategoryFilter from './CategoryFilter'
 import ProductCard from './ProductCard'
+import GroupCard from './GroupCard'
 
 const SUBCAT_LABELS = Object.fromEntries(KABEL_SUBCATEGORIES.map(s => [s.id, s.label]))
 
@@ -22,6 +23,22 @@ export default function ProductGrid() {
     }
     return list
   }, [activeCategory, activeSub])
+
+  // "Alle Produkte": Cinch-Gruppe zusammenfassen
+  const displayItems = useMemo(() => {
+    if (activeCategory !== 'all') return null
+    const result = []
+    const grouped = {}
+    filtered.forEach(p => {
+      if (p.groupId) {
+        if (!grouped[p.groupId]) { grouped[p.groupId] = []; result.push({ type: 'group', groupId: p.groupId, products: grouped[p.groupId] }) }
+        grouped[p.groupId].push(p)
+      } else {
+        result.push({ type: 'single', product: p })
+      }
+    })
+    return result
+  }, [filtered, activeCategory])
 
   // Gruppen für Kabel-Ansicht (alle Kabel)
   const groups = useMemo(() => {
@@ -71,8 +88,31 @@ export default function ProductGrid() {
         <div className="flex-1 h-px bg-obsidian-200 ml-4" />
       </div>
 
-      {/* Gruppierte Ansicht (nur Kabel → Alle) */}
-      {groups ? (
+      {/* "Alle Produkte": Cinch-Gruppe als eine Karte */}
+      {displayItems ? (
+        <div
+          ref={gridRef}
+          className="grid gap-px bg-obsidian-200"
+          style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))' }}
+        >
+          {displayItems.map((item, i) =>
+            item.type === 'group' ? (
+              <GroupCard
+                key={item.groupId}
+                products={item.products}
+                style={{ transitionDelay: `${(i % 6) * 60}ms` }}
+                onShowVariants={() => { handleCategoryChange('kabel'); setActiveSub('cinch') }}
+              />
+            ) : (
+              <ProductCard
+                key={item.product.id}
+                product={item.product}
+                style={{ transitionDelay: `${(i % 6) * 60}ms` }}
+              />
+            )
+          )}
+        </div>
+      ) : groups ? (
         <div ref={gridRef}>
           {groups.map(([subcat, products]) => (
             <div key={subcat}>
@@ -104,7 +144,7 @@ export default function ProductGrid() {
           ))}
         </div>
       ) : (
-        /* Standard-Grid (alle anderen Ansichten) */
+        /* Standard-Grid (Sicherungen, Absorber, Reinigung) */
         <div
           ref={gridRef}
           className="grid gap-px bg-obsidian-200"

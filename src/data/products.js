@@ -39,7 +39,7 @@ export const ACCENT_BAR = {
 export const PRODUCTS = [
   // ── KABEL ──
   {
-    id: 1, cat: 'kabel', subcat: 'cinch',
+    id: 1, cat: 'kabel', subcat: 'cinch', groupId: 'cinch',
     icon: '🔌',
     iconComponent: 'CinchCableIcon',
     name: 'Cinch-Stereo Audiokabel',
@@ -76,7 +76,7 @@ export const PRODUCTS = [
   },
 
   {
-    id: 13, cat: 'kabel', subcat: 'cinch',
+    id: 13, cat: 'kabel', subcat: 'cinch', groupId: 'cinch',
     icon: '🔌',
     iconComponent: 'CinchCableIcon',
     name: 'Supra Cables Eff-ISL Cinch Kabel',
@@ -85,7 +85,7 @@ export const PRODUCTS = [
     href: amazon('Supra Cables Eff-ISL Cinch Kabel HiFi'),
   },
   {
-    id: 14, cat: 'kabel', subcat: 'cinch',
+    id: 14, cat: 'kabel', subcat: 'cinch', groupId: 'cinch',
     icon: '🔌',
     iconComponent: 'DualRCAIcon',
     name: 'Supra Cables Dual RCA',
