@@ -167,10 +167,10 @@ export const PRODUCTS = [
     id: 22, cat: 'kabel', subcat: 'xlr', groupId: 'xlr',
     icon: '🎧',
     iconComponent: 'XLRCableIcon',
-    name: 'enoaudio Mogami 2534 Quad Studio Kabel',
+    name: 'enoaudio Mogami 2534 Quad Stereo Paar (L,R)',
     desc: 'Das Mogami 2534 Quad-Core XLR-Kabel gilt als Referenz im Profi-Studio. Vier verdrillte Innenleiter minimieren Einstreuungen auf ein Minimum – mit Neutrik-Steckern konfektioniert.',
-    price: 'ab 49,–',
-    href: `https://www.amazon.de/Mogami-Professionel-Symmetrische-Mikrofon-Neutrik/dp/B079K92PN6/ref=sr_1_20?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1ULITBI9P2JNP&dib=eyJ2IjoiMSJ9.fEgYS_ZSrs2RrY79yJI5cX-HFWBNJEX_fbfHEdKdk6kGIBhk3rKguY6ULlt6S9eWFu72v_U0VpRRTLh06s3qpyPxtrymom6Lbjghj5x2GFRdUgcQSFz1uhx0kpFY0ybKgeCftryeYUHUbP6GRW41FA3gSYsnDeqsCjp2FlC4RYuYGM4gWJvIk08dvc3PAPtCw9ivnD044WjIR9XRXFD5suK9sHJ3KMEdhFLcHuUZ0Kljf3E1zOLuDmcKHC_dZpYd1G5wSrd76GuTeJkza5Jq-OeFg1KLBIQtfP0q9bxEe5Y.ifE8oKonCpgujqRMvzoWo0554JYCQ9exM7cTp65kwM8&dib_tag=se&keywords=audioquest%2Bxlr&qid=1776531536&sprefix=audioquest%2Bxlr%2Caps%2C126&sr=8-20&th=1&tag=${TAG}`,
+    price: 'ab 80,–',
+    href: `https://www.amazon.de/Mogami-Stereo-Audio-Neutrik-Female/dp/B07BLLDD14/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=11HXMVNM8VJJJ&dib=eyJ2IjoiMSJ9.NrfCckUNeRQZ9P9jy5kS-NT4W95cksihwHsbTaIHIpBj_ELLG6pBdZS9LuoMZJkTRfAkYv2KAuHrAFLpt2I3HDziJ-OapcW5WJM6mr-zKzuBk60Dp-ftPAz7NWzVKZ_fgP_npMz37S7GIT3yZEkseHb2pLjQJt4xJmkJhlqWULKSDnnzB-eJfAqdrl-GNlnGzn51zUu3_QwARKMaWyzCBVSJbxcTTc0j762kRQVr5dvdW7j4HSjGzvO7VZj4vlNCpSx2Prl7u-xaAnlEC07CIIQ-SJPQCKoAWrCdGsRxpv4.KDyH40-7KNqtTUuQzCrGrp0SJWleORPmAc3xDo_WpEU&dib_tag=se&keywords=enoaudio%2BMogami%2B2534%2Bxlr&qid=1776531933&sprefix=enoaudio%2Bmogami%2B2534%2Bxlr%2Caps%2C149&sr=8-1&th=1&tag=${TAG}`,
   },
 
   // ── SICHERUNGEN ──
