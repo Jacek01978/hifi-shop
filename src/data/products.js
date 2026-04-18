@@ -266,7 +266,7 @@ export const PRODUCTS = [
     name: 'Pflegemittel',
     desc: 'Mikrofasertücher, Wattepads und Reinigungstücher für die schonende Pflege von HiFi-Geräten, Gehäuseoberflächen und Anschlüssen. Rückstandsfrei, antistatisch und kratzfrei.',
     price: 'ab 11,–',
-    href: 'https://www.hifi-regler.de/p/hifi-regler-kabel-kontakt-fluid.html',
+    href: amazon('mikrofasertücher hifi reinigung elektronik'),
   },
   {
     id: 26, cat: 'reinigung', subcat: 'reiniger',
