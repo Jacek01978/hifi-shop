@@ -42,6 +42,7 @@ export const PRODUCTS = [
   {
     id: 2, cat: 'kabel',
     icon: '🎧',
+    iconComponent: 'XLRCableIcon',
     name: 'XLR Symmetrisches Audiokabel',
     desc: 'Professionelles symmetrisches Kabel mit Neutrik-Steckern, optimal zur Brummunterdrückung. Unverzichtbar in störungsarmen Studio- und HiFi-Setups.',
     price: 'ab 18,–',
@@ -50,6 +51,7 @@ export const PRODUCTS = [
   {
     id: 3, cat: 'kabel',
     icon: '⚡',
+    iconComponent: 'PowerCableIcon',
     name: 'HiFi Netzkabel audiophil 2,5mm²',
     desc: 'Abgeschirmtes Netzkabel mit 2,5mm² Querschnitt und Schuko-Stecker. Reduziert Netzrauschen spürbar für saubereren Klang.',
     price: 'ab 45,–',
@@ -58,6 +60,7 @@ export const PRODUCTS = [
   {
     id: 4, cat: 'kabel',
     icon: '🔗',
+    iconComponent: 'SpeakerCableIcon',
     name: 'Lautsprecherkabel OFC 2×2,5mm²',
     desc: 'Sauerstofffreies Kupfer in Bananencrimpausführung. Klarer, druckvoller Bassfundament durch minimierten Übergangswiderstand.',
     price: 'ab 34,–',
@@ -68,6 +71,7 @@ export const PRODUCTS = [
   {
     id: 5, cat: 'sicherungen',
     icon: '🔒',
+    iconComponent: 'FuseIcon',
     name: 'HiFi Feinsicherung Silber 5×20mm',
     desc: 'Audiophile Silbersicherung mit reinem Schmelzdraht für verbesserte Leitfähigkeit und Dynamik. Kompatibel mit vielen Verstärkern und Netzteilen.',
     price: 'ab 12,–',
@@ -76,6 +80,7 @@ export const PRODUCTS = [
   {
     id: 6, cat: 'sicherungen',
     icon: '✨',
+    iconComponent: 'GoldFuseIcon',
     name: 'Goldkontakt Sicherung 6,3×32mm',
     desc: 'Hochwertige Gerätesicherung mit vergoldeten Kontakten. Reduziert Übergangswiderstände – klangliche Verbesserungen gegenüber Standardsicherungen.',
     price: 'ab 19,–',
@@ -86,6 +91,7 @@ export const PRODUCTS = [
   {
     id: 7, cat: 'absorber',
     icon: '🟢',
+    iconComponent: 'DeviceFeetIcon',
     name: 'Gerätefüße Entkoppler Edelstahl',
     desc: 'Präzisionsgefertigte Entkopplungsfüße aus Edelstahl mit Spitzenlager. Minimieren Körperschall und Mikrophonie in Verstärkern und CD-Playern.',
     price: 'ab 39,–',
@@ -94,6 +100,7 @@ export const PRODUCTS = [
   {
     id: 8, cat: 'absorber',
     icon: '🎛️',
+    iconComponent: 'AcousticAbsorberIcon',
     name: 'Raumakustik Absorber Schaumstoff',
     desc: 'Breitband-Absorber aus akustischem Pyramidenschaum. Reduziert Raumreflexionen, Flatterechos und störende Frequenzüberhöhungen im Hörraum.',
     price: 'ab 49,–',
@@ -102,6 +109,7 @@ export const PRODUCTS = [
   {
     id: 9, cat: 'absorber',
     icon: '🔵',
+    iconComponent: 'SpeakerSpikesIcon',
     name: 'Lautsprecher Spikes & Teller-Set',
     desc: 'M6 Gewindebolzen-Spikes aus Messing, verchromt. Entkoppeln Lautsprecher vom Untergrund, verbessern Basswiedergabe und Bühnenabbildung.',
     price: 'ab 22,–',
@@ -112,6 +120,7 @@ export const PRODUCTS = [
   {
     id: 10, cat: 'reinigung',
     icon: '💿',
+    iconComponent: 'VinylCleanerIcon',
     name: 'Vinyl-Schallplatten Reinigungsflüssigkeit',
     desc: 'Antistatische Reinigungsflüssigkeit für Schallplatten. Löst Staub, Fett und Fingerabdrücke schonend. Inklusive Mikrofasertuch.',
     price: 'ab 16,–',
@@ -120,6 +129,7 @@ export const PRODUCTS = [
   {
     id: 11, cat: 'reinigung',
     icon: '🧹',
+    iconComponent: 'ContactSprayIcon',
     name: 'Kontaktspray Reiniger & Pflegemittel',
     desc: 'Hochwertiges Kontaktspray für Cinch-Buchsen, Lautsprecherklemmen und Potentiometer. Beseitigt Oxidation, Kratzgeräusche und Übergangswiderstand.',
     price: 'ab 11,–',
@@ -128,6 +138,7 @@ export const PRODUCTS = [
   {
     id: 12, cat: 'reinigung',
     icon: '🎼',
+    iconComponent: 'NeedleBrushIcon',
     name: 'Carbon-Tonabnehmerbürste',
     desc: 'Antistatische Carbonfaserbürste für Vinyl-Nadeln. Schonende Entfernung von Staub und Partikeln, verlängert die Lebensdauer von Tonabnehmer und Platte.',
     price: 'ab 9,–',
