@@ -94,6 +94,16 @@ export const PRODUCTS = [
     href: amazon('Supra Cables Dual RCA Kabel HiFi Stereo'),
   },
 
+  {
+    id: 15, cat: 'kabel', subcat: 'cinch', groupId: 'cinch',
+    icon: '🔌',
+    iconComponent: 'CinchCableIcon',
+    name: 'Audioquest Golden Gate',
+    desc: 'Das AudioQuest Golden Gate Cinch-Kabel überzeugt mit Solid Long-Grain Copper (LGC) Innenleitern und Kaltschweißverbindungen. Minimale Verzerrung, warmer audiophiler Klang.',
+    price: 'ab 109,–',
+    href: amazon('Audioquest Golden Gate Cinch Kabel RCA HiFi'),
+  },
+
   // ── SICHERUNGEN ──
   {
     id: 5, cat: 'sicherungen',
