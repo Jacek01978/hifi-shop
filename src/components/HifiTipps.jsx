@@ -112,6 +112,32 @@ Qualitätsstrom ist die Grundlage für das volle Potential jeder HiFi-Anlage.`,
 Selbst ein einfacher Satz Absorberfüße unter dem CD-Player kann das Klangbild spürbar beruhigen.`,
     readTime: '3 min',
   },
+  {
+    id: 7,
+    category: 'Stromversorgung & Sicherheit',
+    title: 'Was versteht man unter der Phase eines HiFi-Gerätes?',
+    teaser: 'Der Begriff „Phase" taucht in der HiFi-Welt häufig auf – aber was bedeutet er genau, warum ist die richtige Polung wichtig und wie findet man sie heraus?',
+    body: `In der Wechselstromtechnik bezeichnet „Phase" die Lage der positiven Halbwelle des Wechselstroms. Bei einem Schukostecker gibt es zwei Leiter: **Phase (L)** und **Neutralleiter (N)**. Da der Schukostecker drehsymmetrisch ist, kann er in beiden Richtungen eingesteckt werden – die Polung ist also zufällig.
+
+**Warum ist das für HiFi relevant?**
+
+In einem HiFi-Gerät liegt der Transformator direkt an der Netzspannung. Je nachdem, wie das Gerät eingesteckt ist, liegt die Phase entweder auf der dem Chassis zugewandten oder abgewandten Wicklungsseite. Dies beeinflusst die kapazitive Kopplung zwischen Trafo und Gehäuse – und damit das Rauschen und Brummen der Anlage.
+
+**Wie erkennt man die richtige Phase?**
+- **Berührungstest:** Legen Sie einen Finger auf das Metallgehäuse des eingeschalteten Gerätes. Kribbelt es leicht → Phase falsch, Stecker umdrehen
+- **Multimeter:** Spannung zwischen Gehäuse und Schutzerde messen – bei richtiger Phase deutlich niedriger (unter 5V)
+- **Phasentester:** Einfaches Werkzeug aus dem Elektrohandel für unter 5 Euro
+
+**Praktische Auswirkungen:**
+- Richtige Phasenlage reduziert kapazitive Einstreuungen ins Audiosignal
+- Besonders bei Röhrengeräten und Class-A-Verstärkern hörbar relevant
+- Bei Mehrkomponentenanlagen sollten alle Geräte auf korrekte Phase geprüft werden
+
+**Sicherheitshinweis:** Der Berührungstest ist nur bei Geräten mit Schutzerdung (Schukostecker) und intaktem Gehäuse unbedenklich. Bei Geräten mit Eurostecker (ohne Erde) niemals am Gehäuse messen.
+
+Die korrekte Phasenlage kostet nichts – und kann das Klangbild spürbar ruhiger und transparenter machen.`,
+    readTime: '4 min',
+  },
 ]
 
 const CATEGORIES = ['Alle', ...new Set(TIPPS.map(t => t.category))]
