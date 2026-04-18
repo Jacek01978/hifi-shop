@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import * as Icons from '../icons'
 
 const CAT_COLORS = {
   kabel:        { text: 'text-gold',      border: 'border-gold',      bar: 'bg-gold',      glow: 'rgba(201,168,76,0.15)' },
@@ -61,10 +62,10 @@ export default function ProductCard({ product, style }) {
         </div>
 
         {/* Icon */}
-        <span
-          className="text-3xl leading-none select-none w-12 h-12 flex items-center justify-center rounded-full bg-obsidian-100 border border-obsidian-300 group-hover:border-gold/20 transition-colors duration-300"
-        >
-          {product.icon}
+        <span className="text-3xl leading-none select-none w-12 h-12 flex items-center justify-center rounded-full bg-obsidian-100 border border-obsidian-300 group-hover:border-gold/20 transition-colors duration-300">
+          {product.iconComponent
+            ? React.createElement(Icons[product.iconComponent], { size: 26, color: '#c9a84c' })
+            : product.icon}
         </span>
 
         {/* Title */}

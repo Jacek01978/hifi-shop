@@ -33,6 +33,7 @@ export const PRODUCTS = [
   {
     id: 1, cat: 'kabel',
     icon: '🔌',
+    iconComponent: 'CinchCableIcon',
     name: 'Cinch-Stereo Audiokabel OFC Kupfer',
     desc: 'Hochreines OFC-Kupfer, doppelt geschirmt. Minimaler Signalverlust für maximale Klangtreue. Ideal für Verstärker, CD-Player und DAC-Verbindungen.',
     price: 'ab 29,–',
