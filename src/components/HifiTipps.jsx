@@ -171,6 +171,43 @@ Die korrekte Phasenlage kostet nichts – und kann das Klangbild spürbar ruhige
 Eine gründliche Kontaktreinigung kostet wenig Zeit und kann klanglich so viel bewirken wie ein teures Upgrade.`,
     readTime: '4 min',
   },
+  {
+    id: 9,
+    category: 'Reinigung & Pflege',
+    title: 'Verstaubte HiFi-Geräte und Lautsprechermembranen – warum Sauberkeit klanglich zählt',
+    teaser: 'Staub ist nicht nur optisch unschön – er beeinflusst die Wärmeableitung von Geräten, dämpft Lautsprechermembranen und kann langfristig zu Schäden führen.',
+    body: `Staub ist der stille Feind jeder HiFi-Anlage. Er sammelt sich in Lüftungsschlitzen, auf Platinen, auf Lautsprechermembranen und in Hochtönern – und richtet dabei mehr Schaden an, als die meisten Musikliebhaber ahnen.
+
+**Auswirkungen von Staub auf HiFi-Geräte:**
+- **Überhitzung:** Verstärker und CD-Player benötigen freie Lüftungsschlitze. Zugestaubte Öffnungen stauen Wärme, verkürzen die Lebensdauer von Kondensatoren und Transistoren erheblich
+- **Kriechströme:** Staub auf Platinen kann bei Feuchtigkeit leitfähig werden und Kurzschlüsse verursachen
+- **Potentiometer:** Staub in Reglern verstärkt Kratzgeräusche und Oxidation
+
+**Auswirkungen auf Lautsprechermembranen:**
+- Staubablagerungen auf Papiermembranen erhöhen die bewegte Masse – das bedämpft besonders die Höhen- und Mitteltonwiedergabe
+- Hochtönermembranen (Gewebe, Metall, Folie) reagieren empfindlich auf Staubpartikel, die die Schwingfähigkeit einschränken
+- Staubkörner können bei hohen Pegeln in die Schwingspulenzentrierung gelangen und mechanische Schäden verursachen
+
+**Richtige Reinigung von HiFi-Geräten:**
+- Lüftungsschlitze mit weichem Pinsel oder Druckluft (aus der Dose) reinigen
+- Gehäuseoberflächen mit leicht feuchtem Mikrofasertuch abwischen – niemals nass
+- Potentiometer und Schalter mit Kontaktspray behandeln
+- Niemals Staubsauger direkt auf Platinen halten – elektrostatische Entladung möglich
+
+**Richtige Reinigung von Lautsprechermembranen:**
+- **Tieftöner (Papier/Kevlar):** Weichen Pinsel in kreisenden Bewegungen verwenden, niemals drücken
+- **Hochtöner (Gewebe):** Nur mit sehr weichem Pinsel oder speziellem Membranreiniger – nie mit Druckluft
+- **Metallmembranen (Aluminium, Titan):** Trockenes Mikrofasertuch, äußerst sanft
+- **Seidenkuppeln:** Am empfindlichsten – nur mit weichem Pinsel ohne Druck
+
+**Reinigungsintervall:**
+- Gehäuse und Lüftungsschlitze: alle 3 Monate
+- Membranen: halbjährlich oder bei sichtbarem Staubbelag
+- Nach Renovierungsarbeiten in der Wohnung: sofort
+
+Regelmäßige Pflege erhält nicht nur den Klang – sie verlängert die Lebensdauer Ihrer wertvollen Geräte um Jahre.`,
+    readTime: '5 min',
+  },
 ]
 
 const CATEGORIES = ['Alle', ...new Set(TIPPS.map(t => t.category))]
