@@ -208,10 +208,10 @@ export const PRODUCTS = [
     id: 27, cat: 'netzleisten',
     icon: '🔌',
     iconComponent: 'PowerCableIcon',
-    name: 'Audiophile HiFi Netzleiste',
-    desc: 'Hochwertige Netzleiste speziell für HiFi-Anlagen. Mit Überspannungsschutz, Entstörfilter und vergoldeten Schukobuchsen für eine saubere Stromversorgung aller Komponenten.',
-    price: 'ab 79,–',
-    href: amazon('hifi netzleiste audiophil überspannungsschutz entstörfilter'),
+    name: 'Dynavox HiFi-Netzfilter X4100S',
+    desc: 'Mehrfach-Steckdose mit 8 Schukosteckplätzen, integriertem HiFi-Netzfilter und Überspannungsschutz. Reduziert Netzstörungen spürbar und versorgt alle HiFi-Komponenten mit sauberem Strom.',
+    price: 'ab 130,–',
+    href: `https://www.amazon.de/gp/aw/d/B076Q7R396/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=5fe8a84b788c3656ba1975a1eea6c1cc&hsa_cr_id=0&qid=1776773498&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&aref=Z7MrM4Ftpp&ref_=sbx_s_sparkle_sbtcd_asin_0_title&pd_rd_w=ulvlU&content-id=amzn1.sym.67616a74-5971-4136-9787-0edce4b0e77e%3Aamzn1.sym.67616a74-5971-4136-9787-0edce4b0e77e&pf_rd_p=67616a74-5971-4136-9787-0edce4b0e77e&pf_rd_r=SJZFXZ4SRSGQVFASM4NY&pd_rd_wg=PCNWg&pd_rd_r=426e4467-e0bb-4467-98e6-a775be26000e&th=1&tag=${TAG}`,
   },
 
   // ── SICHERUNGEN ──
