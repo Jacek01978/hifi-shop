@@ -41,8 +41,9 @@ export default function ProductGrid() {
     return [...list].sort((a, b) => parsePrice(a.price) - parsePrice(b.price))
   }, [activeCategory, activeSub])
 
-  // Gruppen zusammenfassen (gilt für alle Kategorien)
+  // Gruppen zusammenfassen – nur wenn kein Subfilter aktiv ist
   const displayItems = useMemo(() => {
+    if (activeSub !== 'all') return null
     const result = []
     const grouped = {}
     filtered.forEach(p => {
@@ -54,7 +55,7 @@ export default function ProductGrid() {
       }
     })
     return result
-  }, [filtered, activeCategory])
+  }, [filtered, activeCategory, activeSub])
 
   // Gruppen für Kabel- und Reinigung-Ansicht (alle Unterkategorien)
   const groups = useMemo(() => {
