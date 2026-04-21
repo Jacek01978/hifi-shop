@@ -30,8 +30,8 @@ function FilterRow({ items, active, onChange, small = false }) {
             small ? 'text-[0.72rem] px-4 py-2' : 'text-[0.82rem] px-6 py-3'
           } ${
             active === item.id
-              ? 'border-gold/70 text-gold bg-gold/[0.08]'
-              : 'border-obsidian-300 text-stone hover:border-gold/40 hover:text-cream hover:bg-obsidian-100'
+              ? 'border-gold text-gold bg-gold/[0.12] shadow-[0_0_12px_rgba(201,168,76,0.3)]'
+              : 'border-gold/40 text-gold hover:border-gold hover:text-gold-light hover:bg-gold/[0.08] hover:shadow-[0_0_10px_rgba(201,168,76,0.2)]'
           }`}
         >
           {item.label}
