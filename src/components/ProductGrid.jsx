@@ -3,7 +3,6 @@ import { PRODUCTS, KABEL_SUBCATEGORIES, REINIGUNG_SUBCATEGORIES } from '../data/
 import CategoryFilter from './CategoryFilter'
 import ProductCard from './ProductCard'
 import GroupCard from './GroupCard'
-import ProductModal from './ProductModal'
 
 const SUBCAT_LABELS = Object.fromEntries(
   [...KABEL_SUBCATEGORIES, ...REINIGUNG_SUBCATEGORIES].map(s => [s.id, s.label])
@@ -28,7 +27,6 @@ const parsePrice = (price) => {
 export default function ProductGrid() {
   const [activeCategory, setActiveCategory] = useState('all')
   const [activeSub, setActiveSub]           = useState('all')
-  const [selectedProduct, setSelectedProduct] = useState(null)
   const gridRef = useRef(null)
 
   const handleCategoryChange = (cat) => {
@@ -134,7 +132,6 @@ export default function ProductGrid() {
                 key={item.product.id}
                 product={item.product}
                 style={{ transitionDelay: `${(i % 6) * 60}ms` }}
-                onClick={() => setSelectedProduct(item.product)}
               />
             )
           )}
@@ -164,7 +161,6 @@ export default function ProductGrid() {
                     key={product.id}
                     product={product}
                     style={{ transitionDelay: `${(i % 6) * 60}ms` }}
-                    onClick={() => setSelectedProduct(product)}
                   />
                 ))}
               </div>
@@ -183,18 +179,9 @@ export default function ProductGrid() {
               key={product.id}
               product={product}
               style={{ transitionDelay: `${(i % 6) * 60}ms` }}
-              onClick={() => setSelectedProduct(product)}
             />
           ))}
         </div>
-      )}
-
-      {/* Produktdetail-Modal */}
-      {selectedProduct && (
-        <ProductModal
-          product={selectedProduct}
-          onClose={() => setSelectedProduct(null)}
-        />
       )}
     </section>
   )
