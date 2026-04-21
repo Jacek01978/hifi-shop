@@ -15,6 +15,7 @@ const GROUP_LABELS = {
   netzleisten:    'Netzleisten',
   lautsprecher:   'Lautsprecherkabel',
   dynavox_absorber: 'Absorber & Dämpfer',
+  pflegemittel:     'Reinigung & Pflege',
   pflegemittel:     'Pflegemittel',
 }
 

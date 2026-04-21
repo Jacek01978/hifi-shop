@@ -392,7 +392,7 @@ export const PRODUCTS = [
     href: 'https://www.hifi-regler.de/p/hifi-regler-kabel-kontakt-fluid.html',
   },
   {
-    id: 12, cat: 'reinigung', subcat: 'vinyl', groupId: 'pflegemittel',
+    id: 12, cat: 'reinigung', subcat: 'vinyl', groupId: 'pflegemittel', groupId: 'pflegemittel',
     icon: '🎼',
     iconComponent: 'NeedleBrushIcon',
     name: 'Carbon-Tonabnehmerbürste',
