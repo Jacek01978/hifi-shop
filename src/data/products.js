@@ -270,15 +270,6 @@ export const PRODUCTS = [
 
   // ── SICHERUNGEN ──
   {
-    id: 5, cat: 'sicherungen',
-    icon: '🔒',
-    iconComponent: 'FuseIcon',
-    name: 'HiFi Feinsicherung Silber 5×20mm',
-    desc: 'Audiophile Silbersicherung mit reinem Schmelzdraht für verbesserte Leitfähigkeit und Dynamik. Kompatibel mit vielen Verstärkern und Netzteilen.',
-    price: 'ab 12,–',
-    href: amazon('hifi feinsicherung silber 5x20 audiophil'),
-  },
-  {
     id: 6, cat: 'sicherungen',
     icon: '✨',
     iconComponent: 'GoldFuseIcon',
