@@ -234,6 +234,16 @@ export const PRODUCTS = [
     href: `https://www.amazon.de/AudioQuest-Netzleiste-Powerquest-3-Niagara-1200/dp/B082SX51NV/ref=sr_1_1?crid=YCKI9NGCOYAC&dib=eyJ2IjoiMSJ9.yPgBC-_1a-DeFcN2uSgaVTKO6FYmHo0OjF5wQDax5SjGjHj071QN20LucGBJIEps.SiMUXy8RNOnX29ffWVqKFwr-qYz7DAhM-Dj6K62ykx0&dib_tag=se&keywords=audioquest+steckerleiste&qid=1776776031&sprefix=audioquest+st%2Caps%2C211&sr=8-1&tag=${TAG}`,
   },
 
+  {
+    id: 30, cat: 'netzleisten', groupId: 'netzleisten',
+    icon: '🔌',
+    iconComponent: 'PowerCableIcon',
+    name: 'Audioquest Powerquest 2',
+    desc: 'Kompakte High-End Netzleiste von AudioQuest mit Niagara-Filtertechnologie. Effektive Unterdrückung von HF-Störungen für einen ruhigeren Klangboden in der HiFi-Anlage.',
+    price: 'ab 269,–',
+    href: `https://www.amazon.de/AudioQuest-Netzleiste-Powerquest-2-Niagara-1200/dp/B082SX8KS8/ref=sr_1_1?crid=2B2A25FHP1NP4&dib=eyJ2IjoiMSJ9.c_qKWYfH_Lia0BTOAcnSVIZf4ADirtKe6Y6g8dg-p6SQ1VZEY4_b4c8XdiZH65LmM0QFC9C71wjdlk5F3jf8E8JYG6mAjbyi1HJAScN8xBd-AO1o_sshaqhNhruKo492FacGotlxgGRokSIBu8fu2itiAKoMufI6sLZvlX3sqoFGf7AwzvMmljXtFLJeKQPshUllKXiyNOVBp7p79ySDXucbHRGnPfYxIk2x-ZWLLmU.W8ZytvfP8xO3W1h8gnoVycuAbbuo-IZSjVVqpCI4YhQ&dib_tag=se&keywords=audioquest+powerquest+2&qid=1776776796&sprefix=audioquest+powerq%2Caps%2C113&sr=8-1&tag=${TAG}`,
+  },
+
   // ── SICHERUNGEN ──
   {
     id: 5, cat: 'sicherungen',
