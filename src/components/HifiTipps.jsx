@@ -236,7 +236,7 @@ export default function HifiTipps() {
       <div className="mb-12">
         <div className="flex items-center gap-4 mb-6">
           <span className="block w-10 h-px bg-gold/60" />
-          <span className="font-mono text-[0.55rem] tracking-[0.4em] uppercase text-gold/70">Wissen & Ratgeber</span>
+          <span className="font-mono font-semibold text-[0.75rem] tracking-[0.3em] uppercase text-gold">Wissen & Ratgeber</span>
         </div>
         <h1 className="font-display font-semibold text-cream leading-tight mb-4" style={{ fontSize: 'clamp(3.2rem, 6vw, 5.5rem)' }}>
           HiFi <em className="text-gradient-gold not-italic">Tipps</em>
