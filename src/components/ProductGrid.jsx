@@ -15,6 +15,7 @@ const GROUP_LABELS = {
   netzleisten:    'Netzleisten',
   lautsprecher:   'Lautsprecherkabel',
   dynavox_absorber: 'Absorber & Dämpfer',
+  pflegemittel:     'Pflegemittel',
 }
 
 const parsePrice = (price) => {
@@ -120,6 +121,8 @@ export default function ProductGrid() {
                 onShowVariants={() => {
                   if (item.groupId === 'netzleisten') { handleCategoryChange('netzleisten') }
                   else if (item.groupId === 'lautsprecher') { handleCategoryChange('kabel'); setActiveSub('lautsprecher') }
+                  else if (item.groupId === 'pflegemittel') { handleCategoryChange('reinigung') }
+                  else if (item.groupId === 'dynavox_absorber') { handleCategoryChange('absorber') }
                   else { handleCategoryChange('kabel'); setActiveSub(item.groupId) }
                 }}
               />
