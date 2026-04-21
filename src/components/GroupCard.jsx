@@ -65,17 +65,17 @@ export default function GroupCard({ products, groupLabel, style, onShowVariants 
         </span>
 
         {/* Gruppenname */}
-        <h3 className="font-display text-[1.3rem] font-normal text-cream leading-snug tracking-[0.01em]">
+        <h3 className="font-display text-[1.6rem] font-semibold text-cream leading-snug tracking-[0.01em]">
           {groupLabel}
         </h3>
 
         {/* Variantenliste */}
-        <ul className="flex flex-col gap-2 flex-1">
+        <ul className="flex flex-col gap-2.5 flex-1">
           {products.map((p) => (
             <li key={p.id} className="flex items-center gap-2.5">
               <span className="block w-2 h-px bg-gold/40 shrink-0" />
-              <span className="font-mono text-[0.58rem] text-stone tracking-[0.02em]">{p.name}</span>
-              <span className="font-mono text-[0.55rem] text-gold ml-auto shrink-0">{p.price} €</span>
+              <span className="font-mono text-[0.74rem] text-stone tracking-[0.02em]">{p.name}</span>
+              <span className="font-mono text-[0.72rem] font-semibold text-gold ml-auto shrink-0">{p.price} €</span>
             </li>
           ))}
         </ul>
