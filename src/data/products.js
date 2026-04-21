@@ -269,15 +269,6 @@ export const PRODUCTS = [
   },
 
   // ── SICHERUNGEN ──
-  {
-    id: 6, cat: 'sicherungen',
-    icon: '✨',
-    iconComponent: 'GoldFuseIcon',
-    name: 'Goldkontakt Sicherung 6,3×32mm',
-    desc: 'Hochwertige Gerätesicherung mit vergoldeten Kontakten. Reduziert Übergangswiderstände – klangliche Verbesserungen gegenüber Standardsicherungen.',
-    price: 'ab 19,–',
-    href: amazon('hifi sicherung gold 6.3x32mm audiophil'),
-  },
 
   {
     id: 33, cat: 'sicherungen',
