@@ -10,7 +10,7 @@ const CAT_COLORS = {
   phasendetektor: { text: 'text-cyan-400',   border: 'border-cyan-400',   bar: 'bg-cyan-400',   glow: 'rgba(34,211,238,0.15)' },
 }
 
-export default function ProductCard({ product, style }) {
+export default function ProductCard({ product, style, onClick }) {
   const cardRef = useRef(null)
   const colors  = CAT_COLORS[product.cat] ?? CAT_COLORS.kabel
 
@@ -41,10 +41,11 @@ export default function ProductCard({ product, style }) {
   return (
     <article
       ref={cardRef}
-      className="reveal group relative flex flex-col gap-0 overflow-hidden bg-obsidian-50 border border-obsidian-200 transition-all duration-300"
+      className="reveal group relative flex flex-col gap-0 overflow-hidden bg-obsidian-50 border border-obsidian-200 transition-all duration-300 cursor-pointer"
       style={{ ...style, willChange: 'transform' }}
       onMouseMove={onMouseMove}
       onMouseLeave={onMouseLeave}
+      onClick={onClick}
     >
       {/* Shine layer */}
       <div className="card-shine absolute inset-0 pointer-events-none z-10 transition-all duration-200" />
