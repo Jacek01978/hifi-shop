@@ -244,6 +244,16 @@ export const PRODUCTS = [
     href: `https://www.amazon.de/AudioQuest-Netzleiste-Powerquest-2-Niagara-1200/dp/B082SX8KS8/ref=sr_1_1?crid=2B2A25FHP1NP4&dib=eyJ2IjoiMSJ9.c_qKWYfH_Lia0BTOAcnSVIZf4ADirtKe6Y6g8dg-p6SQ1VZEY4_b4c8XdiZH65LmM0QFC9C71wjdlk5F3jf8E8JYG6mAjbyi1HJAScN8xBd-AO1o_sshaqhNhruKo492FacGotlxgGRokSIBu8fu2itiAKoMufI6sLZvlX3sqoFGf7AwzvMmljXtFLJeKQPshUllKXiyNOVBp7p79ySDXucbHRGnPfYxIk2x-ZWLLmU.W8ZytvfP8xO3W1h8gnoVycuAbbuo-IZSjVVqpCI4YhQ&dib_tag=se&keywords=audioquest+powerquest+2&qid=1776776796&sprefix=audioquest+powerq%2Caps%2C113&sr=8-1&tag=${TAG}`,
   },
 
+  {
+    id: 31, cat: 'netzleisten', groupId: 'netzleisten',
+    icon: '🔌',
+    iconComponent: 'PowerCableIcon',
+    name: 'Supra Cables MK III Netzleiste',
+    desc: 'Hochwertige audiophile Netzleiste von Supra Cables mit integriertem Netzschalter und vergoldeten Schukobuchsen. Solide Verarbeitung und effektive Entstörung für die anspruchsvolle HiFi-Anlage.',
+    price: 'ab 200,–',
+    href: `https://www.amazon.de/Supra-Netzleiste-MK-III-Switch/dp/B017TIM4RM/ref=sr_1_6?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2Q5QGI2LL3HLR&dib=eyJ2IjoiMSJ9.ZgxKkU6QJYEpp4CKdjO86UGPG-3SdHhn8fk5GZ0F0n8c0nkr8pTB8UBIt6Ml0iaEj1z9NXCj8HqLO2w6P7-UPA-JPn841y0cTJO-paO74hjr4ucHgk9_UBZLYuHgcZcrOpdUaix4Nhh4UJaWvjSJfLFSCuVlhGTjaUW9hj9b08L5ot7RwljwZWAqy-OgvgNE5uFzB1TWWSkatZ9JN1ie2c8fBE50XiRo3WF1tWT0wvE.SqJUFSR1heeKRpDc7CfU4pmOTKK5hnuUGpoXBfrk84k&dib_tag=se&keywords=supra+netzleiste&qid=1776776860&sprefix=supra+netzleiste%2Caps%2C301&sr=8-6&tag=${TAG}`,
+  },
+
   // ── SICHERUNGEN ──
   {
     id: 5, cat: 'sicherungen',
