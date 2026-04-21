@@ -145,9 +145,9 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 right-8 lg:right-14 flex flex-col items-center gap-2 opacity-40">
-        <span className="font-mono text-[0.5rem] tracking-[0.3em] uppercase text-gold rotate-90 origin-center mb-2">Scroll</span>
-        <div className="w-px h-8 bg-gradient-to-b from-gold to-transparent" />
+      <div className="absolute bottom-8 right-8 lg:right-14 flex flex-col items-center gap-3 opacity-80">
+        <span className="font-mono text-[0.68rem] font-bold tracking-[0.3em] uppercase text-gold rotate-90 origin-center mb-3">Scroll</span>
+        <div className="w-[3px] h-16 rounded-full bg-gradient-to-b from-gold via-gold/60 to-transparent shadow-[0_0_8px_rgba(201,168,76,0.5)]" />
       </div>
     </section>
   )
