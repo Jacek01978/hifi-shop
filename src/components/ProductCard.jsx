@@ -69,7 +69,7 @@ export default function ProductCard({ product, style }) {
         </span>
 
         {/* Title */}
-        <h3 className="font-display text-[1.3rem] font-normal text-cream leading-snug tracking-[0.01em]">
+        <h3 className="font-display text-[1.6rem] font-semibold text-cream leading-snug tracking-[0.01em]">
           {product.name}
         </h3>
 
@@ -84,10 +84,10 @@ export default function ProductCard({ product, style }) {
         {/* Footer */}
         <div className="flex items-center justify-between">
           <div>
-            <span className={`font-display text-[1.7rem] font-light ${colors.text}`}>
+            <span className={`font-display text-[2.1rem] font-semibold ${colors.text}`}>
               {product.price}
             </span>
-            <span className="font-mono text-[0.7rem] text-muted ml-1">€</span>
+            <span className="font-mono text-[0.8rem] text-muted ml-1">€</span>
             <p className="font-mono text-[0.62rem] text-muted tracking-[0.06em] mt-0.5 opacity-70">
               * Affiliate-Link
             </p>
