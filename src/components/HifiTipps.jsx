@@ -238,10 +238,10 @@ export default function HifiTipps() {
           <span className="block w-10 h-px bg-gold/60" />
           <span className="font-mono text-[0.55rem] tracking-[0.4em] uppercase text-gold/70">Wissen & Ratgeber</span>
         </div>
-        <h1 className="font-display font-light text-cream leading-tight mb-4" style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)' }}>
+        <h1 className="font-display font-semibold text-cream leading-tight mb-4" style={{ fontSize: 'clamp(3.2rem, 6vw, 5.5rem)' }}>
           HiFi <em className="text-gradient-gold not-italic">Tipps</em>
         </h1>
-        <p className="font-mono text-[0.65rem] leading-[1.9] text-muted tracking-[0.04em] max-w-lg">
+        <p className="font-mono font-medium text-[0.82rem] leading-[1.8] text-stone tracking-[0.03em] max-w-lg">
           Praxiswissen für audiophile Ansprüche. Von Kabelphysik über Raumakustik bis zur richtigen Pflege Ihrer Schallplatten.
         </p>
       </div>
