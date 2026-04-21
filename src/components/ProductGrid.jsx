@@ -14,7 +14,7 @@ const GROUP_LABELS = {
   xlr:         'XLR Kabel',
   netzleisten:    'Netzleisten',
   lautsprecher:   'Lautsprecherkabel',
-  dynavox_absorber: 'Dynavox Absorber & Dämpfer',
+  dynavox_absorber: 'Absorber & Dämpfer',
 }
 
 const parsePrice = (price) => {
