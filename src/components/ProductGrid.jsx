@@ -15,6 +15,11 @@ const GROUP_LABELS = {
   netzleisten: 'Netzleisten',
 }
 
+const parsePrice = (price) => {
+  const s = price.replace('ab ', '').replace(',–', '').replace('–', '').replace(',', '.')
+  return parseFloat(s) || 0
+}
+
 export default function ProductGrid() {
   const [activeCategory, setActiveCategory] = useState('all')
   const [activeSub, setActiveSub]           = useState('all')
@@ -30,7 +35,7 @@ export default function ProductGrid() {
     if ((activeCategory === 'kabel' || activeCategory === 'reinigung') && activeSub !== 'all') {
       list = list.filter(p => p.subcat === activeSub)
     }
-    return list
+    return [...list].sort((a, b) => parsePrice(a.price) - parsePrice(b.price))
   }, [activeCategory, activeSub])
 
   // "Alle Produkte": Cinch-Gruppe zusammenfassen
