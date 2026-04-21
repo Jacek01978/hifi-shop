@@ -88,6 +88,15 @@ export const PRODUCTS = [
     href: `https://www.amazon.de/AudioQuest-Monsoon-High-Netzkabel-Kaltger%C3%A4testecker/dp/B07VBMXF15/ref=sr_1_10?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1173098WT6UIE&dib=eyJ2IjoiMSJ9.kh8zmJ4ZXoqM5muy6TPTyXsam4xsRVjPPunT9Zjb4pSZzhSBEGp7KMkEVJACuJnbudBhDDNUaeHfrHU_O3e4l4V6r7aY6C7TRG2MjvxQXLrT82-ev-H32I3hICHnYMJDSbbf30EkgJw01N5zpJIovEIU0fRLTmwfkVtiA7ABS6y5XP5bq0pS5JSfjczGpjdNSQfQUq71lmVnX4H1WEQb3LdDcL2-bC1159U4wSDjeQ8.fd-qZCB2H263582ivsUyI-ePGVavQfZ3aJBl-peTM4M&dib_tag=se&keywords=audioquest+netzkabel&qid=1776528956&sprefix=audioquest+netzkabel%2Caps%2C115&sr=8-10&tag=${TAG}`,
   },
   {
+    id: 35, cat: 'kabel', subcat: 'lautsprecher',
+    icon: '🔗',
+    iconComponent: 'SpeakerCableIcon',
+    name: 'Supra Cables Lautsprecherkabel PLY 3M',
+    desc: 'Hochwertiges Lautsprecherkabel von Supra Cables in 3m Länge mit CombiCon Crimp Steckern. OFC-Leiter in verdrillter PLY-Ausführung für minimale Einstreuungen und natürliche Klangwiedergabe.',
+    price: 'ab 249,–',
+    href: `https://www.amazon.de/Supra-Cables-Lautsprecherkabel-CombiCon-Crimp/dp/B001AACE26/ref=sr_1_4?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=FWJ4RCONS3S&dib=eyJ2IjoiMSJ9.Q9eZyZDxQ6ZIgforquZtc1Bcp0e8FW5KKr_oOxtrpMH9Mc0Wo0ISp5TEw73_IFbT68c5SzeauYCh-DzB-AjSPSAzAlr8cM-VCssu9awfqD4RNfoJXEQu8Icf8aV9l9945-cpkHi9xZVHjIJKg4yqL1WGYYCaPIgCysvxjGhjvFscIK45Iv5L9NtyhpmbLexqBY3-g83UrMhOoAp-Wr4ku6lJWOSp4ZhLHqnbOkb-j19tYCSJnG9qlA-iY2QppeHrMHQOhpSrMN7eDUV3ddGlK8dJ0RXjoSJ-mYFWnxGcxpg.i5UTpa5RUwGP_U0TkveuHWAmga0gUSEbDr75C0QR3YM&dib_tag=se&keywords=lautsprecherkabel+supra&qid=1776778450&s=ce-de&sprefix=lautsprecherkabel+supr%2Celectronics%2C114&sr=1-4&tag=${TAG}`,
+  },
+  {
     id: 34, cat: 'kabel', subcat: 'lautsprecher',
     icon: '🔗',
     iconComponent: 'SpeakerCableIcon',
