@@ -88,6 +88,15 @@ export const PRODUCTS = [
     href: `https://www.amazon.de/AudioQuest-Monsoon-High-Netzkabel-Kaltger%C3%A4testecker/dp/B07VBMXF15/ref=sr_1_10?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1173098WT6UIE&dib=eyJ2IjoiMSJ9.kh8zmJ4ZXoqM5muy6TPTyXsam4xsRVjPPunT9Zjb4pSZzhSBEGp7KMkEVJACuJnbudBhDDNUaeHfrHU_O3e4l4V6r7aY6C7TRG2MjvxQXLrT82-ev-H32I3hICHnYMJDSbbf30EkgJw01N5zpJIovEIU0fRLTmwfkVtiA7ABS6y5XP5bq0pS5JSfjczGpjdNSQfQUq71lmVnX4H1WEQb3LdDcL2-bC1159U4wSDjeQ8.fd-qZCB2H263582ivsUyI-ePGVavQfZ3aJBl-peTM4M&dib_tag=se&keywords=audioquest+netzkabel&qid=1776528956&sprefix=audioquest+netzkabel%2Caps%2C115&sr=8-10&tag=${TAG}`,
   },
   {
+    id: 36, cat: 'kabel', subcat: 'lautsprecher',
+    icon: '🔗',
+    iconComponent: 'SpeakerCableIcon',
+    name: 'QED XT40i Referenz-Lautsprecherkabel 2m',
+    desc: 'Referenz-Lautsprecherkabel von QED mit patentierter X-Tube-Technologie. Hohle Leitergeometrie reduziert den Skin-Effekt für eine besonders offene und detailreiche Hochtonwiedergabe.',
+    price: 'ab 150,–',
+    href: `https://www.amazon.de/QED-XT40i-Referenz-Lautsprecherkabel-Spule-Terminated/dp/B07YTYV65F/ref=sr_1_2?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=36HV9VS3E11SV&dib=eyJ2IjoiMSJ9.sPNsPj7qSv9XSFUlSbbhZn1cvUjskq2ygI-K6pNAJO6VSyi7u2QaoMqiN_4tiGBWLEyu6xpyKRd_n_zKPKAN1cXn_Xmf65d5IfkhMKZ4HlfMEfgsjqMdL71x2Kyz_wdAzgemvIi4xOPXK97xASu9K0lFksmYdWkfL4Q3FaZkw3rXod5HLtVYYnOUo48Rle9blu4k7-QUEVux31lvQiyaOIZc1UEpkI5IbkKMeicZOtQ.JMcsyrmqvDcTNfY1d0ov2fWnRVwoRFwyYWAlLxpQh0o&dib_tag=se&keywords=lautsprecherkabel+qed&qid=1776778657&sprefix=lautsprecherkabel+qed%2Caps%2C179&sr=8-2&tag=${TAG}`,
+  },
+  {
     id: 35, cat: 'kabel', subcat: 'lautsprecher',
     icon: '🔗',
     iconComponent: 'SpeakerCableIcon',
