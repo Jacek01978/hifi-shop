@@ -100,7 +100,7 @@ export default function Hero() {
 
         {/* Subline */}
         <p
-          className="font-mono text-[0.68rem] leading-[2] text-muted tracking-[0.06em] max-w-md mb-12 animate-fade-up"
+          className="font-mono text-[0.82rem] leading-[2] text-stone tracking-[0.04em] max-w-md mb-12 animate-fade-up"
           style={{ animationDelay: '0.35s' }}
         >
           Handverlesenes HiFi-Zubehör für audiophile Ansprüche.<br />
@@ -119,7 +119,7 @@ export default function Hero() {
               <path d="M1 11L11 1M11 1H4M11 1V8" />
             </svg>
           </a>
-          <span className="font-mono text-[0.55rem] tracking-[0.15em] uppercase text-muted">
+          <span className="font-mono text-[0.68rem] tracking-[0.15em] uppercase text-muted">
             {25} Premium-Produkte
           </span>
         </div>

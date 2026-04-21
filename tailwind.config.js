@@ -21,9 +21,9 @@ export default {
           200: '#1e1e1e',
           300: '#2a2a2a',
         },
-        cream: '#f0ead8',
-        stone: '#d4ccbb',
-        muted: '#4a4a4a',
+        cream: '#f5f0e8',
+        stone: '#ddd6c8',
+        muted: '#a09890',
       },
       backgroundImage: {
         'gradient-gold': 'linear-gradient(135deg, #c9a84c 0%, #f0d98c 50%, #c9a84c 100%)',

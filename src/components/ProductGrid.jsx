@@ -90,7 +90,7 @@ export default function ProductGrid() {
         <h2 className="font-display text-[2rem] font-light text-cream tracking-[0.03em]">
           Unsere Produkte
         </h2>
-        <span className="font-mono text-[0.56rem] tracking-[0.25em] uppercase text-muted">
+        <span className="font-mono text-[0.68rem] tracking-[0.2em] uppercase text-muted">
           {filtered.length} Artikel
         </span>
         <div className="flex-1 h-px bg-obsidian-200 ml-4" />
@@ -128,10 +128,10 @@ export default function ProductGrid() {
               {/* Subkategorie-Header */}
               <div className="flex items-center gap-4 px-8 lg:px-14 py-4 border-t border-obsidian-200 bg-obsidian-50">
                 <span className="block w-3 h-px bg-gold/60" />
-                <span className="font-mono text-[0.55rem] tracking-[0.28em] uppercase text-gold/70">
+                <span className="font-mono text-[0.66rem] tracking-[0.22em] uppercase text-gold/80">
                   {SUBCAT_LABELS[subcat] ?? subcat}
                 </span>
-                <span className="font-mono text-[0.5rem] tracking-[0.15em] text-muted">
+                <span className="font-mono text-[0.64rem] tracking-[0.12em] text-muted">
                   {products.length} Artikel
                 </span>
                 <div className="flex-1 h-px bg-obsidian-200" />

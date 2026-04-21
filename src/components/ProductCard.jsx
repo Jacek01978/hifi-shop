@@ -74,7 +74,7 @@ export default function ProductCard({ product, style }) {
         </h3>
 
         {/* Description */}
-        <p className="font-mono text-[0.6rem] leading-[1.9] text-muted tracking-[0.03em] flex-1">
+        <p className="font-mono text-[0.75rem] leading-[1.8] text-stone tracking-[0.02em] flex-1">
           {product.desc}
         </p>
 
@@ -87,8 +87,8 @@ export default function ProductCard({ product, style }) {
             <span className={`font-display text-[1.7rem] font-light ${colors.text}`}>
               {product.price}
             </span>
-            <span className="font-mono text-[0.6rem] text-muted ml-1">€</span>
-            <p className="font-mono text-[0.5rem] text-muted tracking-[0.06em] mt-0.5 opacity-50">
+            <span className="font-mono text-[0.7rem] text-muted ml-1">€</span>
+            <p className="font-mono text-[0.62rem] text-muted tracking-[0.06em] mt-0.5 opacity-70">
               * Affiliate-Link
             </p>
           </div>
