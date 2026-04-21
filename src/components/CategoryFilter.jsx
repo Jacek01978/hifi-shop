@@ -26,12 +26,12 @@ function FilterRow({ items, active, onChange, small = false }) {
           key={item.id}
           ref={(el) => { btnRefs.current[item.id] = el }}
           onClick={() => onChange(item.id)}
-          className={`font-mono font-semibold tracking-[0.14em] uppercase border transition-all duration-250 whitespace-nowrap ${
-            small ? 'text-[0.66rem] px-3.5 py-1.5' : 'text-[0.72rem] px-5 py-2.5'
+          className={`font-mono font-extrabold tracking-[0.12em] uppercase border transition-all duration-250 whitespace-nowrap ${
+            small ? 'text-[0.72rem] px-4 py-2' : 'text-[0.82rem] px-6 py-3'
           } ${
             active === item.id
-              ? 'border-gold/60 text-gold bg-gold/[0.06]'
-              : 'border-obsidian-300 text-muted hover:border-gold/30 hover:text-stone hover:bg-obsidian-100'
+              ? 'border-gold/70 text-gold bg-gold/[0.08]'
+              : 'border-obsidian-300 text-stone hover:border-gold/40 hover:text-cream hover:bg-obsidian-100'
           }`}
         >
           {item.label}
