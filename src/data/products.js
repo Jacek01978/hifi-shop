@@ -344,15 +344,6 @@ export const PRODUCTS = [
     price: 'ab 49,–',
     href: amazon('raumakustik absorber pyramidenschaum hifi studio'),
   },
-  {
-    id: 9, cat: 'absorber',
-    icon: '🔵',
-    iconComponent: 'SpeakerSpikesIcon',
-    name: 'Lautsprecher Spikes & Teller-Set',
-    desc: 'M6 Gewindebolzen-Spikes aus Messing, verchromt. Entkoppeln Lautsprecher vom Untergrund, verbessern Basswiedergabe und Bühnenabbildung.',
-    price: 'ab 22,–',
-    href: amazon('lautsprecher spikes messing hifi entkopplung'),
-  },
 
   // ── REINIGUNG ──
   {
