@@ -7,11 +7,12 @@ const amazon = (query) =>
 
 // ─── PRODUCTS ─────────────────────────────────────────────────────────────────
 export const CATEGORIES = [
-  { id: 'all',         label: 'Alle Produkte' },
-  { id: 'kabel',       label: 'Kabel' },
-  { id: 'sicherungen', label: 'Sicherungen' },
-  { id: 'absorber',    label: 'Absorber & Dämpfer' },
-  { id: 'reinigung',   label: 'Reinigungsmittel' },
+  { id: 'all',          label: 'Alle Produkte' },
+  { id: 'kabel',        label: 'Kabel' },
+  { id: 'sicherungen',  label: 'Sicherungen' },
+  { id: 'absorber',     label: 'Absorber & Dämpfer' },
+  { id: 'reinigung',    label: 'Reinigungsmittel' },
+  { id: 'netzleisten',  label: 'Netzleisten' },
 ]
 
 export const KABEL_SUBCATEGORIES = [
@@ -30,17 +31,19 @@ export const REINIGUNG_SUBCATEGORIES = [
 ]
 
 export const ACCENT = {
-  kabel:       'text-gold border-gold',
-  sicherungen: 'text-blue-400 border-blue-400',
-  absorber:    'text-green-400 border-green-400',
-  reinigung:   'text-pink-400 border-pink-400',
+  kabel:        'text-gold border-gold',
+  sicherungen:  'text-blue-400 border-blue-400',
+  absorber:     'text-green-400 border-green-400',
+  reinigung:    'text-pink-400 border-pink-400',
+  netzleisten:  'text-violet-400 border-violet-400',
 }
 
 export const ACCENT_BAR = {
-  kabel:       'bg-gold',
-  sicherungen: 'bg-blue-400',
-  absorber:    'bg-green-400',
-  reinigung:   'bg-pink-400',
+  kabel:        'bg-gold',
+  sicherungen:  'bg-blue-400',
+  absorber:     'bg-green-400',
+  reinigung:    'bg-pink-400',
+  netzleisten:  'bg-violet-400',
 }
 
 export const PRODUCTS = [
@@ -198,6 +201,17 @@ export const PRODUCTS = [
     desc: 'Hochwertiges konfektioniertes Netzkabel mit 3×2,5mm² Querschnitt, Bals Schuko-Stecker und Wattgate 320i Kaltgerätestecker. Audiophile DIY-Qualität für anspruchsvolle HiFi-Anlagen.',
     price: 'ab 79,90',
     href: 'https://www.ebay.de/itm/180833697125?itmmeta=01KPGYK2ARVM3J97D9BJNV6FVM&hash=item2a1a873d65:g:NkcAAOSwPkJab0NL',
+  },
+
+  // ── NETZLEISTEN ──
+  {
+    id: 27, cat: 'netzleisten',
+    icon: '🔌',
+    iconComponent: 'PowerCableIcon',
+    name: 'Audiophile HiFi Netzleiste',
+    desc: 'Hochwertige Netzleiste speziell für HiFi-Anlagen. Mit Überspannungsschutz, Entstörfilter und vergoldeten Schukobuchsen für eine saubere Stromversorgung aller Komponenten.',
+    price: 'ab 79,–',
+    href: amazon('hifi netzleiste audiophil überspannungsschutz entstörfilter'),
   },
 
   // ── SICHERUNGEN ──

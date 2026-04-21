@@ -5,7 +5,8 @@ const CAT_COLORS = {
   kabel:        { text: 'text-gold',      border: 'border-gold',      bar: 'bg-gold',      glow: 'rgba(201,168,76,0.15)' },
   sicherungen:  { text: 'text-blue-400',  border: 'border-blue-400',  bar: 'bg-blue-400',  glow: 'rgba(96,165,250,0.15)' },
   absorber:     { text: 'text-emerald-400', border: 'border-emerald-400', bar: 'bg-emerald-400', glow: 'rgba(52,211,153,0.15)' },
-  reinigung:    { text: 'text-rose-400',  border: 'border-rose-400',  bar: 'bg-rose-400',  glow: 'rgba(251,113,133,0.15)' },
+  reinigung:    { text: 'text-rose-400',    border: 'border-rose-400',    bar: 'bg-rose-400',    glow: 'rgba(251,113,133,0.15)' },
+  netzleisten:  { text: 'text-violet-400', border: 'border-violet-400', bar: 'bg-violet-400', glow: 'rgba(167,139,250,0.15)' },
 }
 
 export default function ProductCard({ product, style }) {
