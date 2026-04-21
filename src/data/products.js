@@ -61,6 +61,15 @@ export const PRODUCTS = [
     href: amazon('cinch audiokabel ofc kupfer hifi'),
   },
   {
+    id: 40, cat: 'kabel', subcat: 'xlr', groupId: 'xlr',
+    icon: '🎧',
+    iconComponent: 'XLRCableIcon',
+    name: 'Audioquest Red River High End XLR 2m',
+    desc: 'High-End XLR-Kabel von AudioQuest mit Solid Long-Grain Copper Innenleitern und Carbon-Abschirmung. Hervorragende Rauschunterdrückung und audiophile Klangqualität für anspruchsvolle Stereo-Setups.',
+    price: 'ab 230,–',
+    href: `https://www.amazon.de/AudioQuest-PR-Red-River-XLR-Schwarz/dp/B00HZQOWYW/ref=sr_1_6?crid=1SW1RY63MBG2P&dib=eyJ2IjoiMSJ9.dDEk8lq0u1u01ORQkai1Tqh8ZgKNpKr9qd3uE5QAoXmxl1KCxGqOiOILmUc1Ljr64-rM5FV2J4xLp3DTXJAWMtVR6odb8IdlVyG_q1YKFttHTJo87fxr_b4Kv0dyXBeM8PLHZUe_p4fCMJQqt7dXaWf478Z1pUl0kEi1z6shAmnP3AP4Uh7xGwHtl73wPHiQTks-UaUXAZDqzFOpJdINyNVv4_AJBzyNTUSSc6kz9m1_2ICUoHx2GZL7RmatjTO315_V4mqRRuQyurYLjGAl_0VMYfAxvtWS2WZlzYSb3BM.edxBteZ-KKJRW8KXpilwrLxm9WQrEfAwPpkKnnKH7p8&dib_tag=se&keywords=audioquest%2Bxlr%2Bkabel&qid=1776784137&sprefix=audioquest%2Bxlr%2Caps%2C127&sr=8-6&th=1&tag=${TAG}`,
+  },
+  {
     id: 39, cat: 'kabel', subcat: 'xlr', groupId: 'xlr',
     icon: '🎧',
     iconComponent: 'XLRCableIcon',
