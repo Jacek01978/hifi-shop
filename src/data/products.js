@@ -12,7 +12,8 @@ export const CATEGORIES = [
   { id: 'sicherungen',  label: 'Sicherungen' },
   { id: 'absorber',     label: 'Absorber & Dämpfer' },
   { id: 'reinigung',    label: 'Reinigungsmittel' },
-  { id: 'netzleisten',  label: 'Netzleisten' },
+  { id: 'netzleisten',    label: 'Netzleisten' },
+  { id: 'phasendetektor', label: 'Phasendetektor' },
 ]
 
 export const KABEL_SUBCATEGORIES = [
@@ -35,7 +36,8 @@ export const ACCENT = {
   sicherungen:  'text-blue-400 border-blue-400',
   absorber:     'text-green-400 border-green-400',
   reinigung:    'text-pink-400 border-pink-400',
-  netzleisten:  'text-violet-400 border-violet-400',
+  netzleisten:    'text-violet-400 border-violet-400',
+  phasendetektor: 'text-cyan-400 border-cyan-400',
 }
 
 export const ACCENT_BAR = {
@@ -43,7 +45,8 @@ export const ACCENT_BAR = {
   sicherungen:  'bg-blue-400',
   absorber:     'bg-green-400',
   reinigung:    'bg-pink-400',
-  netzleisten:  'bg-violet-400',
+  netzleisten:    'bg-violet-400',
+  phasendetektor: 'bg-cyan-400',
 }
 
 export const PRODUCTS = [
@@ -252,6 +255,17 @@ export const PRODUCTS = [
     desc: 'Hochwertige audiophile Netzleiste von Supra Cables mit integriertem Netzschalter und vergoldeten Schukobuchsen. Solide Verarbeitung und effektive Entstörung für die anspruchsvolle HiFi-Anlage.',
     price: 'ab 200,–',
     href: `https://www.amazon.de/Supra-Netzleiste-MK-III-Switch/dp/B017TIM4RM/ref=sr_1_6?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2Q5QGI2LL3HLR&dib=eyJ2IjoiMSJ9.ZgxKkU6QJYEpp4CKdjO86UGPG-3SdHhn8fk5GZ0F0n8c0nkr8pTB8UBIt6Ml0iaEj1z9NXCj8HqLO2w6P7-UPA-JPn841y0cTJO-paO74hjr4ucHgk9_UBZLYuHgcZcrOpdUaix4Nhh4UJaWvjSJfLFSCuVlhGTjaUW9hj9b08L5ot7RwljwZWAqy-OgvgNE5uFzB1TWWSkatZ9JN1ie2c8fBE50XiRo3WF1tWT0wvE.SqJUFSR1heeKRpDc7CfU4pmOTKK5hnuUGpoXBfrk84k&dib_tag=se&keywords=supra+netzleiste&qid=1776776860&sprefix=supra+netzleiste%2Caps%2C301&sr=8-6&tag=${TAG}`,
+  },
+
+  // ── PHASENDETEKTOR ──
+  {
+    id: 32, cat: 'phasendetektor',
+    icon: '⚡',
+    iconComponent: 'FuseIcon',
+    name: 'Oehlbach Phasendetektor',
+    desc: 'Praktisches Messgerät zur Bestimmung der korrekten Netzphase von HiFi-Geräten. Einfach in die Schukosteckdose stecken und per LED ablesen – für optimale Klangqualität durch korrekte Phasenlage aller Komponenten.',
+    price: 'ab 60,–',
+    href: `https://www.amazon.de/Oehlbach-Hochwertiger-Phasendetektor-Bestimmung-phasenrichtigen/dp/B001IK27YS/ref=pd_rhf_dp_s_pd_crcd_d_sccl_1_2/260-8413956-1206734?pd_rd_w=3KWSX&content-id=amzn1.sym.bdc976f5-091d-476e-babe-0eae24f1fc4c&pf_rd_p=bdc976f5-091d-476e-babe-0eae24f1fc4c&pf_rd_r=8W0HR43WH2SKPS4FEPWZ&pd_rd_wg=kUAvP&pd_rd_r=6e37cba7-af87-4580-b725-b6754faf52d5&pd_rd_i=B001IK27YS&psc=1&tag=${TAG}`,
   },
 
   // ── SICHERUNGEN ──
