@@ -288,6 +288,16 @@ export const PRODUCTS = [
     href: amazon('hifi sicherung gold 6.3x32mm audiophil'),
   },
 
+  {
+    id: 33, cat: 'sicherungen',
+    icon: '✨',
+    iconComponent: 'GoldFuseIcon',
+    name: 'AHP Feinsicherung II 6,3×32mm Gold träge 1,25A',
+    desc: 'Audiophile Goldkontakt-Feinsicherung von AHP (250V, 1,25A, träge). Vergoldete Endkappen für minimalen Übergangswiderstand und optimale Signalübertragung in hochwertigen HiFi-Verstärkern.',
+    price: 'ab 39,90',
+    href: `https://www.amazon.de/AHP-Audiophile-HiFi-Produkte-Feinsicherung-Stromst%C3%A4rke/dp/B005LF1UMG/ref=sr_1_18?dib=eyJ2IjoiMSJ9.T9-bSlDUaWgHhAr4Bz1X2fnG10AsxxLNjy__U7GoghdPb1_DgB7w8z_qOXcfSZuN1OE5IBxm1cRz1MXUGdCp7tL67oF9LJ8fYz6ogjfgMoG0Uhh5dyHrjJyDakkEcP6UoqVTd6m5fYukrXtWeq58FUctS76QZ0CbGh7FBJY2_0vhDwGW5kBij4I_vIEqyRxqTHdw5bSmT0zeDwRUe3aN3x1J0Vada5aXkQ3VcfayntwqgD8btRGKNajIZaVUzQr8iE25FlMEscGQ48EArRTpfIIFeKRTSL2ex1FCTz7SStY.RWKFTE_QCGIDeoGDe_hOH6dmNM2GLsUtFsfq5uOZOOQ&dib_tag=se&keywords=hifi+sicherung+gold+6.3x32mm+audiophil&qid=1776776652&sr=8-18&tag=${TAG}`,
+  },
+
   // ── ABSORBER ──
   {
     id: 7, cat: 'absorber',
