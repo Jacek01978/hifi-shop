@@ -12,8 +12,9 @@ const GROUP_LABELS = {
   cinch:       'Cinch / RCA Kabel',
   netz:        'Netzkabel',
   xlr:         'XLR Kabel',
-  netzleisten:  'Netzleisten',
-  lautsprecher: 'Lautsprecherkabel',
+  netzleisten:    'Netzleisten',
+  lautsprecher:   'Lautsprecherkabel',
+  dynavox_absorber: 'Dynavox Absorber & Dämpfer',
 }
 
 const parsePrice = (price) => {
@@ -39,9 +40,8 @@ export default function ProductGrid() {
     return [...list].sort((a, b) => parsePrice(a.price) - parsePrice(b.price))
   }, [activeCategory, activeSub])
 
-  // "Alle Produkte": Cinch-Gruppe zusammenfassen
+  // Gruppen zusammenfassen (gilt für alle Kategorien)
   const displayItems = useMemo(() => {
-    if (activeCategory !== 'all') return null
     const result = []
     const grouped = {}
     filtered.forEach(p => {
@@ -103,7 +103,7 @@ export default function ProductGrid() {
         <div className="flex-1 h-px bg-obsidian-200 ml-4" />
       </div>
 
-      {/* "Alle Produkte": Cinch-Gruppe als eine Karte */}
+      {/* Produkte mit Gruppen-Karten */}
       {displayItems ? (
         <div
           ref={gridRef}

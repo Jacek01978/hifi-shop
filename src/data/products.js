@@ -318,7 +318,7 @@ export const PRODUCTS = [
     href: amazon('hifi geratefusse entkoppler edelstahl spitzenlager'),
   },
   {
-    id: 38, cat: 'absorber',
+    id: 38, cat: 'absorber', groupId: 'dynavox_absorber',
     icon: '🟢',
     iconComponent: 'DeviceFeetIcon',
     name: 'Dynavox Sub-Watt-Absorber 4er Set',
@@ -327,7 +327,7 @@ export const PRODUCTS = [
     href: `https://www.amazon.de/gp/aw/d/B0039I1DTC/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=d455c89330797381f3deeab3dfcc8d75&hsa_cr_id=0&qid=1776779279&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&aref=gTtRkGXGgg&ref_=sbx_s_sparkle_sbtcd_asin_0_title&pd_rd_w=yFzr5&content-id=amzn1.sym.67616a74-5971-4136-9787-0edce4b0e77e%3Aamzn1.sym.67616a74-5971-4136-9787-0edce4b0e77e&pf_rd_p=67616a74-5971-4136-9787-0edce4b0e77e&pf_rd_r=1M7V9PQXZJY4E6WZ6FSG&pd_rd_wg=zfmRo&pd_rd_r=8e9606b2-d5e1-4e7e-a14a-9d8ca0a75dab&th=1&tag=${TAG}`,
   },
   {
-    id: 37, cat: 'absorber',
+    id: 37, cat: 'absorber', groupId: 'dynavox_absorber',
     icon: '🟢',
     iconComponent: 'DeviceFeetIcon',
     name: 'Dynavox Silikon-Elastomer Dämpfer ED32 4er-Set',
