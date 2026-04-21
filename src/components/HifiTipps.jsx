@@ -252,10 +252,10 @@ export default function HifiTipps() {
           <button
             key={cat}
             onClick={() => setActiveCategory(cat)}
-            className={`font-mono text-[0.55rem] tracking-[0.18em] uppercase px-4 py-2 border transition-all duration-250 whitespace-nowrap ${
+            className={`font-mono font-semibold text-[0.7rem] tracking-[0.14em] uppercase px-5 py-2.5 border transition-all duration-250 whitespace-nowrap ${
               activeCategory === cat
-                ? 'border-gold/60 text-gold bg-gold/[0.06]'
-                : 'border-obsidian-300 text-muted hover:border-gold/30 hover:text-stone'
+                ? 'border-gold/70 text-gold bg-gold/[0.08]'
+                : 'border-gold/40 text-gold hover:border-gold hover:text-gold-light hover:bg-gold/[0.06]'
             }`}
           >
             {cat}
