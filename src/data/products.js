@@ -88,7 +88,7 @@ export const PRODUCTS = [
     href: `https://www.amazon.de/AudioQuest-Monsoon-High-Netzkabel-Kaltger%C3%A4testecker/dp/B07VBMXF15/ref=sr_1_10?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1173098WT6UIE&dib=eyJ2IjoiMSJ9.kh8zmJ4ZXoqM5muy6TPTyXsam4xsRVjPPunT9Zjb4pSZzhSBEGp7KMkEVJACuJnbudBhDDNUaeHfrHU_O3e4l4V6r7aY6C7TRG2MjvxQXLrT82-ev-H32I3hICHnYMJDSbbf30EkgJw01N5zpJIovEIU0fRLTmwfkVtiA7ABS6y5XP5bq0pS5JSfjczGpjdNSQfQUq71lmVnX4H1WEQb3LdDcL2-bC1159U4wSDjeQ8.fd-qZCB2H263582ivsUyI-ePGVavQfZ3aJBl-peTM4M&dib_tag=se&keywords=audioquest+netzkabel&qid=1776528956&sprefix=audioquest+netzkabel%2Caps%2C115&sr=8-10&tag=${TAG}`,
   },
   {
-    id: 36, cat: 'kabel', subcat: 'lautsprecher',
+    id: 36, cat: 'kabel', subcat: 'lautsprecher', groupId: 'lautsprecher',
     icon: '🔗',
     iconComponent: 'SpeakerCableIcon',
     name: 'QED XT40i Referenz-Lautsprecherkabel 2m',
@@ -97,7 +97,7 @@ export const PRODUCTS = [
     href: `https://www.amazon.de/QED-XT40i-Referenz-Lautsprecherkabel-Spule-Terminated/dp/B07YTYV65F/ref=sr_1_2?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=36HV9VS3E11SV&dib=eyJ2IjoiMSJ9.sPNsPj7qSv9XSFUlSbbhZn1cvUjskq2ygI-K6pNAJO6VSyi7u2QaoMqiN_4tiGBWLEyu6xpyKRd_n_zKPKAN1cXn_Xmf65d5IfkhMKZ4HlfMEfgsjqMdL71x2Kyz_wdAzgemvIi4xOPXK97xASu9K0lFksmYdWkfL4Q3FaZkw3rXod5HLtVYYnOUo48Rle9blu4k7-QUEVux31lvQiyaOIZc1UEpkI5IbkKMeicZOtQ.JMcsyrmqvDcTNfY1d0ov2fWnRVwoRFwyYWAlLxpQh0o&dib_tag=se&keywords=lautsprecherkabel+qed&qid=1776778657&sprefix=lautsprecherkabel+qed%2Caps%2C179&sr=8-2&tag=${TAG}`,
   },
   {
-    id: 35, cat: 'kabel', subcat: 'lautsprecher',
+    id: 35, cat: 'kabel', subcat: 'lautsprecher', groupId: 'lautsprecher',
     icon: '🔗',
     iconComponent: 'SpeakerCableIcon',
     name: 'Supra Cables Lautsprecherkabel PLY 3M',
@@ -106,7 +106,7 @@ export const PRODUCTS = [
     href: `https://www.amazon.de/Supra-Cables-Lautsprecherkabel-CombiCon-Crimp/dp/B001AACE26/ref=sr_1_4?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=FWJ4RCONS3S&dib=eyJ2IjoiMSJ9.Q9eZyZDxQ6ZIgforquZtc1Bcp0e8FW5KKr_oOxtrpMH9Mc0Wo0ISp5TEw73_IFbT68c5SzeauYCh-DzB-AjSPSAzAlr8cM-VCssu9awfqD4RNfoJXEQu8Icf8aV9l9945-cpkHi9xZVHjIJKg4yqL1WGYYCaPIgCysvxjGhjvFscIK45Iv5L9NtyhpmbLexqBY3-g83UrMhOoAp-Wr4ku6lJWOSp4ZhLHqnbOkb-j19tYCSJnG9qlA-iY2QppeHrMHQOhpSrMN7eDUV3ddGlK8dJ0RXjoSJ-mYFWnxGcxpg.i5UTpa5RUwGP_U0TkveuHWAmga0gUSEbDr75C0QR3YM&dib_tag=se&keywords=lautsprecherkabel+supra&qid=1776778450&s=ce-de&sprefix=lautsprecherkabel+supr%2Celectronics%2C114&sr=1-4&tag=${TAG}`,
   },
   {
-    id: 34, cat: 'kabel', subcat: 'lautsprecher',
+    id: 34, cat: 'kabel', subcat: 'lautsprecher', groupId: 'lautsprecher',
     icon: '🔗',
     iconComponent: 'SpeakerCableIcon',
     name: 'VIABLUE SC-2 Silver Single-Wire 3m',
@@ -115,7 +115,7 @@ export const PRODUCTS = [
     href: `https://www.amazon.de/ViaBlue-Silver-Single-Wire-Lautsprecherkabel-Bananenstecker/dp/B000W3I0MU/ref=sr_1_18?crid=2KV035R5W3DW3&dib=eyJ2IjoiMSJ9.wu3C_-y-SS035bet09Gz2ui4jgQhENPYFNEQbqKxay-BX3TK4CwryBPmQ1akHuzfnitbjPoaeY-hRJVbBiMbB5qONWvR-HzZJ1ftemJsIAGr3XMorGYQQFEwdLgBt_4DZ1HihgqUEq0K7M_R05rhlk3RsAFRZW1BtL1UBtoGIYQA2PXmFXl4orryodZa72xkyisQFuBUtaB2v5AHPrza8zTPtH5J86MqsZljhQFBagE.3XO8gdWMgp83MDuL_dLdgkvIM8aFDYZbIX-lVMwSvMA&dib_tag=se&keywords=viablue+sc-6+lautsprecherkabel&qid=1776778176&sprefix=lautsprecherkabel+via%2Caps%2C107&sr=8-18&tag=${TAG}`,
   },
   {
-    id: 4, cat: 'kabel', subcat: 'lautsprecher',
+    id: 4, cat: 'kabel', subcat: 'lautsprecher', groupId: 'lautsprecher',
     icon: '🔗',
     iconComponent: 'SpeakerCableIcon',
     name: 'Lautsprecherkabel OFC 2×2,5mm²',

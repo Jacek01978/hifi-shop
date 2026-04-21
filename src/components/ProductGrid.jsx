@@ -12,7 +12,8 @@ const GROUP_LABELS = {
   cinch:       'Cinch / RCA Kabel',
   netz:        'Netzkabel',
   xlr:         'XLR Kabel',
-  netzleisten: 'Netzleisten',
+  netzleisten:  'Netzleisten',
+  lautsprecher: 'Lautsprecherkabel',
 }
 
 const parsePrice = (price) => {
@@ -118,6 +119,7 @@ export default function ProductGrid() {
                 style={{ transitionDelay: `${(i % 6) * 60}ms` }}
                 onShowVariants={() => {
                   if (item.groupId === 'netzleisten') { handleCategoryChange('netzleisten') }
+                  else if (item.groupId === 'lautsprecher') { handleCategoryChange('kabel'); setActiveSub('lautsprecher') }
                   else { handleCategoryChange('kabel'); setActiveSub(item.groupId) }
                 }}
               />
