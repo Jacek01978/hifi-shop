@@ -318,6 +318,15 @@ export const PRODUCTS = [
     href: amazon('hifi geratefusse entkoppler edelstahl spitzenlager'),
   },
   {
+    id: 37, cat: 'absorber',
+    icon: '🟢',
+    iconComponent: 'DeviceFeetIcon',
+    name: 'Dynavox Silikon-Elastomer Dämpfer ED32 4er-Set',
+    desc: 'Vier Silikon-Elastomer Resonanzdämpfer mit selbstklebender 3M-Klebefolie. Ideal für Plattenspieler, Verstärker und HiFi-Geräte – dämpfen Vibrationen zuverlässig und schützen vor Körperschall.',
+    price: 'ab 9,99',
+    href: `https://www.amazon.de/Dynavox-Silikon-Elastomer-Plattenspieler-Resonanzd%C3%A4mpfer-3M-Klebefl%C3%A4che-Schwarz/dp/B0CF22XHJD/ref=sr_1_10?dib=eyJ2IjoiMSJ9.wFmkDJUoeLlxVTPyg6K_e6HNCawVLKXKyXxpvP-Oz9XjTuNx2q6-8SrnCuI-lotw75yK0aNOiX4RdiWt5Z4GKppVzL-KiypfTyzHEhY9t7DevxEaLLouLWMoHzLykM-VjG4TL89YkCDGNoat4o-1LuiH3cDxoSwBrDOnIlMBjrN_phjJHWVT5OJL7bJPGaJ6q-KIGrUmWa0xmsvSFPc8_ENBQFQtcOP23zia0ojxgyo.qYPveoSGEyqpDyMU9VHUWuXPkVBSU5MT--KbjlbHqZo&dib_tag=se&keywords=hifi%2Bger%C3%A4tef%C3%BCsse%2Bentkoppler%2Bedelstahl%2Bspitzenlager&qid=1776779045&sr=8-10&th=1&tag=${TAG}`,
+  },
+  {
     id: 8, cat: 'absorber',
     icon: '🎛️',
     iconComponent: 'AcousticAbsorberIcon',
