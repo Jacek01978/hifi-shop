@@ -5,13 +5,21 @@
 @layer base {
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+    /* Firefox scrollbar */
+    scrollbar-width: thick;
+    scrollbar-color: #c9a84c #111111;
+  }
 
   body {
     font-family: 'DM Mono', monospace;
     color: #d4ccbb;
     background: #080808;
     overflow-x: hidden;
+    /* Firefox scrollbar */
+    scrollbar-width: thick;
+    scrollbar-color: #c9a84c #111111;
   }
 
   ::selection {
