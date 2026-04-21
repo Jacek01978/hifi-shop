@@ -97,7 +97,7 @@ export default function ProductCard({ product, style }) {
             href={product.href}
             target="_blank"
             rel="noopener sponsored"
-            className={`shimmer-sweep relative inline-flex items-center gap-2 font-mono text-[0.58rem] tracking-[0.18em] uppercase bg-obsidian-100 ${colors.text} ${colors.border} border px-4 py-2.5 no-underline transition-all duration-300 hover:bg-gold/10 overflow-hidden`}
+            className={`shimmer-sweep relative inline-flex items-center gap-2 font-mono text-[0.72rem] font-bold tracking-[0.14em] uppercase bg-obsidian-100 ${colors.text} ${colors.border} border px-5 py-3 no-underline transition-all duration-300 hover:bg-gold/10 overflow-hidden`}
           >
             Zum Angebot
             <svg width="9" height="9" viewBox="0 0 10 10" fill="none" stroke="currentColor" strokeWidth="1.5">

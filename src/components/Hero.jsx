@@ -112,7 +112,7 @@ export default function Hero() {
         <div className="flex items-center gap-6 animate-fade-up" style={{ animationDelay: '0.5s' }}>
           <a
             href="#products"
-            className="group inline-flex items-center gap-3 font-mono text-[0.62rem] tracking-[0.2em] uppercase bg-gold text-obsidian px-7 py-3.5 no-underline transition-all duration-300 hover:bg-gold-light hover:shadow-[0_0_30px_rgba(201,168,76,0.4)]"
+            className="group inline-flex items-center gap-3 font-mono text-[0.78rem] font-bold tracking-[0.16em] uppercase bg-gold text-obsidian px-7 py-3.5 no-underline transition-all duration-300 hover:bg-gold-light hover:shadow-[0_0_30px_rgba(201,168,76,0.4)]"
           >
             Produkte entdecken
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5">

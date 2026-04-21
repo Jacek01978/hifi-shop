@@ -26,8 +26,8 @@ function FilterRow({ items, active, onChange, small = false }) {
           key={item.id}
           ref={(el) => { btnRefs.current[item.id] = el }}
           onClick={() => onChange(item.id)}
-          className={`font-mono tracking-[0.18em] uppercase border transition-all duration-250 whitespace-nowrap ${
-            small ? 'text-[0.52rem] px-3.5 py-1.5' : 'text-[0.58rem] px-5 py-2.5'
+          className={`font-mono font-semibold tracking-[0.14em] uppercase border transition-all duration-250 whitespace-nowrap ${
+            small ? 'text-[0.66rem] px-3.5 py-1.5' : 'text-[0.72rem] px-5 py-2.5'
           } ${
             active === item.id
               ? 'border-gold/60 text-gold bg-gold/[0.06]'
