@@ -61,6 +61,15 @@ export const PRODUCTS = [
     href: amazon('cinch audiokabel ofc kupfer hifi'),
   },
   {
+    id: 39, cat: 'kabel', subcat: 'xlr', groupId: 'xlr',
+    icon: '🎧',
+    iconComponent: 'XLRCableIcon',
+    name: 'Inakustik Premium Stereo Audiokabel XLR',
+    desc: 'Hochwertiges symmetrisches XLR-Stereo-Audiokabel von Inakustik. OFC-Kupferleiter mit geflochtener Abschirmung und vergoldeten XLR-Steckern für störungsfreie, transparente Signalübertragung.',
+    price: 'ab 50,–',
+    href: `https://www.amazon.de/Akustik-Premium-Audio-Cable-00405007-Blau-Silber/dp/B00RTMB4SE/ref=sr_1_8?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=UOHIWW9F7U0&dib=eyJ2IjoiMSJ9.WkaGUxWztEnt0cG9oWhRddPQBfa3FBVslAI9LHlW6lrX-_vzTa5WRGOJhRKMTauGoVgHbM3UsnobBXYxnB_KTOXB-lKQlY1RLJ8S95lv3vZ8l9HxCZ5K9XFm93MS2cHxZSdFP2Hm5swtUsVivPnnqHISCHymjn-ihubBYPNAwXGTp9jrzr_WtKLe9SyYQqeJSMKJnxXB5pNxkqB8Ju1sCsv7MnpzY-Q_3yLmHN-lhglspgl4AspQDzPG7LrhKK_Ovlx0gSAjxoRGXhx8sx29xuxv3uf9w08YAlShedxT66c.1O-ICPZRx1mqLkKQWpN43Px-Lc0DEUefqkxfWEcvKoA&dib_tag=se&keywords=xlr%2Bkabel%2Bhigh%2Bend&qid=1776783444&sprefix=xlr%2Bkabel%2Bhigh%2Ben%2Caps%2C207&sr=8-8&th=1&tag=${TAG}`,
+  },
+  {
     id: 2, cat: 'kabel', subcat: 'xlr', groupId: 'xlr',
     icon: '🎧',
     iconComponent: 'XLRCableIcon',
