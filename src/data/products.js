@@ -309,15 +309,6 @@ export const PRODUCTS = [
 
   // ── ABSORBER ──
   {
-    id: 7, cat: 'absorber',
-    icon: '🟢',
-    iconComponent: 'DeviceFeetIcon',
-    name: 'Gerätefüße Entkoppler Edelstahl',
-    desc: 'Präzisionsgefertigte Entkopplungsfüße aus Edelstahl mit Spitzenlager. Minimieren Körperschall und Mikrophonie in Verstärkern und CD-Playern.',
-    price: 'ab 39,–',
-    href: amazon('hifi geratefusse entkoppler edelstahl spitzenlager'),
-  },
-  {
     id: 38, cat: 'absorber', groupId: 'dynavox_absorber',
     icon: '🟢',
     iconComponent: 'DeviceFeetIcon',
