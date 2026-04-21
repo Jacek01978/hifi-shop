@@ -276,39 +276,39 @@ export default function HifiTipps() {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <span className="block w-3 h-px bg-gold/60" />
-                <span className="font-mono text-[0.5rem] tracking-[0.3em] uppercase text-gold/70">{tipp.category}</span>
+                <span className="font-mono font-medium text-[0.65rem] tracking-[0.22em] uppercase text-gold">{tipp.category}</span>
               </div>
-              <span className="font-mono text-[0.5rem] tracking-[0.1em] text-muted">{tipp.readTime} Lesezeit</span>
+              <span className="font-mono text-[0.65rem] tracking-[0.1em] text-muted">{tipp.readTime} Lesezeit</span>
             </div>
 
             {/* Titel */}
-            <h2 className="font-display text-[1.25rem] font-normal text-cream leading-snug tracking-[0.01em] group-hover:text-gold transition-colors duration-300">
+            <h2 className="font-display text-[1.45rem] font-semibold text-cream leading-snug tracking-[0.01em] group-hover:text-gold transition-colors duration-300">
               {tipp.title}
             </h2>
 
             {/* Teaser */}
-            <p className="font-mono text-[0.59rem] leading-[1.85] text-muted tracking-[0.03em]">
+            <p className="font-mono text-[0.75rem] leading-[1.8] text-stone tracking-[0.02em]">
               {tipp.teaser}
             </p>
 
             {/* Aufklapp-Inhalt */}
-            <div className={`overflow-hidden transition-all duration-500 ${openId === tipp.id ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'}`}>
+            <div className={`overflow-hidden transition-all duration-500 ${openId === tipp.id ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'}`}>
               <div className="pt-4 border-t border-obsidian-200">
                 {tipp.body.split('\n\n').map((block, j) => (
                   block.startsWith('**') && block.endsWith('**') ? (
-                    <p key={j} className="font-mono text-[0.58rem] text-gold/80 tracking-[0.08em] uppercase mb-2 mt-4">{block.replace(/\*\*/g, '')}</p>
+                    <p key={j} className="font-mono font-semibold text-[0.7rem] text-gold tracking-[0.08em] uppercase mb-2 mt-4">{block.replace(/\*\*/g, '')}</p>
                   ) : block.startsWith('- ') || block.includes('\n- ') ? (
                     <ul key={j} className="mb-3">
                       {block.split('\n').filter(l => l.trim()).map((line, k) => (
-                        <li key={k} className="flex items-start gap-2 font-mono text-[0.58rem] leading-[1.8] text-muted mb-1">
-                          <span className="block w-2 h-px bg-gold/40 mt-2 shrink-0" />
-                          <span dangerouslySetInnerHTML={{ __html: line.replace(/^- /, '').replace(/\*\*(.*?)\*\*/g, '<span class="text-stone">$1</span>') }} />
+                        <li key={k} className="flex items-start gap-2 font-mono text-[0.74rem] leading-[1.8] text-stone mb-1.5">
+                          <span className="block w-2 h-px bg-gold/60 mt-2.5 shrink-0" />
+                          <span dangerouslySetInnerHTML={{ __html: line.replace(/^- /, '').replace(/\*\*(.*?)\*\*/g, '<span class="text-cream font-semibold">$1</span>') }} />
                         </li>
                       ))}
                     </ul>
                   ) : (
-                    <p key={j} className="font-mono text-[0.58rem] leading-[1.85] text-muted tracking-[0.03em] mb-3"
-                      dangerouslySetInnerHTML={{ __html: block.replace(/\*\*(.*?)\*\*/g, '<span class="text-stone">$1</span>') }}
+                    <p key={j} className="font-mono text-[0.74rem] leading-[1.85] text-stone tracking-[0.02em] mb-3"
+                      dangerouslySetInnerHTML={{ __html: block.replace(/\*\*(.*?)\*\*/g, '<span class="text-cream font-semibold">$1</span>') }}
                     />
                   )
                 ))}
@@ -318,7 +318,7 @@ export default function HifiTipps() {
             {/* Footer */}
             <div className="flex items-center justify-between mt-auto pt-2">
               <div className="h-px flex-1 bg-obsidian-300 group-hover:bg-gold/20 transition-colors duration-300" />
-              <span className="font-mono text-[0.52rem] tracking-[0.15em] uppercase text-gold/60 ml-4">
+              <span className="font-mono font-medium text-[0.65rem] tracking-[0.15em] uppercase text-gold ml-4">
                 {openId === tipp.id ? 'Schließen ↑' : 'Lesen →'}
               </span>
             </div>
