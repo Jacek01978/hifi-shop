@@ -9,9 +9,10 @@ const SUBCAT_LABELS = Object.fromEntries(
 )
 
 const GROUP_LABELS = {
-  cinch: 'Cinch / RCA Kabel',
-  netz:  'Netzkabel',
-  xlr:   'XLR Kabel',
+  cinch:       'Cinch / RCA Kabel',
+  netz:        'Netzkabel',
+  xlr:         'XLR Kabel',
+  netzleisten: 'Netzleisten',
 }
 
 export default function ProductGrid() {
@@ -110,7 +111,10 @@ export default function ProductGrid() {
                 products={item.products}
                 groupLabel={GROUP_LABELS[item.groupId] ?? item.groupId}
                 style={{ transitionDelay: `${(i % 6) * 60}ms` }}
-                onShowVariants={() => { handleCategoryChange('kabel'); setActiveSub(item.groupId) }}
+                onShowVariants={() => {
+                  if (item.groupId === 'netzleisten') { handleCategoryChange('netzleisten') }
+                  else { handleCategoryChange('kabel'); setActiveSub(item.groupId) }
+                }}
               />
             ) : (
               <ProductCard

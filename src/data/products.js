@@ -205,7 +205,7 @@ export const PRODUCTS = [
 
   // ── NETZLEISTEN ──
   {
-    id: 27, cat: 'netzleisten',
+    id: 27, cat: 'netzleisten', groupId: 'netzleisten',
     icon: '🔌',
     iconComponent: 'PowerCableIcon',
     name: 'Dynavox HiFi-Netzfilter X4100S',
@@ -215,7 +215,7 @@ export const PRODUCTS = [
   },
 
   {
-    id: 28, cat: 'netzleisten',
+    id: 28, cat: 'netzleisten', groupId: 'netzleisten',
     icon: '🔌',
     iconComponent: 'PowerCableIcon',
     name: 'Dynavox HiFi-Netzfilter X2000',
@@ -225,7 +225,7 @@ export const PRODUCTS = [
   },
 
   {
-    id: 29, cat: 'netzleisten',
+    id: 29, cat: 'netzleisten', groupId: 'netzleisten',
     icon: '🔌',
     iconComponent: 'PowerCableIcon',
     name: 'Audioquest Powerquest 3',
