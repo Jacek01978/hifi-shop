@@ -38,7 +38,7 @@ export default function Hero() {
       </div>
 
       {/* Vinyl Record – right side */}
-      <div className="hidden lg:flex absolute left-1/2 xl:left-[55%] top-1/2 -translate-y-1/2 pointer-events-none items-center justify-center">
+      <div className="hidden lg:flex absolute left-[55%] xl:left-[60%] top-1/2 -translate-y-1/2 pointer-events-none items-center justify-center">
 
         {/* Outer pulse glow */}
         <div className="absolute w-72 h-72 xl:w-96 xl:h-96 rounded-full animate-pulse-glow"
