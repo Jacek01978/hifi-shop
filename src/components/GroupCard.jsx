@@ -2,7 +2,8 @@ import React, { useRef } from 'react'
 import * as Icons from '../icons'
 
 const CAT_COLORS = {
-  kabel: { text: 'text-gold', border: 'border-gold', bar: 'bg-gold', glow: 'rgba(201,168,76,0.15)' },
+  kabel:     { text: 'text-gold',     border: 'border-gold',     bar: 'bg-gold',     glow: 'rgba(201,168,76,0.15)' },
+  reinigung: { text: 'text-rose-400', border: 'border-rose-400', bar: 'bg-rose-400', glow: 'rgba(251,113,133,0.15)' },
 }
 
 export default function GroupCard({ products, groupLabel, style, onShowVariants }) {

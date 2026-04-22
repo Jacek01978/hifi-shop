@@ -15,6 +15,7 @@ const GROUP_LABELS = {
   netzleisten:    'Netzleisten',
   lautsprecher:   'Lautsprecherkabel',
   dynavox_absorber: 'Absorber & Dämpfer',
+  reinigung:      'Reinigungsmittel',
 }
 
 const parsePrice = (price) => {
@@ -41,9 +42,10 @@ export default function ProductGrid() {
     return [...list].sort((a, b) => parsePrice(a.price) - parsePrice(b.price))
   }, [activeCategory, activeSub])
 
-  // Gruppen zusammenfassen – nur wenn kein Subfilter aktiv ist
+  // Gruppen zusammenfassen – nur wenn kein Subfilter aktiv ist und nicht direkt in Reinigung-Kategorie
   const displayItems = useMemo(() => {
     if (activeSub !== 'all') return null
+    if (activeCategory === 'reinigung') return null
     const result = []
     const grouped = {}
     filtered.forEach(p => {
@@ -122,8 +124,8 @@ export default function ProductGrid() {
                 onShowVariants={() => {
                   if (item.groupId === 'netzleisten') { handleCategoryChange('netzleisten') }
                   else if (item.groupId === 'lautsprecher') { handleCategoryChange('kabel'); setActiveSub('lautsprecher') }
-
                   else if (item.groupId === 'dynavox_absorber') { handleCategoryChange('absorber') }
+                  else if (item.groupId === 'reinigung') { handleCategoryChange('reinigung') }
                   else { handleCategoryChange('kabel'); setActiveSub(item.groupId) }
                 }}
               />
