@@ -119,7 +119,7 @@ export default function Hero() {
         </div>
 
         {/* Tonearm */}
-        <div className="absolute" style={{ top: '-2%', right: '-8%' }}>
+        <div className="absolute" style={{ top: '-2%', right: '-18%' }}>
           <svg width="140" height="200" viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="armGrad" x1="0%" y1="0%" x2="100%" y2="100%">
