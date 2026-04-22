@@ -14,6 +14,7 @@ export const CATEGORIES = [
   { id: 'reinigung',    label: 'Reinigungsmittel' },
   { id: 'netzleisten',    label: 'Netzleisten' },
   { id: 'phasendetektor', label: 'Phasendetektor' },
+  { id: 'usb',            label: 'USB-Zubehör' },
 ]
 
 export const KABEL_SUBCATEGORIES = [
@@ -38,6 +39,7 @@ export const ACCENT = {
   reinigung:    'text-pink-400 border-pink-400',
   netzleisten:    'text-violet-400 border-violet-400',
   phasendetektor: 'text-cyan-400 border-cyan-400',
+  usb:            'text-sky-400 border-sky-400',
 }
 
 export const ACCENT_BAR = {
@@ -47,6 +49,7 @@ export const ACCENT_BAR = {
   reinigung:    'bg-pink-400',
   netzleisten:    'bg-violet-400',
   phasendetektor: 'bg-cyan-400',
+  usb:            'bg-sky-400',
 }
 
 export const PRODUCTS = [
@@ -303,7 +306,7 @@ export const PRODUCTS = [
   },
 
   {
-    id: 41, cat: 'netzleisten', groupId: 'netzleisten',
+    id: 41, cat: 'usb',
     icon: '🔌',
     iconComponent: 'PowerCableIcon',
     name: 'AudioQuest Jitterbug FMJ USB Filter',

@@ -8,6 +8,7 @@ const CAT_COLORS = {
   reinigung:    { text: 'text-rose-400',    border: 'border-rose-400',    bar: 'bg-rose-400',    glow: 'rgba(251,113,133,0.15)' },
   netzleisten:    { text: 'text-violet-400', border: 'border-violet-400', bar: 'bg-violet-400', glow: 'rgba(167,139,250,0.15)' },
   phasendetektor: { text: 'text-cyan-400',   border: 'border-cyan-400',   bar: 'bg-cyan-400',   glow: 'rgba(34,211,238,0.15)' },
+  usb:            { text: 'text-sky-400',    border: 'border-sky-400',    bar: 'bg-sky-400',    glow: 'rgba(56,189,248,0.15)' },
 }
 
 export default function ProductCard({ product, style, onClick }) {
