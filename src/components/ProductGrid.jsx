@@ -26,7 +26,6 @@ const parsePrice = (price) => {
 export default function ProductGrid() {
   const [activeCategory, setActiveCategory] = useState('all')
   const [activeSub, setActiveSub]           = useState('all')
-  const [selectedProduct, setSelectedProduct] = useState(null)
   const gridRef = useRef(null)
 
   const handleCategoryChange = (cat) => {
@@ -133,7 +132,6 @@ export default function ProductGrid() {
                 key={item.product.id}
                 product={item.product}
                 style={{ transitionDelay: `${(i % 6) * 60}ms` }}
-                onClick={() => setSelectedProduct(item.product)}
               />
             )
           )}
@@ -163,7 +161,6 @@ export default function ProductGrid() {
                     key={product.id}
                     product={product}
                     style={{ transitionDelay: `${(i % 6) * 60}ms` }}
-                    onClick={() => setSelectedProduct(product)}
                   />
                 ))}
               </div>
@@ -171,7 +168,7 @@ export default function ProductGrid() {
           ))}
         </div>
       ) : (
-        /* Standard-Grid (Sicherungen, Absorber, Reinigung) */
+        /* Standard-Grid (Sicherungen, Absorber, Netzleisten, Phasendetektor) */
         <div
           ref={gridRef}
           className="grid gap-px bg-obsidian-200"
@@ -182,18 +179,9 @@ export default function ProductGrid() {
               key={product.id}
               product={product}
               style={{ transitionDelay: `${(i % 6) * 60}ms` }}
-              onClick={() => setSelectedProduct(product)}
             />
           ))}
         </div>
-      )}
-
-      {/* Produktdetail-Modal */}
-      {selectedProduct && (
-        <ProductModal
-          product={selectedProduct}
-          onClose={() => setSelectedProduct(null)}
-        />
       )}
     </section>
   )
