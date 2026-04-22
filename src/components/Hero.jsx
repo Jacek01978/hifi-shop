@@ -40,51 +40,80 @@ export default function Hero() {
       {/* Vinyl Record – right side */}
       <div className="hidden lg:flex absolute right-16 xl:right-24 top-1/2 -translate-y-1/2 pointer-events-none items-center justify-center">
 
-        {/* Outer glow */}
-        <div className="absolute w-72 h-72 xl:w-96 xl:h-96 rounded-full"
-          style={{ boxShadow: '0 0 60px rgba(201,168,76,0.08), 0 0 120px rgba(201,168,76,0.04)' }} />
+        {/* Outer pulse glow */}
+        <div className="absolute w-72 h-72 xl:w-96 xl:h-96 rounded-full animate-pulse-glow"
+          style={{ boxShadow: '0 0 80px rgba(201,168,76,0.18), 0 0 160px rgba(201,168,76,0.08)' }} />
 
         {/* Spinning vinyl disc */}
         <div
           className="w-64 h-64 xl:w-80 xl:h-80 rounded-full relative"
-          style={{ animation: 'spinSlow 4s linear infinite' }}
+          style={{ animation: 'spinSlow 4s linear infinite', filter: 'drop-shadow(0 0 18px rgba(201,168,76,0.35))' }}
         >
           <svg viewBox="0 0 320 320" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-            {/* Main disc */}
-            <circle cx="160" cy="160" r="158" fill="#0d0d0d" stroke="rgba(201,168,76,0.15)" strokeWidth="1"/>
+            <defs>
+              {/* Iridescent sheen gradient */}
+              <radialGradient id="vinylSheen" cx="38%" cy="35%" r="65%">
+                <stop offset="0%"   stopColor="rgba(100,80,180,0.18)"/>
+                <stop offset="30%"  stopColor="rgba(201,168,76,0.10)"/>
+                <stop offset="60%"  stopColor="rgba(80,160,200,0.12)"/>
+                <stop offset="100%" stopColor="rgba(0,0,0,0)"/>
+              </radialGradient>
+              {/* Label gradient */}
+              <radialGradient id="labelGrad" cx="50%" cy="40%" r="60%">
+                <stop offset="0%"   stopColor="#2a1e00"/>
+                <stop offset="100%" stopColor="#0f0a00"/>
+              </radialGradient>
+              {/* Edge highlight */}
+              <radialGradient id="edgeGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="88%"  stopColor="rgba(0,0,0,0)"/>
+                <stop offset="96%"  stopColor="rgba(201,168,76,0.25)"/>
+                <stop offset="100%" stopColor="rgba(201,168,76,0.08)"/>
+              </radialGradient>
+            </defs>
 
-            {/* Vinyl grooves */}
-            {[20,28,36,44,52,60,68,76,84,92,100,108,116,124,132,140].map((r, i) => (
+            {/* Main disc – deep black */}
+            <circle cx="160" cy="160" r="158" fill="#0c0c0c"/>
+
+            {/* Vinyl grooves – alternating brightness for realism */}
+            {Array.from({ length: 22 }, (_, i) => 14 + i * 6).map((r, i) => (
               <circle key={i} cx="160" cy="160" r={r}
                 fill="none"
-                stroke={i % 3 === 0 ? 'rgba(255,255,255,0.04)' : 'rgba(255,255,255,0.02)'}
-                strokeWidth="0.8"
+                stroke={i % 2 === 0 ? 'rgba(255,255,255,0.055)' : 'rgba(255,255,255,0.018)'}
+                strokeWidth={i % 4 === 0 ? '1.2' : '0.7'}
               />
             ))}
 
-            {/* Label background */}
-            <circle cx="160" cy="160" r="48" fill="#1a1500"/>
-            <circle cx="160" cy="160" r="47" fill="none" stroke="rgba(201,168,76,0.4)" strokeWidth="0.8"/>
+            {/* Iridescent sheen over grooves */}
+            <circle cx="160" cy="160" r="158" fill="url(#vinylSheen)"/>
 
-            {/* Label inner ring */}
-            <circle cx="160" cy="160" r="38" fill="none" stroke="rgba(201,168,76,0.2)" strokeWidth="0.5"/>
+            {/* Edge glow ring */}
+            <circle cx="160" cy="160" r="158" fill="url(#edgeGlow)"/>
+            <circle cx="160" cy="160" r="157" fill="none" stroke="rgba(201,168,76,0.35)" strokeWidth="1.2"/>
 
-            {/* Label text arc top */}
-            <path id="labelArc" d="M 120,145 A 40,40 0 0,1 200,145" fill="none"/>
-            <text fontSize="7" fill="rgba(201,168,76,0.9)" fontFamily="monospace" letterSpacing="2">
-              <textPath href="#labelArc" startOffset="10%">AUDIO PURE</textPath>
+            {/* Label */}
+            <circle cx="160" cy="160" r="52" fill="url(#labelGrad)"/>
+            <circle cx="160" cy="160" r="51" fill="none" stroke="rgba(201,168,76,0.7)" strokeWidth="1"/>
+            <circle cx="160" cy="160" r="44" fill="none" stroke="rgba(201,168,76,0.25)" strokeWidth="0.6"/>
+
+            {/* Label text arc */}
+            <path id="labelArc"    d="M 118,148 A 42,42 0 0,1 202,148" fill="none"/>
+            <path id="labelArcBot" d="M 122,178 A 42,42 0 0,0 198,178" fill="none"/>
+            <text fontSize="7.5" fill="rgba(201,168,76,1)" fontFamily="monospace" letterSpacing="2.5" fontWeight="bold">
+              <textPath href="#labelArc"    startOffset="8%">AUDIO PURE</textPath>
+            </text>
+            <text fontSize="5.5" fill="rgba(201,168,76,0.55)" fontFamily="monospace" letterSpacing="3">
+              <textPath href="#labelArcBot" startOffset="18%">HI-FI · STEREO</textPath>
             </text>
 
-            {/* Label center dot */}
-            <circle cx="160" cy="160" r="5" fill="rgba(201,168,76,0.6)"/>
-            <circle cx="160" cy="160" r="2.5" fill="#0d0d0d"/>
+            {/* Label center spindle */}
+            <circle cx="160" cy="160" r="6"   fill="rgba(201,168,76,0.5)"/>
+            <circle cx="160" cy="160" r="3.5" fill="#0c0c0c"/>
+            <circle cx="160" cy="160" r="1.5" fill="rgba(201,168,76,0.8)"/>
 
-            {/* Reflection shimmer */}
-            <ellipse cx="130" cy="120" rx="30" ry="12"
-              fill="none"
-              stroke="rgba(255,255,255,0.03)"
-              strokeWidth="8"
-              transform="rotate(-30 130 120)"
+            {/* Highlight reflection */}
+            <ellipse cx="118" cy="105" rx="28" ry="10"
+              fill="rgba(255,255,255,0.045)"
+              transform="rotate(-38 118 105)"
             />
           </svg>
         </div>
@@ -92,17 +121,28 @@ export default function Hero() {
         {/* Tonearm */}
         <div className="absolute" style={{ top: '2%', right: '-4%' }}>
           <svg width="90" height="130" viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg">
-            {/* Arm pivot */}
-            <circle cx="72" cy="18" r="7" fill="#1a1500" stroke="rgba(201,168,76,0.5)" strokeWidth="1.2"/>
-            <circle cx="72" cy="18" r="3" fill="rgba(201,168,76,0.6)"/>
-            {/* Arm tube */}
-            <line x1="72" y1="22" x2="28" y2="108"
-              stroke="rgba(201,168,76,0.55)" strokeWidth="2.5" strokeLinecap="round"/>
+            <defs>
+              <linearGradient id="armGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%"   stopColor="rgba(240,217,140,0.9)"/>
+                <stop offset="100%" stopColor="rgba(160,120,40,0.7)"/>
+              </linearGradient>
+            </defs>
+            {/* Pivot base */}
+            <circle cx="72" cy="18" r="9"  fill="#1a1400" stroke="rgba(201,168,76,0.6)" strokeWidth="1.5"/>
+            <circle cx="72" cy="18" r="4.5" fill="url(#armGrad)"/>
+            <circle cx="72" cy="18" r="2"  fill="#0c0c0c"/>
+            {/* Arm tube with gradient */}
+            <line x1="72" y1="24" x2="26" y2="112"
+              stroke="url(#armGrad)" strokeWidth="3" strokeLinecap="round"/>
             {/* Headshell */}
-            <line x1="28" y1="108" x2="18" y2="118"
-              stroke="rgba(201,168,76,0.4)" strokeWidth="2" strokeLinecap="round"/>
-            {/* Stylus */}
-            <circle cx="18" cy="120" r="3" fill="rgba(201,168,76,0.7)"/>
+            <line x1="26" y1="112" x2="14" y2="124"
+              stroke="rgba(201,168,76,0.6)" strokeWidth="2.2" strokeLinecap="round"/>
+            {/* Cartridge body */}
+            <rect x="9" y="120" width="10" height="6" rx="1"
+              fill="#1a1400" stroke="rgba(201,168,76,0.5)" strokeWidth="0.8"/>
+            {/* Stylus tip glow */}
+            <circle cx="14" cy="128" r="2.5" fill="rgba(201,168,76,0.9)"
+              style={{ filter: 'drop-shadow(0 0 3px rgba(201,168,76,0.8))' }}/>
           </svg>
         </div>
       </div>
