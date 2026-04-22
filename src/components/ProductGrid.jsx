@@ -42,10 +42,9 @@ export default function ProductGrid() {
     return [...list].sort((a, b) => parsePrice(a.price) - parsePrice(b.price))
   }, [activeCategory, activeSub])
 
-  // Gruppen zusammenfassen – nur wenn kein Subfilter aktiv ist und nicht direkt in Reinigung-Kategorie
+  // Gruppen zusammenfassen – nur in der "Alle Produkte"-Ansicht
   const displayItems = useMemo(() => {
-    if (activeSub !== 'all') return null
-    if (activeCategory === 'reinigung') return null
+    if (activeCategory !== 'all') return null
     const result = []
     const grouped = {}
     filtered.forEach(p => {
