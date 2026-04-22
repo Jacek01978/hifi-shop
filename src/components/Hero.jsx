@@ -119,8 +119,8 @@ export default function Hero() {
         </div>
 
         {/* Tonearm */}
-        <div className="absolute" style={{ top: '2%', right: '-4%' }}>
-          <svg width="90" height="130" viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg">
+        <div className="absolute" style={{ top: '-2%', right: '-8%' }}>
+          <svg width="140" height="200" viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="armGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%"   stopColor="rgba(240,217,140,0.9)"/>
