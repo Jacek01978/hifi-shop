@@ -367,6 +367,16 @@ export const PRODUCTS = [
     href: amazon('raumakustik absorber pyramidenschaum hifi studio'),
   },
 
+  {
+    id: 42, cat: 'absorber',
+    icon: '🎛️',
+    iconComponent: 'DeviceFeetIcon',
+    name: 'SSC Minibase',
+    desc: 'Hochwertige HiFi-Geräteunterlage von Akcept Audio zur effektiven Entkopplung von Verstärkern, CD-Spielern und anderen HiFi-Komponenten. Reduziert Körperschall und Vibrationen spürbar – für eine sauberere, detailreichere Klangwiedergabe.',
+    price: 'ab 149,–',
+    href: 'https://www.amazon.de/Akcept-Audio-SSC-Minibase-Farbe/dp/B00L3IJQJY/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3EFV2VFGEJAE4&dib=eyJ2IjoiMSJ9.cuOROUxjMUcDPwcVejY6rA.ZnHso2BEUlI4LuXCVuqlVRjqqG1aAX1YfoG1ZSEwczo&dib_tag=se&keywords=hifi+base+ssc&qid=1776876788&sprefix=hifi+base+ssc%2Caps%2C120&sr=8-1',
+  },
+
   // ── REINIGUNG ──
   {
     id: 10, cat: 'reinigung', subcat: 'vinyl', groupId: 'reinigung',
