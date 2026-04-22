@@ -170,6 +170,16 @@ a:hover ~ .cursor-ring, button:hover ~ .cursor-ring { transform: scale(1.5); }
   from { transform: scaleX(0); }
   to   { transform: scaleX(1); }
 }
+@keyframes hifi-tipps-glow {
+  0%, 100% {
+    text-shadow: 0 0 8px rgba(201,168,76,0.6), 0 0 16px rgba(201,168,76,0.3);
+    box-shadow: 0 0 6px rgba(201,168,76,0.1);
+  }
+  50% {
+    text-shadow: 0 0 14px rgba(201,168,76,1), 0 0 28px rgba(201,168,76,0.6), 0 0 48px rgba(201,168,76,0.2);
+    box-shadow: 0 0 16px rgba(201,168,76,0.35), inset 0 0 10px rgba(201,168,76,0.08);
+  }
+}
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50%       { transform: translateY(-12px); }
