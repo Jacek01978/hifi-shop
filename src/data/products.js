@@ -326,6 +326,16 @@ export const PRODUCTS = [
     href: `https://www.amazon.de/Oehlbach-Hochwertiger-Phasendetektor-Bestimmung-phasenrichtigen/dp/B001IK27YS/ref=pd_rhf_dp_s_pd_crcd_d_sccl_1_2/260-8413956-1206734?pd_rd_w=3KWSX&content-id=amzn1.sym.bdc976f5-091d-476e-babe-0eae24f1fc4c&pf_rd_p=bdc976f5-091d-476e-babe-0eae24f1fc4c&pf_rd_r=8W0HR43WH2SKPS4FEPWZ&pd_rd_wg=kUAvP&pd_rd_r=6e37cba7-af87-4580-b725-b6754faf52d5&pd_rd_i=B001IK27YS&psc=1&tag=${TAG}`,
   },
 
+  {
+    id: 43, cat: 'phasendetektor',
+    icon: '⚡',
+    iconComponent: 'FuseIcon',
+    name: 'Supra Cables AC-Sensor Stick',
+    desc: 'Kompakter Phasendetektor von Supra Cables für 110–230V. Einfach in die Schukosteckdose stecken – die LED zeigt sofort an, ob die Netzphase korrekt liegt. Unverzichtbar für die optimale Phasenlage aller HiFi-Komponenten.',
+    price: 'ab 26,–',
+    href: 'https://www.amazon.de/Supra-Cables-AC-Sensor-110-230/dp/B006WON10E/ref=pd_sim_d_sccl_3_1/260-8413956-1206734?pd_rd_w=uvlV3&content-id=amzn1.sym.633823c2-ab75-447c-a9af-015032f59703&pf_rd_p=633823c2-ab75-447c-a9af-015032f59703&pf_rd_r=Z545RTVFF7FKMV84972A&pd_rd_wg=xKMI4&pd_rd_r=9912c04c-e2bb-4563-a3c0-731d5d981762&pd_rd_i=B006WON10E&psc=1',
+  },
+
   // ── SICHERUNGEN ──
 
   {
