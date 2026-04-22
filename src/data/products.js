@@ -317,7 +317,7 @@ export const PRODUCTS = [
 
   // ── PHASENDETEKTOR ──
   {
-    id: 32, cat: 'phasendetektor',
+    id: 32, cat: 'phasendetektor', groupId: 'phasendetektor',
     icon: '⚡',
     iconComponent: 'FuseIcon',
     name: 'Oehlbach Phasendetektor',
@@ -327,7 +327,7 @@ export const PRODUCTS = [
   },
 
   {
-    id: 43, cat: 'phasendetektor',
+    id: 43, cat: 'phasendetektor', groupId: 'phasendetektor',
     icon: '⚡',
     iconComponent: 'FuseIcon',
     name: 'Supra Cables AC-Sensor Stick',

@@ -16,6 +16,7 @@ const GROUP_LABELS = {
   lautsprecher:   'Lautsprecherkabel',
   dynavox_absorber: 'Absorber & Dämpfer',
   reinigung:      'Reinigungsmittel',
+  phasendetektor: 'Phasendetektor',
 }
 
 const parsePrice = (price) => {
@@ -124,6 +125,7 @@ export default function ProductGrid() {
                   else if (item.groupId === 'lautsprecher') { handleCategoryChange('kabel'); setActiveSub('lautsprecher') }
                   else if (item.groupId === 'dynavox_absorber') { handleCategoryChange('absorber') }
                   else if (item.groupId === 'reinigung') { handleCategoryChange('reinigung') }
+                  else if (item.groupId === 'phasendetektor') { handleCategoryChange('phasendetektor') }
                   else { handleCategoryChange('kabel'); setActiveSub(item.groupId) }
                 }}
               />
