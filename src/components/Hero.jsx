@@ -37,37 +37,74 @@ export default function Hero() {
         />
       </div>
 
-      {/* Decorative rotating rings – right side */}
-      <div className="hidden lg:block absolute right-16 xl:right-24 top-1/2 -translate-y-1/2 pointer-events-none">
-        {/* Outer ring */}
-        <div className="absolute -inset-16 rounded-full border border-gold/[0.06] animate-spin-slow" />
-        {/* Mid ring */}
-        <div className="absolute -inset-8 rounded-full border border-gold/[0.1] animate-spin-slow-reverse" />
-        {/* Main ring */}
-        <div className="w-64 h-64 xl:w-80 xl:h-80 rounded-full border border-gold/[0.18] flex items-center justify-center animate-pulse-glow">
-          {/* Inner decorative */}
-          <div className="absolute inset-6 rounded-full border border-gold/[0.08]" />
-          <div className="absolute inset-12 rounded-full border border-gold/[0.05]" />
+      {/* Vinyl Record – right side */}
+      <div className="hidden lg:flex absolute right-16 xl:right-24 top-1/2 -translate-y-1/2 pointer-events-none items-center justify-center">
 
-          {/* Center symbol */}
-          <div className="w-20 h-20 rounded-full border border-gold/30 flex items-center justify-center bg-obsidian-100/60 backdrop-blur-sm">
-            <span className="font-display text-3xl text-gradient-gold animate-float">♫</span>
-          </div>
+        {/* Outer glow */}
+        <div className="absolute w-72 h-72 xl:w-96 xl:h-96 rounded-full"
+          style={{ boxShadow: '0 0 60px rgba(201,168,76,0.08), 0 0 120px rgba(201,168,76,0.04)' }} />
+
+        {/* Spinning vinyl disc */}
+        <div
+          className="w-64 h-64 xl:w-80 xl:h-80 rounded-full relative"
+          style={{ animation: 'spinSlow 4s linear infinite' }}
+        >
+          <svg viewBox="0 0 320 320" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            {/* Main disc */}
+            <circle cx="160" cy="160" r="158" fill="#0d0d0d" stroke="rgba(201,168,76,0.15)" strokeWidth="1"/>
+
+            {/* Vinyl grooves */}
+            {[20,28,36,44,52,60,68,76,84,92,100,108,116,124,132,140].map((r, i) => (
+              <circle key={i} cx="160" cy="160" r={r}
+                fill="none"
+                stroke={i % 3 === 0 ? 'rgba(255,255,255,0.04)' : 'rgba(255,255,255,0.02)'}
+                strokeWidth="0.8"
+              />
+            ))}
+
+            {/* Label background */}
+            <circle cx="160" cy="160" r="48" fill="#1a1500"/>
+            <circle cx="160" cy="160" r="47" fill="none" stroke="rgba(201,168,76,0.4)" strokeWidth="0.8"/>
+
+            {/* Label inner ring */}
+            <circle cx="160" cy="160" r="38" fill="none" stroke="rgba(201,168,76,0.2)" strokeWidth="0.5"/>
+
+            {/* Label text arc top */}
+            <path id="labelArc" d="M 120,145 A 40,40 0 0,1 200,145" fill="none"/>
+            <text fontSize="7" fill="rgba(201,168,76,0.9)" fontFamily="monospace" letterSpacing="2">
+              <textPath href="#labelArc" startOffset="10%">AUDIO PURE</textPath>
+            </text>
+
+            {/* Label center dot */}
+            <circle cx="160" cy="160" r="5" fill="rgba(201,168,76,0.6)"/>
+            <circle cx="160" cy="160" r="2.5" fill="#0d0d0d"/>
+
+            {/* Reflection shimmer */}
+            <ellipse cx="130" cy="120" rx="30" ry="12"
+              fill="none"
+              stroke="rgba(255,255,255,0.03)"
+              strokeWidth="8"
+              transform="rotate(-30 130 120)"
+            />
+          </svg>
         </div>
 
-        {/* Floating dots */}
-        {[0,60,120,180,240,300].map((deg, i) => (
-          <div
-            key={i}
-            className="absolute w-1.5 h-1.5 rounded-full bg-gold/40"
-            style={{
-              top: '50%', left: '50%',
-              transform: `rotate(${deg}deg) translateY(-${140 + (i % 2) * 24}px)`,
-              animation: `float ${4 + i * 0.5}s ease-in-out infinite`,
-              animationDelay: `${i * 0.4}s`,
-            }}
-          />
-        ))}
+        {/* Tonearm */}
+        <div className="absolute" style={{ top: '2%', right: '-4%' }}>
+          <svg width="90" height="130" viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg">
+            {/* Arm pivot */}
+            <circle cx="72" cy="18" r="7" fill="#1a1500" stroke="rgba(201,168,76,0.5)" strokeWidth="1.2"/>
+            <circle cx="72" cy="18" r="3" fill="rgba(201,168,76,0.6)"/>
+            {/* Arm tube */}
+            <line x1="72" y1="22" x2="28" y2="108"
+              stroke="rgba(201,168,76,0.55)" strokeWidth="2.5" strokeLinecap="round"/>
+            {/* Headshell */}
+            <line x1="28" y1="108" x2="18" y2="118"
+              stroke="rgba(201,168,76,0.4)" strokeWidth="2" strokeLinecap="round"/>
+            {/* Stylus */}
+            <circle cx="18" cy="120" r="3" fill="rgba(201,168,76,0.7)"/>
+          </svg>
+        </div>
       </div>
 
       {/* Main content */}
