@@ -302,6 +302,16 @@ export const PRODUCTS = [
     href: `https://www.amazon.de/Supra-Netzleiste-MK-III-Switch/dp/B017TIM4RM/ref=sr_1_6?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2Q5QGI2LL3HLR&dib=eyJ2IjoiMSJ9.ZgxKkU6QJYEpp4CKdjO86UGPG-3SdHhn8fk5GZ0F0n8c0nkr8pTB8UBIt6Ml0iaEj1z9NXCj8HqLO2w6P7-UPA-JPn841y0cTJO-paO74hjr4ucHgk9_UBZLYuHgcZcrOpdUaix4Nhh4UJaWvjSJfLFSCuVlhGTjaUW9hj9b08L5ot7RwljwZWAqy-OgvgNE5uFzB1TWWSkatZ9JN1ie2c8fBE50XiRo3WF1tWT0wvE.SqJUFSR1heeKRpDc7CfU4pmOTKK5hnuUGpoXBfrk84k&dib_tag=se&keywords=supra+netzleiste&qid=1776776860&sprefix=supra+netzleiste%2Caps%2C301&sr=8-6&tag=${TAG}`,
   },
 
+  {
+    id: 41, cat: 'netzleisten', groupId: 'netzleisten',
+    icon: '🔌',
+    iconComponent: 'PowerCableIcon',
+    name: 'AudioQuest Jitterbug FMJ USB Filter',
+    desc: 'USB Data & Power Noise Filter von AudioQuest. Reduziert parasitäre Resonanzen und Störungen auf USB-Leitungen – spürbar weniger digitales Rauschen für DACs, Streamer und andere USB-Audioquellen. Einfach zwischen USB-Netzteil und Gerät stecken.',
+    price: 'ab 59,–',
+    href: 'https://www.amazon.de/AudioQuest-USB-Filter-Reduzierung-parasit%C3%A4re-Resonanzen-schwarz/dp/B08YDFH63B/ref=sr_1_3_mod_primary_new?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=225TU8OIDRMB1&dib=eyJ2IjoiMSJ9.H7oW_WotmUN7fnatPql3zTqJnn46orD1w4389BVlDhkFpNx_p974suzgy1F7e2NC8SLjYAMN6loA9MZZNgmhWyNlTBO-Dep1muYVsZhCFxrnmMHJOZTED81u8RDd27EJFiSP-ef-JZ6O-F4St5OJSiejisPrGMz4zDJtW1N57MoQspgsBjYOtQH_Abq2XMP0idF8635YObDbq3BfBQvvOSAQLKBp2nY-nw9fR4jEHAF1DKyjNmrnWnTCh6vHTLOX.3NG4IKvS3mZBI6EDpr6Fdjtx5YiStrty4aHMFUlf6js&dib_tag=se&keywords=jitter+bug+audioquest&qid=1776875775&s=ce-de&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=jitter+bug+audioquest%2Celectronics%2C97&sr=1-3',
+  },
+
   // ── PHASENDETEKTOR ──
   {
     id: 32, cat: 'phasendetektor',
