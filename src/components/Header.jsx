@@ -53,17 +53,16 @@ export default function Header({ page, onNavigate }) {
           ))}
           <button
             onClick={() => onNavigate(page === 'tipps' ? 'shop' : 'tipps')}
-            className={`group relative font-mono text-[0.6rem] tracking-[0.22em] uppercase transition-all duration-300 px-3 py-1.5 border ${
+            className={`font-mono text-[0.6rem] tracking-[0.22em] uppercase px-3 py-1.5 border transition-all duration-300 ${
               page === 'tipps'
                 ? 'text-gold border-gold/60 bg-gold/10'
-                : 'text-gold/80 border-gold/30 bg-gold/5 hover:text-gold hover:border-gold/60 hover:bg-gold/10'
+                : ''
             }`}
-            style={{
-              textShadow: '0 0 12px rgba(201,168,76,0.8), 0 0 24px rgba(201,168,76,0.4)',
-              boxShadow: page === 'tipps'
-                ? '0 0 16px rgba(201,168,76,0.3), inset 0 0 12px rgba(201,168,76,0.05)'
-                : '0 0 8px rgba(201,168,76,0.15)',
-              animation: page !== 'tipps' ? 'hifi-tipps-glow 2.5s ease-in-out infinite' : 'none',
+            style={page !== 'tipps' ? {
+              animation: 'hifi-tipps-glow 3s ease-in-out infinite',
+            } : {
+              textShadow: '0 0 12px rgba(201,168,76,0.8)',
+              boxShadow: '0 0 16px rgba(201,168,76,0.3)',
             }}
           >
             ✦ HiFi Tipps
