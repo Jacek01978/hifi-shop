@@ -310,7 +310,7 @@ export const PRODUCTS = [
     icon: '🔌',
     iconComponent: 'PowerCableIcon',
     name: 'AudioQuest Jitterbug FMJ USB Filter',
-    desc: 'USB Data & Power Noise Filter von AudioQuest. Reduziert parasitäre Resonanzen und Störungen auf USB-Leitungen – spürbar weniger digitales Rauschen für DACs, Streamer und andere USB-Audioquellen. Einfach zwischen USB-Netzteil und Gerät stecken.',
+    desc: 'USB Data & Power Noise Filter von AudioQuest. Reduziert parasitäre Resonanzen und Störungen auf USB-Leitungen – spürbar weniger digitales Rauschen für DACs, Streamer und andere USB-Audioquellen. Einfach in den USB-Port stecken und Gerät anschließen.',
     price: 'ab 59,–',
     href: 'https://www.amazon.de/AudioQuest-USB-Filter-Reduzierung-parasit%C3%A4re-Resonanzen-schwarz/dp/B08YDFH63B/ref=sr_1_3_mod_primary_new?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=225TU8OIDRMB1&dib=eyJ2IjoiMSJ9.H7oW_WotmUN7fnatPql3zTqJnn46orD1w4389BVlDhkFpNx_p974suzgy1F7e2NC8SLjYAMN6loA9MZZNgmhWyNlTBO-Dep1muYVsZhCFxrnmMHJOZTED81u8RDd27EJFiSP-ef-JZ6O-F4St5OJSiejisPrGMz4zDJtW1N57MoQspgsBjYOtQH_Abq2XMP0idF8635YObDbq3BfBQvvOSAQLKBp2nY-nw9fR4jEHAF1DKyjNmrnWnTCh6vHTLOX.3NG4IKvS3mZBI6EDpr6Fdjtx5YiStrty4aHMFUlf6js&dib_tag=se&keywords=jitter+bug+audioquest&qid=1776875775&s=ce-de&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=jitter+bug+audioquest%2Celectronics%2C97&sr=1-3',
   },
