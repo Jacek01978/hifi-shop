@@ -53,9 +53,9 @@ export default function Hero() {
             <defs>
               {/* Iridescent sheen gradient */}
               <radialGradient id="vinylSheen" cx="38%" cy="35%" r="65%">
-                <stop offset="0%"   stopColor="rgba(100,80,180,0.18)"/>
-                <stop offset="30%"  stopColor="rgba(201,168,76,0.10)"/>
-                <stop offset="60%"  stopColor="rgba(80,160,200,0.12)"/>
+                <stop offset="0%"   stopColor="rgba(220,80,60,0.16)"/>
+                <stop offset="35%"  stopColor="rgba(201,168,76,0.12)"/>
+                <stop offset="70%"  stopColor="rgba(180,60,80,0.10)"/>
                 <stop offset="100%" stopColor="rgba(0,0,0,0)"/>
               </radialGradient>
               {/* Label gradient */}
