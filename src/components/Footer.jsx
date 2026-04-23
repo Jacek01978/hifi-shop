@@ -70,7 +70,14 @@ export default function Footer({ onNavigate }) {
           <h4 className="font-mono text-[0.55rem] tracking-[0.28em] uppercase text-gold/60 mb-5">
             Rechtliches
           </h4>
-          {['Impressum', 'Datenschutz', 'Affiliate-Hinweis', 'Kontakt'].map((item) => (
+          <button
+            onClick={() => onNavigate?.('impressum')}
+            className="group flex items-center gap-2 font-mono text-[0.58rem] text-muted mb-3 tracking-[0.05em] hover:text-gold transition-colors duration-300"
+          >
+            <span className="block w-0 h-px bg-gold/50 transition-all duration-300 group-hover:w-3" />
+            Impressum
+          </button>
+          {['Datenschutz', 'Affiliate-Hinweis', 'Kontakt'].map((item) => (
             <a
               key={item}
               href="#"

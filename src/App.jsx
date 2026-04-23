@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import ProductGrid from './components/ProductGrid'
 import AffiliateDisclaimer from './components/AffiliateDisclaimer'
 import HifiTipps from './components/HifiTipps'
+import Impressum from './components/Impressum'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -20,9 +21,11 @@ export default function App() {
             <ProductGrid />
             <AffiliateDisclaimer />
           </>
-        ) : (
+        ) : page === 'tipps' ? (
           <HifiTipps />
-        )}
+        ) : page === 'impressum' ? (
+          <Impressum onNavigate={setPage} />
+        ) : null}
       </main>
       <Footer onNavigate={setPage} />
     </div>
