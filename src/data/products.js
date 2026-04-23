@@ -387,6 +387,16 @@ export const PRODUCTS = [
     href: 'https://www.amazon.de/Akcept-Audio-SSC-Minibase-Farbe/dp/B00L3IJQJY/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3EFV2VFGEJAE4&dib=eyJ2IjoiMSJ9.cuOROUxjMUcDPwcVejY6rA.ZnHso2BEUlI4LuXCVuqlVRjqqG1aAX1YfoG1ZSEwczo&dib_tag=se&keywords=hifi+base+ssc&qid=1776876788&sprefix=hifi+base+ssc%2Caps%2C120&sr=8-1',
   },
 
+  {
+    id: 44, cat: 'absorber',
+    icon: '🎛️',
+    iconComponent: 'DeviceFeetIcon',
+    name: 'Audio Selection Disc 8er Set',
+    desc: 'Acht hochwertige Entkopplungsscheiben zur Vibrationsdämpfung von HiFi-Geräten. Einfach unter Verstärker, CD-Player oder Plattenspieler legen – reduziert Körperschall und unerwünschte Resonanzen für eine ruhigere, detailreichere Klangwiedergabe.',
+    price: 'ab 23,–',
+    href: 'https://www.amazon.de/Audio-Selection-Disc-8er-Farbe/dp/B00H8OBOCY/ref=pd_day0_d_sccl_2_13/260-8413956-1206734?pd_rd_w=4dXR5&content-id=amzn1.sym.3c058bef-4019-49f7-9d6d-aa05b8240803&pf_rd_p=3c058bef-4019-49f7-9d6d-aa05b8240803&pf_rd_r=ZFCFPZWZEZGRZJ4R5FRQ&pd_rd_wg=rofHk&pd_rd_r=781d0a5d-d942-41cd-aae7-26d3bb06ad76&pd_rd_i=B00H8OBOCY&psc=1',
+  },
+
   // ── REINIGUNG ──
   {
     id: 10, cat: 'reinigung', subcat: 'vinyl', groupId: 'reinigung',
