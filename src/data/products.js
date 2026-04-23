@@ -388,7 +388,7 @@ export const PRODUCTS = [
   },
 
   {
-    id: 44, cat: 'absorber',
+    id: 44, cat: 'absorber', groupId: 'dynavox_absorber',
     icon: '🎛️',
     iconComponent: 'DeviceFeetIcon',
     name: 'Audio Selection Disc 8er Set',
