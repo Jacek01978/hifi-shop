@@ -129,7 +129,7 @@ export default function HifiTuning({ onNavigate }) {
         </div>
 
         <p className="font-mono text-[0.74rem] leading-[2] text-stone tracking-[0.03em] mt-8 border-l border-gold/20 pl-5">
-          Das lineare Netzteil versorgt nun einen Media-Player, den Orbsmart, mit der nötigen 12 Volt Spannung. Der Unterschied zum einfachen Netzteil ist deutlich zu sehen und zu hören.
+          Das lineare Netzteil versorgt nun den Media-Player, einen Orbsmart-Android-Player, mit sauberer 12 Volt Spannung. Der Unterschied zum günstigen Standard-Netzteil macht sich visuell und audiophil bemerkbar.
         </p>
       </div>
 
