@@ -40,29 +40,14 @@ export default function HifiTuning({ onNavigate }) {
           style={{ maxHeight: '520px', filter: 'brightness(0.95) contrast(1.05)', display: 'block' }}
         />
 
-        {/* Nebel-Rand oben */}
-        <div className="absolute top-0 left-0 right-0 pointer-events-none" style={{
-          height: '38%',
-          background: 'linear-gradient(to bottom, rgba(8,8,8,1) 0%, rgba(8,8,8,0.6) 40%, rgba(8,8,8,0.15) 75%, transparent 100%)',
-          filter: 'blur(6px)',
-        }} />
-        {/* Nebel-Rand unten */}
-        <div className="absolute bottom-0 left-0 right-0 pointer-events-none" style={{
-          height: '42%',
-          background: 'linear-gradient(to top, rgba(8,8,8,1) 0%, rgba(8,8,8,0.6) 40%, rgba(8,8,8,0.15) 75%, transparent 100%)',
-          filter: 'blur(6px)',
-        }} />
-        {/* Nebel-Rand links */}
-        <div className="absolute top-0 bottom-0 left-0 pointer-events-none" style={{
-          width: '28%',
-          background: 'linear-gradient(to right, rgba(8,8,8,1) 0%, rgba(8,8,8,0.5) 45%, rgba(8,8,8,0.1) 75%, transparent 100%)',
-          filter: 'blur(8px)',
-        }} />
-        {/* Nebel-Rand rechts */}
-        <div className="absolute top-0 bottom-0 right-0 pointer-events-none" style={{
-          width: '28%',
-          background: 'linear-gradient(to left, rgba(8,8,8,1) 0%, rgba(8,8,8,0.5) 45%, rgba(8,8,8,0.1) 75%, transparent 100%)',
-          filter: 'blur(8px)',
+        {/* Vignette – alle vier Seiten */}
+        <div className="absolute inset-0 pointer-events-none" style={{
+          background: `
+            linear-gradient(to bottom, rgba(8,8,8,0.75) 0%, transparent 22%),
+            linear-gradient(to top,    rgba(8,8,8,0.85) 0%, transparent 28%),
+            linear-gradient(to right,  rgba(8,8,8,0.7)  0%, transparent 18%),
+            linear-gradient(to left,   rgba(8,8,8,0.7)  0%, transparent 18%)
+          `
         }} />
 
         {/* Caption */}
