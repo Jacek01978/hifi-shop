@@ -32,24 +32,27 @@ export default function HifiTuning({ onNavigate }) {
       </p>
 
       {/* Photo */}
-      <div className="relative overflow-hidden border border-obsidian-200 mb-6"
-        style={{ boxShadow: '0 0 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(201,168,76,0.08)' }}
-      >
-        {/* Gold top accent */}
-        <div className="absolute top-0 left-0 right-0 h-[1.5px] bg-gradient-to-r from-transparent via-gold/40 to-transparent z-10" />
-
+      <div className="relative overflow-hidden mb-6">
         <img
           src="/hifi-tuning.jpeg"
           alt="ASR Emitter II Exclusive HiFi Anlage"
           className="w-full object-cover"
-          style={{ maxHeight: '520px', filter: 'brightness(0.95) contrast(1.05)' }}
+          style={{ maxHeight: '520px', filter: 'brightness(0.95) contrast(1.05)', display: 'block' }}
         />
 
-        {/* Bottom overlay with caption */}
-        <div className="absolute bottom-0 left-0 right-0 px-6 py-4"
-          style={{ background: 'linear-gradient(to top, rgba(8,8,8,0.85) 0%, transparent 100%)' }}
-        >
-          <p className="font-mono text-[0.58rem] tracking-[0.2em] uppercase text-gold/80">
+        {/* Vignette – alle vier Seiten */}
+        <div className="absolute inset-0 pointer-events-none" style={{
+          background: `
+            linear-gradient(to bottom, rgba(8,8,8,0.75) 0%, transparent 22%),
+            linear-gradient(to top,    rgba(8,8,8,0.85) 0%, transparent 28%),
+            linear-gradient(to right,  rgba(8,8,8,0.7)  0%, transparent 18%),
+            linear-gradient(to left,   rgba(8,8,8,0.7)  0%, transparent 18%)
+          `
+        }} />
+
+        {/* Caption */}
+        <div className="absolute bottom-0 left-0 right-0 px-6 py-5 z-10">
+          <p className="font-mono text-[0.58rem] tracking-[0.2em] uppercase text-gold/70">
             ASR Emitter II Exclusive · Battery Power Supply · PMC Lautsprecher
           </p>
         </div>
