@@ -100,7 +100,7 @@ export default function HifiTuning({ onNavigate }) {
 
         {/* Text */}
         <p className="font-mono text-[0.74rem] leading-[2] text-stone tracking-[0.03em] mt-8 border-l border-gold/20 pl-5">
-          Silikon-Dämpfer unter dem Netzteil sorgen für einen rutschfesten Stand und reduzieren ebenfalls schädliche Vibrationen. Eine Hifi-Basis unter dem Netzteil trägt auch dazu bei, dass das Netzteil vor Erschütterungen geschützt ist.
+          Silikon-Dämpfer unter dem Netzteil sorgen für einen rutschfesten Stand und reduzieren ebenfalls schädliche Vibrationen. Eine Hifi-Basis unter dem Netzteil trägt auch dazu bei, dass das Netzteil vor Erschütterungen geschützt ist. Sie werden es nicht glauben, aber diese kleine Modifikation hat durchaus positiven Einfluss auf den Klang.
         </p>
       </div>
 
