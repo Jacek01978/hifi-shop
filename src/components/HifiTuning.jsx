@@ -102,6 +102,35 @@ export default function HifiTuning({ onNavigate }) {
         <p className="font-mono text-[0.74rem] leading-[2] text-stone tracking-[0.03em] mt-8 border-l border-gold/20 pl-5">
           Silikon-Dämpfer unter dem Netzteil sorgen für einen rutschfesten Stand und reduzieren ebenfalls schädliche Vibrationen. Eine Hifi-Basis unter dem Netzteil trägt auch dazu bei, dass das Netzteil vor Erschütterungen geschützt ist. Sie werden es nicht glauben, aber diese kleine Modifikation hat durchaus positiven Einfluss auf den Klang.
         </p>
+
+        {/* Zweite Bildergalerie – Mediaplayer */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10">
+          {[
+            { src: '/netzteil-mediaplayer.jpeg', alt: 'Lineares Netzteil mit Mediaplayer' },
+            { src: '/orbsmart.jpeg',             alt: 'Orbsmart H-01 Mediaplayer' },
+          ].map((img) => (
+            <div key={img.src} className="relative overflow-hidden">
+              <img
+                src={img.src}
+                alt={img.alt}
+                className="w-full object-cover"
+                style={{ maxHeight: '340px', filter: 'brightness(0.95) contrast(1.05)', display: 'block' }}
+              />
+              <div className="absolute inset-0 pointer-events-none" style={{
+                background: `
+                  linear-gradient(to bottom, rgba(8,8,8,0.6) 0%, transparent 20%),
+                  linear-gradient(to top,    rgba(8,8,8,0.7) 0%, transparent 25%),
+                  linear-gradient(to right,  rgba(8,8,8,0.6) 0%, transparent 15%),
+                  linear-gradient(to left,   rgba(8,8,8,0.6) 0%, transparent 15%)
+                `
+              }} />
+            </div>
+          ))}
+        </div>
+
+        <p className="font-mono text-[0.74rem] leading-[2] text-stone tracking-[0.03em] mt-8 border-l border-gold/20 pl-5">
+          Das lineare Netzteil versorgt nun einen Media-Player, den Orbsmart, mit der nötigen 12 Volt Spannung. Der Unterschied zum einfachen Netzteil ist deutlich zu sehen und zu hören.
+        </p>
       </div>
 
     </section>
