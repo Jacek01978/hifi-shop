@@ -422,8 +422,8 @@ export const PRODUCTS = [
     iconComponent: 'ContactSprayIcon',
     name: 'Pflegemittel',
     desc: 'Mikrofasertücher, Wattepads und Reinigungstücher für die schonende Pflege von HiFi-Geräten, Gehäuseoberflächen und Anschlüssen. Rückstandsfrei, antistatisch und kratzfrei.',
-    price: 'ab 11,–',
-    href: amazon('mikrofasertücher hifi reinigung elektronik'),
+    price: 'ab 7,–',
+    href: 'https://www.amazon.de/Protected-CD-Reinigungstuch/dp/B00EEZ6114/ref=sr_1_3?crid=1DAZLW24BVP2C&dib=eyJ2IjoiMSJ9.48U452tqF1vXwbxvmYI76Tl7GTEAiYwFFBgk9DNNDQg0pOO6yeJx752clUfuTru4PxAUbqruXpIKMnkEJcRGRtmPd7UsPeKBQbWU0yNzGvQBzS_9ZP0Ob3XPQjkXfdP2FdRCKWow_YZx8ZDuE0Ho1ooEcBtD-LSaXnS36oZ9KKnANO569wzTX-c05YCa70X3Dg-SwqKmCONElkUCYOpePZ1iN4__moD2eUQSqBCG56g.GFVzZ2g-M1CUzlKakekWGtXW0ffeuZ8Q4Z5ayaMQl8g&dib_tag=se&keywords=cd+reinigungstuch&qid=1777370923&sprefix=cd+rein%2Caps%2C111&sr=8-3',
   },
   {
     id: 26, cat: 'reinigung', subcat: 'reiniger', groupId: 'reinigung',
