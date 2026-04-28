@@ -399,6 +399,15 @@ export const PRODUCTS = [
 
   // ── REINIGUNG ──
   {
+    id: 45, cat: 'reinigung', subcat: 'reiniger', groupId: 'reinigung',
+    icon: '💿',
+    iconComponent: 'ContactSprayIcon',
+    name: 'Perfect Sound CD Control Spray',
+    desc: 'Professionelles Reinigungsspray für CDs, DVDs und Blu-rays. Entfernt Fingerabdrücke, Staub und Schlieren schonend und rückstandsfrei. Mit Zerstäuberflasche für einfache Anwendung – verbessert die Lesbarkeit und verlängert die Lebensdauer von Silberscheiben.',
+    price: 'ab 20,–',
+    href: 'https://www.amazon.de/Perfect-Sound-Control-Spray-Zerst%C3%A4uberflasche/dp/B006RHY830',
+  },
+  {
     id: 10, cat: 'reinigung', subcat: 'vinyl', groupId: 'reinigung',
     icon: '💿',
     iconComponent: 'VinylCleanerIcon',
