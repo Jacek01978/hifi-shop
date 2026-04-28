@@ -31,11 +31,35 @@ export default function HifiTuning({ onNavigate }) {
         von der Aufstellung bis zur Verkabelung.
       </p>
 
+      {/* Photo */}
+      <div className="relative overflow-hidden border border-obsidian-200 mb-6"
+        style={{ boxShadow: '0 0 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(201,168,76,0.08)' }}
+      >
+        {/* Gold top accent */}
+        <div className="absolute top-0 left-0 right-0 h-[1.5px] bg-gradient-to-r from-transparent via-gold/40 to-transparent z-10" />
+
+        <img
+          src="/hifi-tuning.jpeg"
+          alt="ASR Emitter II Exclusive HiFi Anlage"
+          className="w-full object-cover"
+          style={{ maxHeight: '520px', filter: 'brightness(0.95) contrast(1.05)' }}
+        />
+
+        {/* Bottom overlay with caption */}
+        <div className="absolute bottom-0 left-0 right-0 px-6 py-4"
+          style={{ background: 'linear-gradient(to top, rgba(8,8,8,0.85) 0%, transparent 100%)' }}
+        >
+          <p className="font-mono text-[0.58rem] tracking-[0.2em] uppercase text-gold/80">
+            ASR Emitter II Exclusive · Battery Power Supply · PMC Lautsprecher
+          </p>
+        </div>
+      </div>
+
       {/* Placeholder */}
       <div className="border border-obsidian-200 p-10 flex flex-col items-center gap-4 text-center">
         <span className="font-display text-4xl text-gold/20">⚙</span>
         <p className="font-mono text-[0.65rem] tracking-[0.15em] uppercase text-muted">
-          Inhalte folgen in Kürze
+          Weitere Inhalte folgen in Kürze
         </p>
       </div>
 
