@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
 
-const NAV = ['Kabel', 'Sicherungen', 'Absorber', 'Reinigung']
 
 export default function Header({ page, onNavigate }) {
   const [scrolled, setScrolled] = useState(false)
@@ -41,16 +40,6 @@ export default function Header({ page, onNavigate }) {
 
         {/* Nav */}
         <nav className="hidden md:flex items-center gap-8">
-          {page === 'shop' && NAV.map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
-              className="group relative font-mono text-[0.6rem] tracking-[0.22em] uppercase text-muted hover:text-stone transition-colors duration-300 no-underline"
-            >
-              {item}
-              <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-gold transition-all duration-300 group-hover:w-full" />
-            </a>
-          ))}
           <button
             onClick={() => onNavigate(page === 'tipps' ? 'shop' : 'tipps')}
             className={`font-mono text-[0.6rem] tracking-[0.22em] uppercase px-3 py-1.5 border transition-all duration-300 ${
