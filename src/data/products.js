@@ -185,6 +185,16 @@ export const PRODUCTS = [
   },
 
   {
+    id: 46, cat: 'kabel', subcat: 'cinch', groupId: 'cinch',
+    icon: '🔌',
+    iconComponent: 'CinchCableIcon',
+    name: 'RCA Abschlusskappen Green Box',
+    desc: 'Hochwertige RCA-Abschlusskappen von Sieveking Sound zur Terminierung ungenutzter Cinch-Eingänge. Verhindern das Einkoppeln von Störsignalen über offene Buchsen – für ein ruhigeres Klangbild und sauberere Signalübertragung.',
+    price: 'ab 44,–',
+    href: `https://www.amazon.de/Sieveking-Sound-RCA-Abschlusskappen/dp/B001LQWGDG/ref=sr_1_19?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=VFAEA1TW418W&dib=eyJ2IjoiMSJ9.DLQg8YN5j4NT9JFYB9OgRGqtLceUTqR06BDYqRAx1XfOOqc6YLLfEOY-Wk74CTKeswxClA0nUuAWZLzIbIGVZt2948ojaT-1Ku8pmh7zmtkqR_q1LqCn0FwVVFPcCnFC9Jrl4Tg_tMIRy_t93i1sOGNtMNVSmQsGqBPyxKJ20Us3Tr2MDLs5-aUR1fpn1wAsLWzx0Gu9SVmFOU0Nto2SrX0gfBXyuWAb8B6wkB7Q5_Q.o5rltxlLzrXB0buQG4E8HbMDsHr021U1qT8zZbPpMP8&dib_tag=se&keywords=hifi+abschlusskappen&qid=1777381589&sprefix=hifi+abschluss+kappen%2Caps%2C158&sr=8-19&tag=${TAG}`,
+  },
+
+  {
     id: 18, cat: 'kabel', subcat: 'cinch', groupId: 'cinch',
     icon: '🔌',
     iconComponent: 'CinchCableIcon',
