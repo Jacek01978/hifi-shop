@@ -58,12 +58,45 @@ export default function HifiTuning({ onNavigate }) {
         </div>
       </div>
 
-      {/* Placeholder */}
-      <div className="border border-obsidian-200 p-10 flex flex-col items-center gap-4 text-center">
-        <span className="font-display text-4xl text-gold/20">⚙</span>
-        <p className="font-mono text-[0.65rem] tracking-[0.15em] uppercase text-muted">
-          Weitere Inhalte folgen in Kürze
-        </p>
+      {/* Tuning Tipp 1 */}
+      <div className="mt-16">
+        {/* Tipp Header */}
+        <div className="flex items-center gap-4 mb-6">
+          <span className="block w-8 h-px bg-gold/60" />
+          <span className="font-mono text-[0.52rem] tracking-[0.35em] uppercase text-gold/70">Tuning</span>
+        </div>
+        <h2 className="font-display text-[2rem] font-light text-cream tracking-[0.03em] mb-10">
+          Tuning Tipp 1
+        </h2>
+
+        {/* Bildergalerie */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {[
+            { src: '/netzteil1.jpeg',  alt: 'Netzteil Ansicht 1' },
+            { src: '/netzteil2.jpeg',  alt: 'Netzteil Ansicht 2' },
+            { src: '/netzteil3.jpeg',  alt: 'Netzteil Ansicht 3' },
+            { src: '/netzteil4.jpeg',  alt: 'Netzteil Ansicht 4' },
+            { src: '/netzteil-base.jpeg', alt: 'Netzteil Base' },
+          ].map((img) => (
+            <div key={img.src} className="relative overflow-hidden">
+              <img
+                src={img.src}
+                alt={img.alt}
+                className="w-full object-cover"
+                style={{ maxHeight: '340px', filter: 'brightness(0.95) contrast(1.05)', display: 'block' }}
+              />
+              {/* Vignette */}
+              <div className="absolute inset-0 pointer-events-none" style={{
+                background: `
+                  linear-gradient(to bottom, rgba(8,8,8,0.6) 0%, transparent 20%),
+                  linear-gradient(to top,    rgba(8,8,8,0.7) 0%, transparent 25%),
+                  linear-gradient(to right,  rgba(8,8,8,0.6) 0%, transparent 15%),
+                  linear-gradient(to left,   rgba(8,8,8,0.6) 0%, transparent 15%)
+                `
+              }} />
+            </div>
+          ))}
+        </div>
       </div>
 
     </section>
