@@ -45,8 +45,15 @@ export default function Header({ page, onNavigate }) {
             className={`font-mono text-[0.6rem] tracking-[0.22em] uppercase px-3 py-1.5 border transition-all duration-300 ${
               page === 'tuning'
                 ? 'text-gold border-gold/60 bg-gold/10'
-                : 'text-gold/60 border-gold/20 hover:text-gold hover:border-gold/50 hover:bg-gold/5'
+                : ''
             }`}
+            style={page !== 'tuning' ? {
+              animation: 'hifi-tipps-glow 3s ease-in-out infinite',
+              animationDelay: '1.5s',
+            } : {
+              textShadow: '0 0 12px rgba(201,168,76,0.8)',
+              boxShadow: '0 0 16px rgba(201,168,76,0.3)',
+            }}
           >
             ⚙ HiFi Tuning
           </button>
