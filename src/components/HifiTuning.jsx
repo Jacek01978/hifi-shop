@@ -233,6 +233,28 @@ export default function HifiTuning({ onNavigate }) {
         <p className="font-mono text-[0.74rem] leading-[2] text-stone tracking-[0.03em] mt-8 border-l border-gold/20 pl-5">
           Digitale Eingänge sollten ebenfalls abgeschlossen werden, falls diese nicht benutzt werden.
         </p>
+
+        {/* Drittes Foto */}
+        <div className="relative overflow-hidden mt-10">
+          <img
+            src="/abschluss-stecker.jpeg"
+            alt="Abschlusskappen für alle Anschlusstypen"
+            className="w-full object-cover"
+            style={{ maxHeight: '480px', filter: 'brightness(0.95) contrast(1.05)', display: 'block' }}
+          />
+          <div className="absolute inset-0 pointer-events-none" style={{
+            background: `
+              linear-gradient(to bottom, rgba(8,8,8,0.6) 0%, transparent 20%),
+              linear-gradient(to top,    rgba(8,8,8,0.7) 0%, transparent 25%),
+              linear-gradient(to right,  rgba(8,8,8,0.6) 0%, transparent 15%),
+              linear-gradient(to left,   rgba(8,8,8,0.6) 0%, transparent 15%)
+            `
+          }} />
+        </div>
+
+        <p className="font-mono text-[0.74rem] leading-[2] text-stone tracking-[0.03em] mt-8 border-l border-gold/20 pl-5">
+          Für alle Anschlusstypen gibt es Abschlusskappen und diese verhindern, dass Staub und HF-Strahlung in das Gerät eindringen. Dadurch sollte in der Regel ein ruhigeres und gelassenes Klangbild entstehen.
+        </p>
       </div>
 
     </section>
