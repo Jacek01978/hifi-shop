@@ -257,6 +257,41 @@ export default function HifiTuning({ onNavigate }) {
         </p>
       </div>
 
+      {/* Tuning Tipp 4 */}
+      <div className="mt-16">
+        {/* Tipp Header */}
+        <div className="flex items-center gap-4 mb-6">
+          <span className="block w-8 h-px bg-gold/60" />
+          <span className="font-mono text-[0.52rem] tracking-[0.35em] uppercase text-gold/70">Tuning</span>
+        </div>
+        <h2 className="font-display text-[2rem] font-light text-cream tracking-[0.03em] mb-10">
+          Tuning Tipp 4
+        </h2>
+
+        {/* Text */}
+        <p className="font-mono text-[0.74rem] leading-[2] text-stone tracking-[0.03em] mb-10 border-l border-gold/20 pl-5">
+          Ein Austausch der HiFi-Sicherung kann sich durchaus lohnen und das Klangbild verbessern. Bitte dabei immer auf die korrekte Stromstärke (z.B. 1,25 A) achten!
+        </p>
+
+        {/* Foto */}
+        <div className="relative overflow-hidden">
+          <img
+            src="/sicherung1.jpeg"
+            alt="HiFi Sicherung Austausch"
+            className="w-full object-cover"
+            style={{ maxHeight: '480px', filter: 'brightness(0.95) contrast(1.05)', display: 'block' }}
+          />
+          <div className="absolute inset-0 pointer-events-none" style={{
+            background: `
+              linear-gradient(to bottom, rgba(8,8,8,0.6) 0%, transparent 20%),
+              linear-gradient(to top,    rgba(8,8,8,0.7) 0%, transparent 25%),
+              linear-gradient(to right,  rgba(8,8,8,0.6) 0%, transparent 15%),
+              linear-gradient(to left,   rgba(8,8,8,0.6) 0%, transparent 15%)
+            `
+          }} />
+        </div>
+      </div>
+
     </section>
   )
 }
