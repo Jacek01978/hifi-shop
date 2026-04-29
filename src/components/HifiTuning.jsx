@@ -211,6 +211,28 @@ export default function HifiTuning({ onNavigate }) {
         <p className="font-mono text-[0.74rem] leading-[2] text-stone tracking-[0.03em] mt-8 border-l border-gold/20 pl-5">
           Offene RCA-Eingänge sollten immer abgeschlossen werden, da sonst HF-Strahlung in den Verstärker eindringen und die Klangqualität negativ beeinflussen kann.
         </p>
+
+        {/* Zweites Foto */}
+        <div className="relative overflow-hidden mt-10">
+          <img
+            src="/digital.jpeg"
+            alt="Digitale Eingänge am HiFi-Verstärker"
+            className="w-full object-cover"
+            style={{ maxHeight: '480px', filter: 'brightness(0.95) contrast(1.05)', display: 'block' }}
+          />
+          <div className="absolute inset-0 pointer-events-none" style={{
+            background: `
+              linear-gradient(to bottom, rgba(8,8,8,0.6) 0%, transparent 20%),
+              linear-gradient(to top,    rgba(8,8,8,0.7) 0%, transparent 25%),
+              linear-gradient(to right,  rgba(8,8,8,0.6) 0%, transparent 15%),
+              linear-gradient(to left,   rgba(8,8,8,0.6) 0%, transparent 15%)
+            `
+          }} />
+        </div>
+
+        <p className="font-mono text-[0.74rem] leading-[2] text-stone tracking-[0.03em] mt-8 border-l border-gold/20 pl-5">
+          Digitale Eingänge sollten ebenfalls abgeschlossen werden, falls diese nicht benutzt werden.
+        </p>
       </div>
 
     </section>
