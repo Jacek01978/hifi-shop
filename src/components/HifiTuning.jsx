@@ -209,7 +209,7 @@ export default function HifiTuning({ onNavigate }) {
 
         {/* Text */}
         <p className="font-mono text-[0.74rem] leading-[2] text-stone tracking-[0.03em] mt-8 border-l border-gold/20 pl-5">
-          Alle offenen RCA-Eingänge sollten immer abgeschlossen werden, da sonst HF-Strahlung in den Verstärker eindringen und die Klangqualität negativ beeinflussen kann.
+          Alle offenen RCA-Eingänge/Ausgänge sollten immer abgeschlossen werden, da sonst HF-Strahlung in den Verstärker eindringen und die Klangqualität negativ beeinflussen kann.
         </p>
 
         {/* Zweites Foto */}
