@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function AffiliateDisclaimer() {
   return (
-    <aside className="mx-8 lg:mx-14 mb-20">
+    <aside id="affiliate-hinweis" className="mx-8 lg:mx-14 mb-20">
       <div className="relative overflow-hidden border border-obsidian-300 p-6"
         style={{ background: 'linear-gradient(135deg, rgba(201,168,76,0.03) 0%, transparent 60%)' }}
       >
