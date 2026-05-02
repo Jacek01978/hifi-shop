@@ -98,7 +98,7 @@ export default function ProductGrid() {
       {/* Affiliate-Hinweis unter dem Filter */}
       <div className="px-8 lg:px-14 py-2.5 border-b border-obsidian-200 bg-obsidian-50">
         <p className="font-mono text-[0.58rem] text-stone/60 tracking-[0.04em]">
-          * Diese Seite enthält Affiliate-Links zu Amazon. Bei einem Kauf erhalten wir eine kleine Provision – für Sie entstehen keine Mehrkosten.
+          Hinweis: * Diese Seite enthält Affiliate-Links zu Amazon. Bei einem Kauf erhalten wir eine kleine Provision – für Sie entstehen keine Mehrkosten.
         </p>
       </div>
 
