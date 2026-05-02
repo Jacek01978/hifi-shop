@@ -95,6 +95,13 @@ export default function ProductGrid() {
         onChangeSub={setActiveSub}
       />
 
+      {/* Affiliate-Hinweis unter dem Filter */}
+      <div className="px-8 lg:px-14 py-2.5 border-b border-obsidian-200 bg-obsidian-50">
+        <p className="font-mono text-[0.58rem] text-stone/60 tracking-[0.04em]">
+          * Diese Seite enthält Affiliate-Links zu Amazon. Bei einem Kauf erhalten wir eine kleine Provision – für Sie entstehen keine Mehrkosten.
+        </p>
+      </div>
+
       {/* Section header */}
       <div className="flex items-baseline gap-6 px-8 lg:px-14 pt-14 pb-10">
         <h2 className="font-display text-[2rem] font-light text-cream tracking-[0.03em]">
