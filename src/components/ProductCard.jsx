@@ -63,7 +63,7 @@ export default function ProductCard({ product, style, onClick }) {
               {product.price}
             </span>
             <span className="font-mono text-[0.8rem] text-muted ml-1">€</span>
-            <p className="font-mono text-[0.74rem] text-muted tracking-[0.06em] mt-0.5 opacity-70">
+            <p className="font-mono text-[0.74rem] text-stone tracking-[0.06em] mt-0.5">
               * Affiliate-Link
             </p>
           </div>
