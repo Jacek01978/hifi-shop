@@ -84,7 +84,7 @@ export default function Header({ page, onNavigate }) {
             }}
             className="font-mono text-[0.7rem] font-bold tracking-[0.1em] uppercase border border-gold/40 text-gold px-4 py-2 hover:bg-gold/10 transition-colors duration-300"
           >
-            {page === 'tipps' ? '← Shop' : 'Affiliate Shop (Produktwerbung)'}
+            {page === 'tipps' ? '← Shop' : 'Affiliate Shop – Amazon Werbepartner'}
           </button>
         </nav>
       </div>
