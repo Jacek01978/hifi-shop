@@ -12,37 +12,13 @@ export default function GroupCard({ products, groupLabel, style, onShowVariants 
   const colors  = CAT_COLORS[products[0].cat] ?? CAT_COLORS.kabel
   const first   = products[0]
 
-  const onMouseMove = (e) => {
-    const el = cardRef.current
-    if (!el) return
-    const rect = el.getBoundingClientRect()
-    const x = (e.clientX - rect.left) / rect.width  - 0.5
-    const y = (e.clientY - rect.top)  / rect.height - 0.5
-    el.style.transform = `perspective(700px) rotateY(${x * 8}deg) rotateX(${-y * 8}deg) scale(1.015)`
-    el.style.boxShadow = `${-x * 20}px ${-y * 20}px 40px ${colors.glow}, 0 0 0 1px rgba(201,168,76,0.12)`
-    const shine = el.querySelector('.card-shine')
-    if (shine) shine.style.background = `radial-gradient(circle at ${(x+0.5)*100}% ${(y+0.5)*100}%, rgba(255,255,255,0.04) 0%, transparent 60%)`
-  }
-
-  const onMouseLeave = () => {
-    const el = cardRef.current
-    if (!el) return
-    el.style.transform = ''
-    el.style.boxShadow = ''
-    const shine = el.querySelector('.card-shine')
-    if (shine) shine.style.background = ''
-  }
-
   return (
     <article
       ref={cardRef}
-      className="reveal group relative flex flex-col overflow-hidden bg-obsidian-50 border border-obsidian-200 transition-all duration-300"
-      style={{ ...style, willChange: 'transform' }}
-      onMouseMove={onMouseMove}
-      onMouseLeave={onMouseLeave}
+      className="reveal relative flex flex-col overflow-hidden bg-obsidian-50 border border-obsidian-200"
+      style={style}
     >
-      <div className="card-shine absolute inset-0 pointer-events-none z-10 transition-all duration-200" />
-      <div className={`absolute top-0 left-0 w-full h-[1.5px] ${colors.bar} scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100`} />
+      <div className={`absolute top-0 left-0 w-full h-[1.5px] ${colors.bar}`} />
 
       <div className="relative z-20 flex flex-col gap-5 p-7 flex-1">
 
@@ -60,7 +36,7 @@ export default function GroupCard({ products, groupLabel, style, onShowVariants 
         </div>
 
         {/* Icon */}
-        <span className="text-3xl leading-none select-none w-12 h-12 flex items-center justify-center rounded-full bg-obsidian-100 border border-obsidian-300 group-hover:border-gold/20 transition-colors duration-300">
+        <span className="text-3xl leading-none select-none w-12 h-12 flex items-center justify-center rounded-full bg-obsidian-100 border border-obsidian-300">
           {first.iconComponent
             ? React.createElement(Icons[first.iconComponent], { size: 26, color: '#c9a84c' })
             : first.icon}
@@ -82,7 +58,7 @@ export default function GroupCard({ products, groupLabel, style, onShowVariants 
           ))}
         </ul>
 
-        <div className="h-px bg-obsidian-300 group-hover:bg-gold/20 transition-colors duration-300" />
+        <div className="h-px bg-obsidian-300" />
 
         {/* Footer */}
         <div className="flex items-center justify-between">
@@ -99,10 +75,6 @@ export default function GroupCard({ products, groupLabel, style, onShowVariants 
         </div>
       </div>
 
-      <div
-        className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-        style={{ background: `linear-gradient(to top, ${colors.glow}, transparent)` }}
-      />
     </article>
   )
 }
