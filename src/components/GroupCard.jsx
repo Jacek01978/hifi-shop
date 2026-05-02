@@ -64,7 +64,7 @@ export default function GroupCard({ products, groupLabel, style, onShowVariants 
 
         {/* Footer */}
         <div className="flex items-center justify-between">
-          <p className="font-mono text-[0.5rem] text-muted tracking-[0.06em] opacity-50">* Affiliate-Links</p>
+          <p className="font-mono text-[0.62rem] text-muted tracking-[0.06em] opacity-50">* Affiliate-Links</p>
           <button
             onClick={onShowVariants}
             className={`shimmer-sweep relative inline-flex items-center gap-2 font-mono text-[0.58rem] tracking-[0.18em] uppercase bg-obsidian-100 ${colors.text} ${colors.border} border px-4 py-2.5 transition-all duration-300 hover:bg-gold/10 overflow-hidden`}
