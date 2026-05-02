@@ -2,9 +2,11 @@ import React, { useRef } from 'react'
 import * as Icons from '../icons'
 
 const CAT_COLORS = {
-  kabel:     { text: 'text-gold',     border: 'border-gold',     bar: 'bg-gold',     glow: 'rgba(201,168,76,0.15)' },
-  reinigung:     { text: 'text-rose-400', border: 'border-rose-400', bar: 'bg-rose-400', glow: 'rgba(251,113,133,0.15)' },
-  phasendetektor: { text: 'text-cyan-400', border: 'border-cyan-400', bar: 'bg-cyan-400', glow: 'rgba(34,211,238,0.15)' },
+  kabel:          { text: 'text-gold',       border: 'border-gold',       bar: 'bg-gold',       glow: 'rgba(201,168,76,0.15)'  },
+  reinigung:      { text: 'text-amber-200',  border: 'border-amber-200',  bar: 'bg-amber-200',  glow: 'rgba(253,230,138,0.12)' },
+  phasendetektor: { text: 'text-yellow-500', border: 'border-yellow-500', bar: 'bg-yellow-500', glow: 'rgba(234,179,8,0.15)'   },
+  netzleisten:    { text: 'text-orange-300', border: 'border-orange-300', bar: 'bg-orange-300', glow: 'rgba(253,186,116,0.15)' },
+  dynavox_absorber: { text: 'text-stone-300', border: 'border-stone-300', bar: 'bg-stone-300',  glow: 'rgba(214,211,209,0.12)' },
 }
 
 export default function GroupCard({ products, groupLabel, style, onShowVariants }) {

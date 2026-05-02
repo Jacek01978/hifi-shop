@@ -2,13 +2,13 @@ import React, { useRef } from 'react'
 import * as Icons from '../icons'
 
 const CAT_COLORS = {
-  kabel:        { text: 'text-gold',      border: 'border-gold',      bar: 'bg-gold',      glow: 'rgba(201,168,76,0.15)' },
-  sicherungen:  { text: 'text-blue-400',  border: 'border-blue-400',  bar: 'bg-blue-400',  glow: 'rgba(96,165,250,0.15)' },
-  absorber:     { text: 'text-emerald-400', border: 'border-emerald-400', bar: 'bg-emerald-400', glow: 'rgba(52,211,153,0.15)' },
-  reinigung:    { text: 'text-rose-400',    border: 'border-rose-400',    bar: 'bg-rose-400',    glow: 'rgba(251,113,133,0.15)' },
-  netzleisten:    { text: 'text-violet-400', border: 'border-violet-400', bar: 'bg-violet-400', glow: 'rgba(167,139,250,0.15)' },
-  phasendetektor: { text: 'text-cyan-400',   border: 'border-cyan-400',   bar: 'bg-cyan-400',   glow: 'rgba(34,211,238,0.15)' },
-  usb:            { text: 'text-sky-400',    border: 'border-sky-400',    bar: 'bg-sky-400',    glow: 'rgba(56,189,248,0.15)' },
+  kabel:          { text: 'text-gold',        border: 'border-gold',        bar: 'bg-gold',        glow: 'rgba(201,168,76,0.15)' },
+  sicherungen:    { text: 'text-amber-300',   border: 'border-amber-300',   bar: 'bg-amber-300',   glow: 'rgba(252,211,77,0.15)' },
+  absorber:       { text: 'text-stone-300',   border: 'border-stone-300',   bar: 'bg-stone-300',   glow: 'rgba(214,211,209,0.12)' },
+  reinigung:      { text: 'text-amber-200',   border: 'border-amber-200',   bar: 'bg-amber-200',   glow: 'rgba(253,230,138,0.12)' },
+  netzleisten:    { text: 'text-orange-300',  border: 'border-orange-300',  bar: 'bg-orange-300',  glow: 'rgba(253,186,116,0.15)' },
+  phasendetektor: { text: 'text-yellow-500',  border: 'border-yellow-500',  bar: 'bg-yellow-500',  glow: 'rgba(234,179,8,0.15)'  },
+  usb:            { text: 'text-amber-400',   border: 'border-amber-400',   bar: 'bg-amber-400',   glow: 'rgba(251,191,36,0.15)' },
 }
 
 export default function ProductCard({ product, style, onClick }) {

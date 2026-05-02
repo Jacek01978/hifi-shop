@@ -33,23 +33,23 @@ export const REINIGUNG_SUBCATEGORIES = [
 ]
 
 export const ACCENT = {
-  kabel:        'text-gold border-gold',
-  sicherungen:  'text-blue-400 border-blue-400',
-  absorber:     'text-green-400 border-green-400',
-  reinigung:    'text-pink-400 border-pink-400',
-  netzleisten:    'text-violet-400 border-violet-400',
-  phasendetektor: 'text-cyan-400 border-cyan-400',
-  usb:            'text-sky-400 border-sky-400',
+  kabel:          'text-gold border-gold',
+  sicherungen:    'text-amber-300 border-amber-300',
+  absorber:       'text-stone-300 border-stone-300',
+  reinigung:      'text-amber-200 border-amber-200',
+  netzleisten:    'text-orange-300 border-orange-300',
+  phasendetektor: 'text-yellow-500 border-yellow-500',
+  usb:            'text-amber-400 border-amber-400',
 }
 
 export const ACCENT_BAR = {
-  kabel:        'bg-gold',
-  sicherungen:  'bg-blue-400',
-  absorber:     'bg-green-400',
-  reinigung:    'bg-pink-400',
-  netzleisten:    'bg-violet-400',
-  phasendetektor: 'bg-cyan-400',
-  usb:            'bg-sky-400',
+  kabel:          'bg-gold',
+  sicherungen:    'bg-amber-300',
+  absorber:       'bg-stone-300',
+  reinigung:      'bg-amber-200',
+  netzleisten:    'bg-orange-300',
+  phasendetektor: 'bg-yellow-500',
+  usb:            'bg-amber-400',
 }
 
 export const PRODUCTS = [
