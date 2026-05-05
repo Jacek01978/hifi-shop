@@ -102,12 +102,6 @@ export default function Footer({ onNavigate }) {
         <span className="font-mono text-[0.52rem] text-muted tracking-[0.12em]">
           © {year} AudioPure. Alle Rechte vorbehalten.
         </span>
-        <div className="flex items-center gap-2">
-          <div className="w-1 h-1 rounded-full bg-gold/40" />
-          <span className="font-mono text-[0.52rem] text-muted tracking-[0.1em]">
-            Affiliate-Shop · Keine direkte Kaufabwicklung
-          </span>
-        </div>
       </div>
     </footer>
   )
