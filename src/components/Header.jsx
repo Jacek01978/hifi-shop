@@ -73,6 +73,15 @@ export default function Header({ page, onNavigate }) {
           >
             ✦ HiFi Tipps
           </button>
+          <a
+            href="/HiFi-Checkliste.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-mono text-[0.6rem] tracking-[0.22em] uppercase px-3 py-1.5 border no-underline transition-all duration-300"
+            style={{ animation: 'hifi-tipps-glow 3s ease-in-out infinite', animationDelay: '0.75s' }}
+          >
+            ☑ HiFi-Checkliste
+          </a>
         </nav>
       </div>
 

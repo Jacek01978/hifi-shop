@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>HiFi-Checkliste – AudioPure</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Mono:wght@300;400;500&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0D0D0D;
+    color: #D4CCBB;
+    font-family: 'DM Mono', 'Courier New', monospace;
+    margin: 0 auto;
+  }
+
+  /* Gold accent top */
+  .top-bar { height: 7px; background: #C9A84C; }
+  .bottom-bar { height: 7px; background: #C9A84C; margin-top: auto; }
+
+  .page {
+    padding: 42px 60px 42px 60px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 24px;
+  }
+  .logo-circle {
+    width: 33px; height: 33px;
+    border: 2px solid #C9A84C;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .logo-dot { width: 12px; height: 12px; background: #C9A84C; border-radius: 50%; }
+  .logo-text { font-family: 'Cormorant Garamond', serif; font-size: 34px; font-weight: 300; color: #F0EAD8; letter-spacing: 3px; }
+  .logo-text em { color: #C9A84C; font-style: normal; font-weight: 400; }
+  .header-url { font-size: 13px; color: #C9A84C; letter-spacing: 2px; margin-left: auto; align-self: center; text-transform: uppercase; }
+
+  .header-divider { height: 1px; background: linear-gradient(90deg, #C9A84C, rgba(201,168,76,0.2)); margin-bottom: 22px; }
+
+  /* Titel */
+  .category-label { font-size: 11px; letter-spacing: 5px; color: #C9A84C; text-transform: uppercase; margin-bottom: 10px; }
+
+  .title-block { margin-bottom: 16px; }
+  .title-main { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 300; color: #F0EAD8; line-height: 1.15; }
+  .title-accent { color: #C9A84C; }
+
+  .title-deco { width: 130px; height: 1px; background: #C9A84C; margin: 13px 0; }
+  .subtitle { font-size: 13px; color: #9A9080; line-height: 1.7; margin-bottom: 16px; }
+
+  .section-divider { height: 1px; background: rgba(201,168,76,0.3); margin-bottom: 3px; }
+
+  /* Checklist */
+  .checklist { flex: 1; }
+
+  .item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    border-bottom: 1px solid rgba(201,168,76,0.12);
+    position: relative;
+  }
+  .item:nth-child(even) { background: #161616; }
+  .item:nth-child(odd)  { background: #121212; }
+
+  .item-stripe { width: 4px; min-height: 75px; background: #C9A84C; flex-shrink: 0; align-self: stretch; }
+
+  .item-nr {
+    font-size: 18px; font-weight: 500;
+    color: #C9A84C;
+    width: 48px;
+    padding: 16px 0 16px 13px;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+
+  .item-content { padding: 14px 12px 14px 15px; flex: 1; }
+  .item-frage { font-size: 15px; font-weight: 500; color: #F0EAD8; line-height: 1.4; margin-bottom: 6px; }
+  .item-tipp  { font-size: 13px; color: #7A7060; line-height: 1.6; }
+  .item-tipp span { color: #9A8858; font-weight: 500; }
+
+  .item-checks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 20px 14px 12px;
+    flex-shrink: 0;
+    align-self: stretch;
+  }
+  .check-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 22px; height: 22px;
+    border: 1.5px solid rgba(201,168,76,0.7);
+    background: transparent;
+    flex-shrink: 0;
+    cursor: pointer;
+    position: relative;
+  }
+  .checkbox:checked {
+    background: transparent;
+    border-color: #C9A84C;
+  }
+  .checkbox:checked::after {
+    content: '';
+    position: absolute;
+    left: 4px; top: -1px;
+    width: 9px; height: 15px;
+    border: 2.5px solid #C9A84C;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+  }
+  .check-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #9A8858;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 22px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(201,168,76,0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-text { font-size: 11px; color: #6A6050; letter-spacing: 1.5px; }
+
+  /* Print */
+  @media print {
+    body { background: #0D0D0D !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .page { padding: 32px 55px; }
+    @page { size: A4; margin: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="top-bar"></div>
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-circle"><div class="logo-dot"></div></div>
+    <span class="logo-text">Audio<em>Pure</em></span>
+    <span class="header-url">www.hifi-system.com</span>
+  </div>
+  <div class="header-divider"></div>
+
+  <!-- Titel -->
+  <div class="category-label">Optimierung</div>
+  <div class="title-block">
+    <div class="title-main">HiFi-<span class="title-accent">Checkliste</span></div>
+    <div class="title-deco"></div>
+    <div class="subtitle">Seit 35 Jahren beschäftige ich mich mit dem Thema HiFi und habe eine Menge Erfahrung gesammelt, von der Sie profitieren können! Gehen Sie diese Punkte systematisch durch, um das Maximum aus Ihrer HiFi-Anlage herauszuholen.</div>
+  </div>
+  <div class="section-divider"></div>
+
+  <!-- Checkliste -->
+  <div class="checklist">
+
+    <div class="item">
+      <div class="item-stripe"></div>
+      <div class="item-nr">01</div>
+      <div class="item-content">
+        <div class="item-frage">Ist die Phase korrekt eingestellt?</div>
+        <div class="item-tipp"><span>Tipp:</span> Nutzen Sie einen Phasendetektor und stecken Sie alle Geräte phasenrichtig ein.</div>
+      </div>
+      <div class="item-checks">
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Ja</span></div>
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Nein</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-stripe"></div>
+      <div class="item-nr">02</div>
+      <div class="item-content">
+        <div class="item-frage">Sind die Lautsprecher korrekt (zum Hörer) positioniert?</div>
+        <div class="item-tipp"><span>Tipp:</span> Optimale Aufstellung: gleichseitiges Dreieck zwischen Lautsprechern und Hörposition. Der Lautsprecher sollte nicht zu nah an der Wand aufgestellt werden – ein Mindestabstand von 30–50 cm sollte beachtet werden.</div>
+      </div>
+      <div class="item-checks">
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Ja</span></div>
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Nein</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-stripe"></div>
+      <div class="item-nr">03</div>
+      <div class="item-content">
+        <div class="item-frage">Sind der linke und rechte Kanal vielleicht vertauscht?</div>
+        <div class="item-tipp"><span>Tipp:</span> Drehen Sie den Balance-Regler nach ganz links und spielen Sie die linke Tonspur (Test-Signal) ab und achten Sie, ob nur der linke Lautsprecher aktiv ist. Falls Sie keinen Ton hören, dann sind wahrscheinlich der rechte und der linke Kanal vertauscht.</div>
+      </div>
+      <div class="item-checks">
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Ja</span></div>
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Nein</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-stripe"></div>
+      <div class="item-nr">04</div>
+      <div class="item-content">
+        <div class="item-frage">Sind alle HiFi-Geräte an einer Netzleiste oder an mehreren unterschiedlichen Steckdosen angeschlossen?</div>
+        <div class="item-tipp"><span>Tipp:</span> Empfehlung: alle Geräte an einer hochwertigen, gefilterten Netzleiste betreiben.</div>
+      </div>
+      <div class="item-checks">
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Ja</span></div>
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Nein</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-stripe"></div>
+      <div class="item-nr">05</div>
+      <div class="item-content">
+        <div class="item-frage">Wie lang sind die Kabel zwischen den HiFi-Geräten?</div>
+        <div class="item-tipp"><span>Tipp:</span> Kürzere Kabel = weniger Kapazität und Einstreuung. Optimal: 0,5 – 1,5 m für Cinch. Analoge Verbindungen (ab 3 m) sollten i.d.R. mit Hilfe einer XLR-Verbindung durchgeführt werden, da diese weniger empfindlich gegenüber Störungen ist. Bitte beachten: Kabel können wie Antennen wirken und so unerwünschte HF-Störungen in die HiFi-Anlage einschleusen.</div>
+      </div>
+      <div class="item-checks">
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Ja</span></div>
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Nein</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-stripe"></div>
+      <div class="item-nr">06</div>
+      <div class="item-content">
+        <div class="item-frage">Herrscht ein Kabelsalat hinter der HiFi-Anlage?</div>
+        <div class="item-tipp"><span>Tipp:</span> Netz- und Signalkabel sollten sich nicht berühren oder kreuzen (elektromagnetische Einstreuung).</div>
+      </div>
+      <div class="item-checks">
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Ja</span></div>
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Nein</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-stripe"></div>
+      <div class="item-nr">07</div>
+      <div class="item-content">
+        <div class="item-frage">Wann und wie wurden zuletzt alle Kontakte gesäubert?</div>
+        <div class="item-tipp"><span>Tipp:</span> Kontakte regelmäßig mit Isopropanol oder Kontakt-Fluid reinigen und behandeln.</div>
+      </div>
+      <div class="item-checks">
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Ja</span></div>
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Nein</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-stripe"></div>
+      <div class="item-nr">08</div>
+      <div class="item-content">
+        <div class="item-frage">Stehen Vor- und Endverstärker direkt aufeinander?</div>
+        <div class="item-tipp"><span>Tipp:</span> Geräte sollten einzeln stehen oder durch HiFi-Basen entkoppelt sein (Wärme, Vibrationen). Der Vorverstärker sollte am besten oben und der Endverstärker unten im HiFi-Rack stehen – die Strahlung des Trafos der Endstufe kann den empfindlichen Vorverstärker hörbar beeinträchtigen.</div>
+      </div>
+      <div class="item-checks">
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Ja</span></div>
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Nein</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-stripe"></div>
+      <div class="item-nr">09</div>
+      <div class="item-content">
+        <div class="item-frage">Worauf stehen Ihre HiFi-Geräte?</div>
+        <div class="item-tipp"><span>Tipp:</span> Massives, resonanzarmes Möbel bevorzugen. Kein Glas oder Holz mit starker Eigenresonanz. Es gibt spezielle HiFi-Racks, die besonders stabil und schwingungsarm konstruiert sind und dadurch messbare klangliche Vorteile gegenüber herkömmlichen Möbeln bieten.</div>
+      </div>
+      <div class="item-checks">
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Ja</span></div>
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Nein</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-stripe"></div>
+      <div class="item-nr">10</div>
+      <div class="item-content">
+        <div class="item-frage">Verwenden Sie eine HiFi-Basis unter Ihren Geräten?</div>
+        <div class="item-tipp"><span>Tipp:</span> Geräteunterlagen und Absorberfüße entkoppeln vom Untergrund und reduzieren Körperschall.</div>
+      </div>
+      <div class="item-checks">
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Ja</span></div>
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Nein</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-stripe"></div>
+      <div class="item-nr">11</div>
+      <div class="item-content">
+        <div class="item-frage">Verwenden Sie einen Stromfilter für Ihre HiFi-Anlage?</div>
+        <div class="item-tipp"><span>Tipp:</span> Ein hochwertiger Netzfilter reduziert HF-Störungen aus dem Stromnetz spürbar.</div>
+      </div>
+      <div class="item-checks">
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Ja</span></div>
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Nein</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-stripe"></div>
+      <div class="item-nr">12</div>
+      <div class="item-content">
+        <div class="item-frage">Wie stark ist die elektromagnetische Strahlung (Handys, WLAN usw.) in Ihrem Musikzimmer?</div>
+        <div class="item-tipp"><span>Tipp:</span> WLAN-Router und Mobilgeräte möglichst aus dem Hörraum entfernen oder ausschalten.</div>
+      </div>
+      <div class="item-checks">
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Ja</span></div>
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Nein</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-stripe"></div>
+      <div class="item-nr">13</div>
+      <div class="item-content">
+        <div class="item-frage">Sind alle RCA / XLR / HDMI / COAX Ein- und Ausgänge abgedichtet?</div>
+        <div class="item-tipp"><span>Tipp:</span> Ungenutzte Eingänge und Ausgänge mit Abschlusskappen versehen – schützt vor Staub und HF-Einstreuung.</div>
+      </div>
+      <div class="item-checks">
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Ja</span></div>
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Nein</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-stripe"></div>
+      <div class="item-nr">14</div>
+      <div class="item-content">
+        <div class="item-frage">Benutzen Sie Standard-HiFi-Sicherungen in Ihren HiFi-Geräten?</div>
+        <div class="item-tipp"><span>Tipp:</span> Hochwertige HiFi-Sicherungen (z.B. Furutech, Synergistic Research) bestehen aus reinem Silber oder Kupfer und haben vergoldete Kontakte – das reduziert den Widerstand und kann zu besserer Dynamik, mehr Detailauflösung, tieferem Bass und geringerem Rauschen führen. Wichtig: Immer dieselbe Ampere-Zahl und Auslösecharakteristik (T = träge, F = flink) verwenden.</div>
+      </div>
+      <div class="item-checks">
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Ja</span></div>
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Nein</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-stripe"></div>
+      <div class="item-nr">15</div>
+      <div class="item-content">
+        <div class="item-frage">Sind Ihre Lautsprecher richtig vom Boden entkoppelt?</div>
+        <div class="item-tipp"><span>Tipp:</span> Mit Hilfe einer Steinplatte und/oder Spikes oder speziellen Absorbern können Lautsprecher vom Boden entkoppelt werden. Die richtige Art der Entkopplung kann großen Einfluss auf den Klang haben.</div>
+      </div>
+      <div class="item-checks">
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Ja</span></div>
+        <div class="check-option"><input type="checkbox" class="checkbox"><span class="check-label">Nein</span></div>
+      </div>
+    </div>
+
+  </div><!-- /checklist -->
+
+  <!-- Footer -->
+  <div class="footer">
+    <span class="footer-text">AudioPure – Curated HiFi Accessories</span>
+  </div>
+
+</div><!-- /page -->
+<div class="bottom-bar"></div>
+</body>
+</html>
