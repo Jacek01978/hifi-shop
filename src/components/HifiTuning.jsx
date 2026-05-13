@@ -144,19 +144,18 @@ export default function HifiTuning({ onNavigate }) {
           Tuning Tipp 2
         </h2>
 
-        {/* Bildergalerie – 4 Bilder nebeneinander */}
+        {/* Bildergalerie – 4 Bilder nebeneinander, gleiche Höhe */}
         <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
           {[
             { src: '/ar.jpeg',      alt: 'Analoger Ausgang' },
             { src: '/arc.jpeg',     alt: 'ARC Reinigung' },
             { src: '/cleaner.jpeg', alt: 'CD Reiniger' },
           ].map((img) => (
-            <div key={img.src} className="relative overflow-hidden">
+            <div key={img.src} className="relative overflow-hidden" style={{ height: '260px' }}>
               <img
                 src={img.src}
                 alt={img.alt}
-                className="w-full object-cover"
-                style={{ maxHeight: '340px', filter: 'brightness(0.95) contrast(1.05)', display: 'block' }}
+                style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(0.95) contrast(1.05)', display: 'block' }}
               />
               <div className="absolute inset-0 pointer-events-none" style={{
                 background: `
@@ -169,8 +168,8 @@ export default function HifiTuning({ onNavigate }) {
             </div>
           ))}
 
-          {/* CD-Matte – 90° gedreht */}
-          <div className="relative overflow-hidden" style={{ height: '340px' }}>
+          {/* CD-Matte – 90° gedreht, gleiche Höhe */}
+          <div className="relative overflow-hidden" style={{ height: '260px' }}>
             <img
               src="/cd-matte.jpg"
               alt="CD Matte"
@@ -178,9 +177,9 @@ export default function HifiTuning({ onNavigate }) {
                 position: 'absolute',
                 top: '50%',
                 left: '50%',
+                width: '260px',
+                height: 'auto',
                 transform: 'translate(-50%, -50%) rotate(90deg)',
-                height: '100%',
-                width: 'auto',
                 maxWidth: 'none',
                 filter: 'brightness(0.95) contrast(1.05)',
               }}
