@@ -249,7 +249,7 @@ export default function HifiTuning({ onNavigate }) {
         </div>
 
         <p className="font-mono text-[0.74rem] leading-[2] text-stone tracking-[0.03em] mt-8 border-l border-gold/20 pl-5">
-          Digitale Eingänge sollten ebenfalls abgeschlossen werden, falls diese nicht benutzt werden.
+          Digitale Eingänge/Ausgänge des Quellgerätes (z.B. CD-Spieler, Streamers usw.) oder des Verstärkers sollten ebenfalls abgeschlossen werden, falls diese nicht benutzt werden.
         </p>
 
         {/* Drittes Foto */}
