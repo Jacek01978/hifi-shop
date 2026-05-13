@@ -144,8 +144,8 @@ export default function HifiTuning({ onNavigate }) {
           Tuning Tipp 2
         </h2>
 
-        {/* Bildergalerie – 3 kleine Bilder */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        {/* Bildergalerie – 4 Bilder nebeneinander */}
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
           {[
             { src: '/ar.jpeg',      alt: 'Analoger Ausgang' },
             { src: '/arc.jpeg',     alt: 'ARC Reinigung' },
@@ -168,24 +168,20 @@ export default function HifiTuning({ onNavigate }) {
               }} />
             </div>
           ))}
-        </div>
 
-        {/* CD-Matte – größer dargestellt */}
-        <div className="relative overflow-hidden mt-4">
-          <img
-            src="/cd-matte.jpg"
-            alt="CD Matte"
-            className="w-full object-contain"
-            style={{ maxHeight: '520px', filter: 'brightness(0.95) contrast(1.05)', display: 'block' }}
-          />
-          <div className="absolute inset-0 pointer-events-none" style={{
-            background: `
-              linear-gradient(to bottom, rgba(8,8,8,0.4) 0%, transparent 15%),
-              linear-gradient(to top,    rgba(8,8,8,0.4) 0%, transparent 15%),
-              linear-gradient(to right,  rgba(8,8,8,0.4) 0%, transparent 10%),
-              linear-gradient(to left,   rgba(8,8,8,0.4) 0%, transparent 10%)
-            `
-          }} />
+          {/* CD-Matte – 90° gedreht, 50% kleiner */}
+          <div className="relative overflow-hidden flex items-center justify-center" style={{ minHeight: '340px' }}>
+            <img
+              src="/cd-matte.jpg"
+              alt="CD Matte"
+              style={{
+                transform: 'rotate(90deg) scale(0.5)',
+                transformOrigin: 'center center',
+                filter: 'brightness(0.95) contrast(1.05)',
+                maxWidth: '200%',
+              }}
+            />
+          </div>
         </div>
 
         {/* Text */}
