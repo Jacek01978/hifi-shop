@@ -310,6 +310,41 @@ export default function HifiTuning({ onNavigate }) {
         </div>
       </div>
 
+      {/* Tuning Tipp 5 */}
+      <div className="mt-16">
+        {/* Tipp Header */}
+        <div className="flex items-center gap-4 mb-6">
+          <span className="block w-8 h-px bg-gold/60" />
+          <span className="font-mono text-[0.52rem] tracking-[0.35em] uppercase text-gold/70">Tuning</span>
+        </div>
+        <h2 className="font-display text-[2rem] font-light text-cream tracking-[0.03em] mb-10">
+          Tuning Tipp 5
+        </h2>
+
+        {/* Foto */}
+        <div className="relative overflow-hidden">
+          <img
+            src="/netzleiste-ps.jpg"
+            alt="Netzleiste mit PS Audio Noise Harvester"
+            className="w-full object-cover"
+            style={{ maxHeight: '480px', filter: 'brightness(0.95) contrast(1.05)', display: 'block' }}
+          />
+          <div className="absolute inset-0 pointer-events-none" style={{
+            background: `
+              linear-gradient(to bottom, rgba(8,8,8,0.6) 0%, transparent 20%),
+              linear-gradient(to top,    rgba(8,8,8,0.7) 0%, transparent 25%),
+              linear-gradient(to right,  rgba(8,8,8,0.6) 0%, transparent 15%),
+              linear-gradient(to left,   rgba(8,8,8,0.6) 0%, transparent 15%)
+            `
+          }} />
+        </div>
+
+        {/* Text */}
+        <p className="font-mono text-[0.74rem] leading-[2] text-stone tracking-[0.03em] mt-8 border-l border-gold/20 pl-5">
+          Eine Netzleiste kann zusätzlich mit speziellen Geräten zur Filterung von Netzstörungen – PS Audio Noise Harvester – ausgestattet werden. Die blaue LED blinkt jedes Mal auf, wenn Netzstörungen aus dem System heraus genommen wurden. Je schneller sie blinkt, desto mehr Störungen sind im System.
+        </p>
+      </div>
+
     </section>
   )
 }
