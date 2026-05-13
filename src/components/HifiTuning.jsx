@@ -343,6 +343,9 @@ export default function HifiTuning({ onNavigate }) {
         <p className="font-mono text-[0.74rem] leading-[2] text-stone tracking-[0.03em] mt-8 border-l border-gold/20 pl-5">
           Eine Netzleiste kann zusätzlich mit speziellen Geräten zur Filterung von Netzstörungen – PS Audio Noise Harvester – ausgestattet werden. Die blaue LED blinkt jedes Mal auf, wenn Netzstörungen aus dem System heraus genommen wurden. Je schneller sie blinkt, desto mehr Störungen sind im System.
         </p>
+        <p className="font-mono text-[0.74rem] leading-[2] text-stone tracking-[0.03em] mt-4 border-l border-gold/20 pl-5">
+          Der creaktivSystems ci2p Power Plug-Optimizer Abschlußstecker informiert durch direkten Metallkontakt die gesamte Stromleitung. Dies führt zu einem deutlich verbesserten HF-Verhalten der gesamten Steckerleiste und der damit verbundenen Stromleitung.
+        </p>
       </div>
 
     </section>
