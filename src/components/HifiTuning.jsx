@@ -144,13 +144,12 @@ export default function HifiTuning({ onNavigate }) {
           Tuning Tipp 2
         </h2>
 
-        {/* Bildergalerie */}
-        <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
+        {/* Bildergalerie – 3 kleine Bilder */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {[
             { src: '/ar.jpeg',      alt: 'Analoger Ausgang' },
             { src: '/arc.jpeg',     alt: 'ARC Reinigung' },
             { src: '/cleaner.jpeg', alt: 'CD Reiniger' },
-            { src: '/cd-matte.jpg', alt: 'CD Matte' },
           ].map((img) => (
             <div key={img.src} className="relative overflow-hidden">
               <img
@@ -159,7 +158,6 @@ export default function HifiTuning({ onNavigate }) {
                 className="w-full object-cover"
                 style={{ maxHeight: '340px', filter: 'brightness(0.95) contrast(1.05)', display: 'block' }}
               />
-              {/* Vignette */}
               <div className="absolute inset-0 pointer-events-none" style={{
                 background: `
                   linear-gradient(to bottom, rgba(8,8,8,0.6) 0%, transparent 20%),
@@ -170,6 +168,24 @@ export default function HifiTuning({ onNavigate }) {
               }} />
             </div>
           ))}
+        </div>
+
+        {/* CD-Matte – größer dargestellt */}
+        <div className="relative overflow-hidden mt-4">
+          <img
+            src="/cd-matte.jpg"
+            alt="CD Matte"
+            className="w-full object-contain"
+            style={{ maxHeight: '520px', filter: 'brightness(0.95) contrast(1.05)', display: 'block' }}
+          />
+          <div className="absolute inset-0 pointer-events-none" style={{
+            background: `
+              linear-gradient(to bottom, rgba(8,8,8,0.4) 0%, transparent 15%),
+              linear-gradient(to top,    rgba(8,8,8,0.4) 0%, transparent 15%),
+              linear-gradient(to right,  rgba(8,8,8,0.4) 0%, transparent 10%),
+              linear-gradient(to left,   rgba(8,8,8,0.4) 0%, transparent 10%)
+            `
+          }} />
         </div>
 
         {/* Text */}
