@@ -169,16 +169,20 @@ export default function HifiTuning({ onNavigate }) {
             </div>
           ))}
 
-          {/* CD-Matte – 90° gedreht, 50% kleiner */}
-          <div className="relative overflow-hidden flex items-center justify-center" style={{ minHeight: '340px' }}>
+          {/* CD-Matte – 90° gedreht */}
+          <div className="relative overflow-hidden" style={{ height: '340px' }}>
             <img
               src="/cd-matte.jpg"
               alt="CD Matte"
               style={{
-                transform: 'rotate(90deg) scale(0.5)',
-                transformOrigin: 'center center',
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%) rotate(90deg)',
+                height: '100%',
+                width: 'auto',
+                maxWidth: 'none',
                 filter: 'brightness(0.95) contrast(1.05)',
-                maxWidth: '200%',
               }}
             />
           </div>
