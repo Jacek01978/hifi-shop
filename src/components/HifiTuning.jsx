@@ -145,11 +145,12 @@ export default function HifiTuning({ onNavigate }) {
         </h2>
 
         {/* Bildergalerie */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
           {[
             { src: '/ar.jpeg',      alt: 'Analoger Ausgang' },
             { src: '/arc.jpeg',     alt: 'ARC Reinigung' },
             { src: '/cleaner.jpeg', alt: 'CD Reiniger' },
+            { src: '/cd-matte.jpg', alt: 'CD Matte' },
           ].map((img) => (
             <div key={img.src} className="relative overflow-hidden">
               <img
