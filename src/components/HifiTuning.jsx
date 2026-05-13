@@ -190,6 +190,9 @@ export default function HifiTuning({ onNavigate }) {
         <p className="font-mono text-[0.74rem] leading-[2] text-stone tracking-[0.03em] mt-8 border-l border-gold/20 pl-5">
           Das Einlesen der Daten kann durch verschmutze CDs verfälscht werden. Deswegen sollten CDs vorher gereinigt werden.
         </p>
+        <p className="font-mono text-[0.74rem] leading-[2] text-stone tracking-[0.03em] mt-4 border-l border-gold/20 pl-5">
+          Das CD-Spray verbessert die Lesbarkeit der Daten auf der CD und die CD-Matte verringert ungewünschte Schwingungen der CD, sodass der Laser die Daten exakter auslesen kann. Die Fehlerkorrektur des CD-Spielers bzw. des Laufwerks wird durch diese Maßnahmen nicht mehr so stark beansprucht, was zu einem verbesserten Klangbild führen wird.
+        </p>
       </div>
 
       {/* Tuning Tipp 3 */}
