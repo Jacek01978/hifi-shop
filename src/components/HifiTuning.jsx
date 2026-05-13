@@ -150,7 +150,7 @@ export default function HifiTuning({ onNavigate }) {
             { src: '/ar.jpeg',      alt: 'Analoger Ausgang' },
             { src: '/cleaner.jpeg', alt: 'CD Reiniger' },
           ].map((img) => (
-            <div key={img.src} className="relative overflow-hidden" style={{ height: '260px' }}>
+            <div key={img.src} className="relative overflow-hidden" style={{ height: '320px' }}>
               <img
                 src={img.src}
                 alt={img.alt}
@@ -168,7 +168,7 @@ export default function HifiTuning({ onNavigate }) {
           ))}
 
           {/* CD-Matte – 90° gedreht, gleiche Höhe */}
-          <div className="relative overflow-hidden" style={{ height: '260px' }}>
+          <div className="relative overflow-hidden" style={{ height: '320px' }}>
             <img
               src="/cd-matte.jpg"
               alt="CD Matte"
@@ -176,7 +176,7 @@ export default function HifiTuning({ onNavigate }) {
                 position: 'absolute',
                 top: '50%',
                 left: '50%',
-                width: '260px',
+                width: '320px',
                 height: 'auto',
                 transform: 'translate(-50%, -50%) rotate(90deg)',
                 maxWidth: 'none',
