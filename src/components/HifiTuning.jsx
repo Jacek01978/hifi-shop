@@ -326,8 +326,8 @@ export default function HifiTuning({ onNavigate }) {
           <img
             src="/netzleiste-ps.jpg"
             alt="Netzleiste mit PS Audio Noise Harvester"
-            className="w-full object-cover"
-            style={{ maxHeight: '480px', filter: 'brightness(0.95) contrast(1.05)', display: 'block' }}
+            className="w-full object-contain"
+            style={{ filter: 'brightness(0.95) contrast(1.05)', display: 'block' }}
           />
           <div className="absolute inset-0 pointer-events-none" style={{
             background: `
