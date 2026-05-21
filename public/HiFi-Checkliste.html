@@ -168,9 +168,22 @@
   /* Print */
   @media print {
     * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
-    body { background: #0D0D0D !important; margin: 0 !important; }
-    .page { padding: 28px 42px; }
+    html, body {
+      background: #0D0D0D !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 210mm !important;
+      height: auto !important;
+      min-height: 0 !important;
+    }
+    .top-bar { page-break-after: avoid; }
+    .page { padding: 20px 40px; min-height: 0 !important; }
+    .header { page-break-after: avoid; }
+    .header-divider { page-break-after: avoid; }
+    .title-block { page-break-after: avoid; }
+    .item { page-break-inside: avoid; }
     .download-btn { display: none !important; }
+    .bottom-bar { page-break-before: avoid; }
     @page { size: A4; margin: 0; }
   }
 </style>
@@ -397,7 +410,7 @@
   </div><!-- /checklist -->
 
   <!-- Download Button -->
-  <button class="download-btn" onclick="window.print()">
+  <button class="download-btn" onclick="window.scrollTo(0,0); setTimeout(()=>window.print(),200)">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8">
       <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
       <polyline points="7 10 12 15 17 10"/>
