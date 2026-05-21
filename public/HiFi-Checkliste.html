@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>HiFi-Checkliste – AudioPure</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Mono:wght@300;400;500&display=swap');
 
@@ -168,10 +167,11 @@
 
   /* Print */
   @media print {
-    body { background: #0D0D0D !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-    .page { padding: 32px 55px; }
+    * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+    body { background: #0D0D0D !important; margin: 0 !important; }
+    .page { padding: 28px 42px; }
+    .download-btn { display: none !important; }
     @page { size: A4; margin: 0; }
-    .download-btn { display: none; }
   }
 </style>
 </head>
@@ -397,13 +397,13 @@
   </div><!-- /checklist -->
 
   <!-- Download Button -->
-  <button class="download-btn" onclick="downloadPDF()">
+  <button class="download-btn" onclick="window.print()">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8">
       <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
       <polyline points="7 10 12 15 17 10"/>
       <line x1="12" y1="15" x2="12" y2="3"/>
     </svg>
-    Als PDF herunterladen
+    Als PDF speichern
   </button>
 
   <!-- Footer -->
@@ -413,32 +413,5 @@
 
 </div><!-- /page -->
 <div class="bottom-bar"></div>
-<script>
-  function downloadPDF() {
-    const btn = document.querySelector('.download-btn');
-    btn.style.display = 'none';
-
-    const element = document.body;
-    const opt = {
-      margin:       0,
-      filename:     'HiFi-Checkliste-AudioPure.pdf',
-      image:        { type: 'jpeg', quality: 0.98 },
-      html2canvas:  {
-        scale:       2,
-        useCORS:     true,
-        backgroundColor: '#0D0D0D',
-        windowWidth: 794,
-        windowHeight: 1123,
-        scrollX:     0,
-        scrollY:     -window.scrollY
-      },
-      jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
-    };
-
-    html2pdf().set(opt).from(element).save().then(() => {
-      btn.style.display = 'flex';
-    });
-  }
-</script>
 </body>
 </html>
