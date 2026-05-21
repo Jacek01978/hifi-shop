@@ -423,7 +423,15 @@
       margin:       0,
       filename:     'HiFi-Checkliste-AudioPure.pdf',
       image:        { type: 'jpeg', quality: 0.98 },
-      html2canvas:  { scale: 2, useCORS: true, backgroundColor: '#0D0D0D' },
+      html2canvas:  {
+        scale:       2,
+        useCORS:     true,
+        backgroundColor: '#0D0D0D',
+        windowWidth: 794,
+        windowHeight: 1123,
+        scrollX:     0,
+        scrollY:     -window.scrollY
+      },
       jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
     };
 
