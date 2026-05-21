@@ -168,7 +168,12 @@
   /* Print */
   @media print {
     * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
-    html, body {
+    html {
+      background: #0D0D0D !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    body {
       background: #0D0D0D !important;
       margin: 0 !important;
       padding: 0 !important;
@@ -182,7 +187,9 @@
     .header-divider { page-break-after: avoid; }
     .title-block { page-break-after: avoid; }
     .item { page-break-inside: avoid; }
-    .download-btn { display: none !important; }
+    .subtitle { display: none !important; }
+    .download-btn, button { display: none !important; visibility: hidden !important; }
+    .footer { margin-top: 10px; }
     .bottom-bar { page-break-before: avoid; }
     @page { size: A4; margin: 0; }
   }
