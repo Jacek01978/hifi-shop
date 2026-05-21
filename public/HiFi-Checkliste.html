@@ -168,12 +168,7 @@
   /* Print */
   @media print {
     * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
-    html {
-      background: #0D0D0D !important;
-      margin: 0 !important;
-      padding: 0 !important;
-    }
-    body {
+    html, body {
       background: #0D0D0D !important;
       margin: 0 !important;
       padding: 0 !important;
@@ -181,16 +176,22 @@
       height: auto !important;
       min-height: 0 !important;
     }
-    .top-bar { page-break-after: avoid; }
-    .page { padding: 20px 40px; min-height: 0 !important; }
-    .header { page-break-after: avoid; }
+    .top-bar { page-break-after: avoid; background: #C9A84C !important; }
+    .page {
+      padding: 20px 40px;
+      min-height: 0 !important;
+      background: #0D0D0D !important;
+    }
+    .header { page-break-after: avoid; background: #0D0D0D !important; }
     .header-divider { page-break-after: avoid; }
-    .title-block { page-break-after: avoid; }
+    .category-label { background: #0D0D0D !important; }
+    .title-block { page-break-after: avoid; background: #0D0D0D !important; }
+    #subtitle-text { display: none !important; }
+    .section-divider { page-break-after: avoid; }
     .item { page-break-inside: avoid; }
-    .subtitle { display: none !important; }
     .download-btn, button { display: none !important; visibility: hidden !important; }
-    .footer { margin-top: 10px; }
-    .bottom-bar { page-break-before: avoid; }
+    .footer { margin-top: 10px; background: #0D0D0D !important; }
+    .bottom-bar { page-break-before: avoid; background: #C9A84C !important; }
     @page { size: A4; margin: 0; }
   }
 </style>
@@ -212,7 +213,7 @@
   <div class="title-block">
     <div class="title-main">HiFi-<span class="title-accent">Checkliste</span></div>
     <div class="title-deco"></div>
-    <div class="subtitle">Seit 35 Jahren beschäftige ich mich mit dem Thema HiFi und habe eine Menge Erfahrung gesammelt, von der Sie vielleicht profitieren können! Gehen Sie diese Punkte systematisch durch, um das Maximum aus Ihrer HiFi-Anlage herauszuholen.</div>
+    <div class="subtitle" id="subtitle-text">Seit 35 Jahren beschäftige ich mich mit dem Thema HiFi und habe eine Menge Erfahrung gesammelt, von der Sie vielleicht profitieren können! Gehen Sie diese Punkte systematisch durch, um das Maximum aus Ihrer HiFi-Anlage herauszuholen.</div>
   </div>
   <div class="section-divider"></div>
 
