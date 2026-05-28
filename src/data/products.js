@@ -482,6 +482,16 @@ export const PRODUCTS = [
   },
 
   {
+    id: 54, cat: 'netzteile',
+    icon: '🔋',
+    iconComponent: 'PowerCableIcon',
+    name: 'SBooster BOTW Power & Precision ECO MK2 Linear-Netzteil 12V',
+    desc: 'Das SBooster BOTW P&P ECO MK2 ist ein audiophiles Linear-Netzteil mit 12V Ausgang. Außerordentlich rauscharm und präzise geregelt – spürbare Klangverbesserung für Streamer, DACs, Netzwerkplayer und andere 12V-HiFi-Geräte gegenüber Standard-Schaltnetzteilen.',
+    price: 'ab 379,–',
+    href: `https://www.amazon.de/SBooster-BOTW-Power-Precision-Linear-Netzteil/dp/B07GXYT69K/ref=sr_1_35?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=16E0HKVFK9BRZ&dib=eyJ2IjoiMSJ9.r6qPAfZGp7AEKneSwTbiZfkfpy0D2cIVNTMoLJLoPIJaZQVp9oK-U9M9Gkk6R575EvCXGAOYklPGgHOMgjtwlNudXQM1aSn-plEEmYlNVXMuWRLw7i6kKikkW4qTRrTHLKytG2cjU-qz8Y9eFNuDvDIpPNbJBaxKBPZp5tXnno0qQ2HBF70ZCNxrDXXIf2lHal_82Ll0xi0dxsGBBeOPaDwzrqfY1GixTKWcISDmySvO_VmdTmZVAZTNLQFDULUrm-RSofE-SqSLTJScU9U8IyJ_Aamv0Y7wEyiLJVXwZ98.tZkfadk_63dROSDutibfkFfCBCpqEWWwjKTTTG2Vj6A&dib_tag=se&keywords=lineares+netzteil&qid=1779991770&sprefix=lineares+netzte%2Caps%2C1128&sr=8-35&tag=${TAG}`,
+  },
+
+  {
     id: 53, cat: 'netzteile',
     icon: '🔋',
     iconComponent: 'PowerCableIcon',
