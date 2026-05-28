@@ -15,6 +15,7 @@ export const CATEGORIES = [
   { id: 'netzleisten',    label: 'Netzleisten' },
   { id: 'phasendetektor', label: 'Phasendetektor' },
   { id: 'usb',            label: 'USB-Zubehör' },
+  { id: 'fernbedienung', label: 'Fernbedienung' },
 ]
 
 export const KABEL_SUBCATEGORIES = [
@@ -41,6 +42,7 @@ export const ACCENT = {
   netzleisten:    'text-orange-300 border-orange-300',
   phasendetektor: 'text-yellow-500 border-yellow-500',
   usb:            'text-amber-400 border-amber-400',
+  fernbedienung:  'text-sky-400 border-sky-400',
 }
 
 export const ACCENT_BAR = {
@@ -51,6 +53,7 @@ export const ACCENT_BAR = {
   netzleisten:    'bg-orange-300',
   phasendetektor: 'bg-yellow-500',
   usb:            'bg-amber-400',
+  fernbedienung:  'bg-sky-400',
 }
 
 export const PRODUCTS = [
@@ -493,6 +496,17 @@ export const PRODUCTS = [
     desc: 'Das QED QE6601 ist ein hochwertiges optisches Digitalkabel (TOSLINK) aus der Performance-Serie. Graphit-Außenmantel, hohe Bandbreite und präzise Stecker für eine verlustfreie digitale Signalübertragung zwischen CD-Spieler, Streamer und DAC.',
     price: '69,95 €',
     href: 'https://www.soundimports.eu/de/qed-qe6601.html',
+  },
+
+  // ── FERNBEDIENUNG ──
+  {
+    id: 51, cat: 'fernbedienung',
+    icon: '📡',
+    iconComponent: 'PowerCableIcon',
+    name: 'Universelle Smart-Home-IR-Fernbedienung IR1',
+    desc: 'Die IMOU IR1 ist eine universelle Smart-Home-Infrarot-Fernbedienung, die bis zu 6 Geräte gleichzeitig steuert. Kompatibel mit fast allen HiFi- und Heimkino-Geräten – Verstärker, Receiver, TV, Streamer. Einfache Einrichtung per App, kein Hub erforderlich.',
+    price: 'ab 14,99 €',
+    href: 'https://store.imou.com/de-de/products/ir-remote-control',
   },
 
   {
