@@ -23,6 +23,7 @@ export const KABEL_SUBCATEGORIES = [
   { id: 'xlr',          label: 'XLR' },
   { id: 'netz',         label: 'Netzkabel' },
   { id: 'lautsprecher', label: 'Lautsprecherkabel' },
+  { id: 'digital',      label: 'Digitalkabel' },
 ]
 
 export const REINIGUNG_SUBCATEGORIES = [
@@ -461,5 +462,36 @@ export const PRODUCTS = [
     desc: 'Antistatische Carbonfaserbürste für Vinyl-Nadeln. Schonende Entfernung von Staub und Partikeln, verlängert die Lebensdauer von Tonabnehmer und Platte.',
     price: 'ab 9,–',
     href: amazon('tonabnehmer nadelbürste carbon vinyl antistatisch'),
+  },
+
+  // ── ISOTEK / QED (soundimports.eu) ──
+  {
+    id: 47, cat: 'kabel', subcat: 'netz', groupId: 'netz',
+    icon: '⚡',
+    iconComponent: 'PowerCableIcon',
+    name: 'IsoTek EVO3 Premier Netzkabel 1,5m C13',
+    desc: 'Das IsoTek EVO3 Premier ist ein hochwertiges audiophiles Netzkabel mit verdrillten OFC-Leitern, Schirmgeflecht und einem C13-Kaltgerätestecker. Reduziert Netzrauschen und Störungen spürbar – ideal für Verstärker, Vorverstärker und Quellgeräte.',
+    price: '199,95 €',
+    href: 'https://www.soundimports.eu/de/isotek-i101013.html',
+  },
+
+  {
+    id: 48, cat: 'kabel', subcat: 'netz', groupId: 'netz',
+    icon: '⚡',
+    iconComponent: 'PowerCableIcon',
+    name: 'IsoTek EVO3 Initium Netzkabel 1,5m C13',
+    desc: 'Das IsoTek EVO3 Initium ist der audiophile Einstieg in die EVO3-Serie. Mit verdrillten OFC-Leitern und C13-Kaltgerätestecker sorgt es für eine merklich sauberere Stromversorgung gegenüber Standard-Netzkabeln.',
+    price: '129,95 €',
+    href: 'https://www.soundimports.eu/de/isotek-i101113.html',
+  },
+
+  {
+    id: 49, cat: 'kabel', subcat: 'digital', groupId: 'digital',
+    icon: '💡',
+    iconComponent: 'CinchCableIcon',
+    name: 'QED QE6601 Performance Optisches Graphit-Kabel',
+    desc: 'Das QED QE6601 ist ein hochwertiges optisches Digitalkabel (TOSLINK) aus der Performance-Serie. Graphit-Außenmantel, hohe Bandbreite und präzise Stecker für eine verlustfreie digitale Signalübertragung zwischen CD-Spieler, Streamer und DAC.',
+    price: '69,95 €',
+    href: 'https://www.soundimports.eu/de/qed-qe6601.html',
   },
 ]
