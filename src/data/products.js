@@ -481,6 +481,16 @@ export const PRODUCTS = [
     href: `https://www.amazon.de/Keces-P-8-Netzteil-Dual-Typ/dp/B07TLYRVTZ/ref=sr_1_4?crid=16CF593E9WXQA&dib=eyJ2IjoiMSJ9.DaYhwP_6lWfDrcPE_EZdn9cTUiqQQmNYHcBq5rrvtuUVbCnyLkNjtI9TdJHJWj-dCUc_9EPNX_EwcWhaLFtGlN88AmKld3Nyrtx3FHU-c-CFVNuLjbFzHhj_nqsLnBs20qt350Ac8Jp6l-hogCbSAES88THQTUmwTGjspUxlHYdzps31JFaNUeWqgJ61Qbi_oczfxW81QIEzouEW7q4kO24_gfBtOTmbm0ZppixauHN8m8OEND6MgRrR-ayK_2ngo8gigHTcvvLdem98tB-kTEcQyKkI8Kv4NjS3-x7eEdE.vqfzPTVIwbs2E3wOYTb9zzQruwPGYW-KcCMPlH_smQ8&dib_tag=se&keywords=keces+netzteil+12v&qid=1779991202&sprefix=keces+net%2Caps%2C156&sr=8-4&tag=${TAG}`,
   },
 
+  {
+    id: 53, cat: 'netzteile',
+    icon: '🔋',
+    iconComponent: 'PowerCableIcon',
+    name: 'Topping P50 Lineares Netzteil 2×5V + 1×15V',
+    desc: 'Das Topping P50 ist ein kompaktes Linear-Netzteil mit drei unabhängigen Ausgängen (2×5V + 1×15V). Extrem rauscharme Stromversorgung für DACs, Kopfhörerverstärker und Streamer – ideal als Upgrade für Topping- und andere HiFi-Komponenten.',
+    price: 'ab 129,–',
+    href: `https://www.amazon.de/dp/B0BFL5WNTX/ref=sspa_dk_hqp_detail_aax_0?aref=9OAiwnW9zl&sp_csd=d2lkZ2V0TmFtZT1zcF9ocXBfc2hhcmVk&th=1&tag=${TAG}`,
+  },
+
   // ── ISOTEK / QED (soundimports.eu) ──
   {
     id: 47, cat: 'kabel', subcat: 'netz', groupId: 'netz',
