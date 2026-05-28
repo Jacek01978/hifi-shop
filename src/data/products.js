@@ -16,6 +16,7 @@ export const CATEGORIES = [
   { id: 'phasendetektor', label: 'Phasendetektor' },
   { id: 'usb',            label: 'USB-Zubehör' },
   { id: 'fernbedienung', label: 'Fernbedienung' },
+  { id: 'netzteile',     label: 'Netzteile' },
 ]
 
 export const KABEL_SUBCATEGORIES = [
@@ -43,6 +44,7 @@ export const ACCENT = {
   phasendetektor: 'text-yellow-500 border-yellow-500',
   usb:            'text-amber-400 border-amber-400',
   fernbedienung:  'text-sky-400 border-sky-400',
+  netzteile:      'text-emerald-400 border-emerald-400',
 }
 
 export const ACCENT_BAR = {
@@ -54,6 +56,7 @@ export const ACCENT_BAR = {
   phasendetektor: 'bg-yellow-500',
   usb:            'bg-amber-400',
   fernbedienung:  'bg-sky-400',
+  netzteile:      'bg-emerald-400',
 }
 
 export const PRODUCTS = [
@@ -465,6 +468,17 @@ export const PRODUCTS = [
     desc: 'Antistatische Carbonfaserbürste für Vinyl-Nadeln. Schonende Entfernung von Staub und Partikeln, verlängert die Lebensdauer von Tonabnehmer und Platte.',
     price: 'ab 9,–',
     href: amazon('tonabnehmer nadelbürste carbon vinyl antistatisch'),
+  },
+
+  // ── NETZTEILE ──
+  {
+    id: 52, cat: 'netzteile',
+    icon: '🔋',
+    iconComponent: 'PowerCableIcon',
+    name: 'Keces P8 Dual DC Netzteil – Typ 2 (9V/12V + 12V/15V)',
+    desc: 'Das Keces P8 ist ein audiophiles Linear-Netzteil mit zwei unabhängigen DC-Ausgängen (Typ 2: 9V/12V + 12V/15V). Extrem rauscharme Stromversorgung für DACs, Streamer, Vorverstärker und andere empfindliche HiFi-Komponenten – deutlich saubererer Klang gegenüber Schaltnetzteilen.',
+    price: 'Preis auf Amazon',
+    href: `https://www.amazon.de/Keces-P-8-Netzteil-Dual-Typ/dp/B07TLYRVTZ/ref=sr_1_4?crid=16CF593E9WXQA&dib=eyJ2IjoiMSJ9.DaYhwP_6lWfDrcPE_EZdn9cTUiqQQmNYHcBq5rrvtuUVbCnyLkNjtI9TdJHJWj-dCUc_9EPNX_EwcWhaLFtGlN88AmKld3Nyrtx3FHU-c-CFVNuLjbFzHhj_nqsLnBs20qt350Ac8Jp6l-hogCbSAES88THQTUmwTGjspUxlHYdzps31JFaNUeWqgJ61Qbi_oczfxW81QIEzouEW7q4kO24_gfBtOTmbm0ZppixauHN8m8OEND6MgRrR-ayK_2ngo8gigHTcvvLdem98tB-kTEcQyKkI8Kv4NjS3-x7eEdE.vqfzPTVIwbs2E3wOYTb9zzQruwPGYW-KcCMPlH_smQ8&dib_tag=se&keywords=keces+netzteil+12v&qid=1779991202&sprefix=keces+net%2Caps%2C156&sr=8-4&tag=${TAG}`,
   },
 
   // ── ISOTEK / QED (soundimports.eu) ──
