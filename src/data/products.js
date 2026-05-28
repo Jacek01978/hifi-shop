@@ -494,4 +494,14 @@ export const PRODUCTS = [
     price: '69,95 €',
     href: 'https://www.soundimports.eu/de/qed-qe6601.html',
   },
+
+  {
+    id: 50, cat: 'kabel', subcat: 'digital', groupId: 'digital',
+    icon: '🖥️',
+    iconComponent: 'CinchCableIcon',
+    name: 'QED QE8164 Connect HDMI Kabel',
+    desc: 'Das QED QE8164 Connect ist ein hochwertiges HDMI-Kabel für verlustfreie Audio- und Videoübertragung. Vergoldete Stecker, robuste Abschirmung und präzise Kontaktierung – ideal für HiFi-Verstärker, AV-Receiver, Streamer und TV mit HDMI-Anschluss.',
+    price: 'ab 18,95 €',
+    href: 'https://www.soundimports.eu/de/qed-qe8164.html',
+  },
 ]
