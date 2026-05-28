@@ -1,6 +1,6 @@
 // ─── AFFILIATE TAG ────────────────────────────────────────────────────────────
 // Ersetze "DEIN-TAG-21" mit deinem echten Amazon PartnerNet-Tag
-const TAG = 'DEIN-TAG-21'
+const TAG = 'hifisok-21'
 
 const amazon = (query) =>
   `https://www.amazon.de/s?k=${encodeURIComponent(query)}&tag=${TAG}`
