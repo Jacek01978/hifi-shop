@@ -415,6 +415,16 @@ export const PRODUCTS = [
   },
 
   {
+    id: 57, cat: 'absorber',
+    icon: '🟢',
+    iconComponent: 'DeviceFeetIcon',
+    name: 'Sorbothane Vibration Isolation Disk',
+    desc: 'Hochwertige Sorbothane-Entkopplungsscheiben zur effektiven Vibrationsisolation von HiFi-Geräten. Das visko-elastische Sorbothane-Material absorbiert Körperschall und Schwingungen zuverlässig – ideal unter Verstärkern, CD-Spielern und Plattenspielern für eine sauberere Klangwiedergabe.',
+    price: 'ab 43,–',
+    href: `https://www.amazon.de/Sorbothane-Vibration-Isolation-Disk-Thick/dp/B0042U8P9C/ref=pd_rhf_dp_s_ci_mcx_mr__d_sccl_2_1/260-8413956-1206734?pd_rd_w=zKnC3&content-id=amzn1.sym.ed004a83-d00a-4170-b67f-a2c1d1da315c:amzn1.symc.eceb4a60-6482-4142-ae09-dd50a19cf686&pf_rd_p=ed004a83-d00a-4170-b67f-a2c1d1da315c&pf_rd_r=C2C82E8J55D720XZAZ7N&pd_rd_wg=1Hbfq&pd_rd_r=1bf91e2c-fd7e-4a8f-be1d-85f1b90b768d&pd_rd_i=B0042U8P9C&psc=1&tag=${TAG}`,
+  },
+
+  {
     id: 56, cat: 'absorber',
     icon: '🟢',
     iconComponent: 'DeviceFeetIcon',
