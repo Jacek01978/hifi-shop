@@ -415,6 +415,16 @@ export const PRODUCTS = [
   },
 
   {
+    id: 56, cat: 'absorber',
+    icon: '🟢',
+    iconComponent: 'DeviceFeetIcon',
+    name: 'AudioQuest Sorbothane Sheet – Dämpfungsmatte',
+    desc: 'Die AudioQuest Sorbothane Sheet ist eine hochwertige Dämpfungsmatte aus visko-elastischem Sorbothane-Material. Effektiv gegen Körperschall und Vibrationen – einfach unter Verstärker, CD-Spieler oder Plattenspieler legen für eine ruhigere, detailreichere Klangwiedergabe.',
+    price: 'ab 55,–',
+    href: 'https://www.hifiklubben.de/audioquest-sorbothane-sheet-damping-feets/aqsorbothanesheet/',
+  },
+
+  {
     id: 55, cat: 'absorber',
     icon: '💿',
     iconComponent: 'DeviceFeetIcon',
