@@ -414,6 +414,16 @@ export const PRODUCTS = [
     href: 'https://www.amazon.de/Audio-Selection-Disc-8er-Farbe/dp/B00H8OBOCY/ref=pd_day0_d_sccl_2_13/260-8413956-1206734?pd_rd_w=4dXR5&content-id=amzn1.sym.3c058bef-4019-49f7-9d6d-aa05b8240803&pf_rd_p=3c058bef-4019-49f7-9d6d-aa05b8240803&pf_rd_r=ZFCFPZWZEZGRZJ4R5FRQ&pd_rd_wg=rofHk&pd_rd_r=781d0a5d-d942-41cd-aae7-26d3bb06ad76&pd_rd_i=B00H8OBOCY&psc=1',
   },
 
+  {
+    id: 55, cat: 'absorber',
+    icon: '💿',
+    iconComponent: 'DeviceFeetIcon',
+    name: 'CD-Tuning-Pad aus Kohlefaser',
+    desc: 'Hochwertiges CD-Tuning-Pad aus Kohlefaser zur Reduzierung von Hochfrequenzgraten und Resonanzen. Wird auf die CD aufgelegt und dämpft Vibrationen während des Lesevorgangs – für eine präzisere Signalabtastung und spürbar verbesserte Klangqualität.',
+    price: 'ab 9,–',
+    href: `https://www.amazon.de/CD-Tuning-Pad-Reduzierung-Hochfrequenzgraten-Signalgenauigkeit-Klangqualit%C3%A4t-SILVER/dp/B0DMW122C2/ref=dp-upsell-widget_d_sccl_3_1/260-8413956-1206734?pd_rd_w=fT36D&content-id=amzn1.sym.a5360d69-1dd8-4402-89fe-f853c93e1259&pf_rd_p=a5360d69-1dd8-4402-89fe-f853c93e1259&pf_rd_r=9XNCJBPSQ483ANMQHWZP&pd_rd_wg=nINCj&pd_rd_r=a4d4dfcc-0190-4e32-9ca1-4d2bb0dd8dfc&pd_rd_i=B0DMW122C2&th=1&tag=${TAG}`,
+  },
+
   // ── REINIGUNG ──
   {
     id: 45, cat: 'reinigung', subcat: 'reiniger', groupId: 'reinigung',
