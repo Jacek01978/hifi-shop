@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import IntroSection from './components/IntroSection'
 import ProductGrid from './components/ProductGrid'
 import AffiliateDisclaimer from './components/AffiliateDisclaimer'
 import HifiTipps from './components/HifiTipps'
@@ -21,6 +22,7 @@ export default function App() {
         {page === 'shop' ? (
           <>
             <Hero onNavigate={setPage} />
+            <IntroSection />
             <ProductGrid />
             <AffiliateDisclaimer />
           </>
