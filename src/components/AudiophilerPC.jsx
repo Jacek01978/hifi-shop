@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 const COMPONENTS = [
   {
@@ -34,7 +34,43 @@ const COMPONENTS = [
 ]
 
 export default function AudiophilerPC({ onNavigate }) {
+  const [lightbox, setLightbox] = useState(null) // { src, alt }
+
+  useEffect(() => {
+    const onKey = (e) => { if (e.key === 'Escape') setLightbox(null) }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [])
+
+  const openLightbox = (src, alt) => setLightbox({ src, alt })
+
   return (
+    <>
+    {/* Lightbox Overlay */}
+    {lightbox && (
+      <div
+        className="fixed inset-0 z-50 flex items-center justify-center"
+        style={{ background: 'rgba(0,0,0,0.92)' }}
+        onClick={() => setLightbox(null)}
+      >
+        <button
+          onClick={() => setLightbox(null)}
+          className="absolute top-5 right-6 text-white/70 hover:text-white font-mono text-[0.7rem] tracking-[0.2em] uppercase bg-transparent border border-white/20 px-3 py-1.5 transition-colors"
+        >
+          ✕ Schließen
+        </button>
+        <img
+          src={lightbox.src}
+          alt={lightbox.alt}
+          className="max-w-[92vw] max-h-[88vh] object-contain shadow-2xl"
+          onClick={(e) => e.stopPropagation()}
+        />
+        <p className="absolute bottom-5 font-mono text-[0.65rem] tracking-[0.15em] text-white/40 uppercase">
+          {lightbox.alt}
+        </p>
+      </div>
+    )}
+    <div>
     <article className="min-h-screen pb-24">
 
       {/* Hero-Bild */}
@@ -103,8 +139,18 @@ export default function AudiophilerPC({ onNavigate }) {
               { src: '/AudiophilerPC.jpg',  alt: 'Audiophiler PC – Übersicht alle Komponenten' },
               { src: '/AudiophilerPC1.jpg', alt: 'Audiophiler PC – Detailansicht' },
             ].map(({ src, alt }) => (
-              <div key={src} className="overflow-hidden border border-obsidian-200" style={{ height: '280px' }}>
-                <img src={src} alt={alt} className="w-full h-full object-cover hover:scale-[1.03] transition-transform duration-500" />
+              <div
+                key={src}
+                className="overflow-hidden border border-obsidian-200 cursor-zoom-in relative group"
+                style={{ height: '280px' }}
+                onClick={() => openLightbox(src, alt)}
+              >
+                <img src={src} alt={alt} className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ background: 'rgba(0,0,0,0.25)' }}>
+                  <span className="font-mono text-[0.6rem] tracking-[0.25em] uppercase text-white border border-white/50 px-3 py-1.5">
+                    🔍 Vergrößern
+                  </span>
+                </div>
               </div>
             ))}
           </div>
@@ -171,8 +217,18 @@ export default function AudiophilerPC({ onNavigate }) {
               { src: '/USB-Digital-Audio.jpg',  alt: 'Douk Audio U2 Pro USB Interface – Rückseite' },
               { src: '/USB-Digital-Audio1.jpg', alt: 'Douk Audio U2 Pro USB Interface – Detail' },
             ].map(({ src, alt }) => (
-              <div key={src} className="overflow-hidden border border-obsidian-200" style={{ height: '260px' }}>
-                <img src={src} alt={alt} className="w-full h-full object-cover hover:scale-[1.03] transition-transform duration-500" />
+              <div
+                key={src}
+                className="overflow-hidden border border-obsidian-200 cursor-zoom-in relative group"
+                style={{ height: '260px' }}
+                onClick={() => openLightbox(src, alt)}
+              >
+                <img src={src} alt={alt} className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ background: 'rgba(0,0,0,0.25)' }}>
+                  <span className="font-mono text-[0.6rem] tracking-[0.25em] uppercase text-white border border-white/50 px-3 py-1.5">
+                    🔍 Vergrößern
+                  </span>
+                </div>
               </div>
             ))}
           </div>
@@ -234,8 +290,16 @@ export default function AudiophilerPC({ onNavigate }) {
               { src: '/Chord.jpg',   alt: 'Chord Electronics' },
               { src: '/chord1.jpg',  alt: 'Chord DAC Detail' },
             ].map(({ src, alt }) => (
-              <div key={src} className="overflow-hidden border border-obsidian-200" style={{ height: '140px' }}>
-                <img src={src} alt={alt} className="w-full h-full object-cover hover:scale-[1.05] transition-transform duration-500" />
+              <div
+                key={src}
+                className="overflow-hidden border border-obsidian-200 cursor-zoom-in relative group"
+                style={{ height: '140px' }}
+                onClick={() => openLightbox(src, alt)}
+              >
+                <img src={src} alt={alt} className="w-full h-full object-cover group-hover:scale-[1.05] transition-transform duration-500" />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ background: 'rgba(0,0,0,0.3)' }}>
+                  <span className="text-white text-lg">🔍</span>
+                </div>
               </div>
             ))}
           </div>
@@ -307,5 +371,7 @@ export default function AudiophilerPC({ onNavigate }) {
         </div>
       </div>
     </article>
+    </div>
+    </>
   )
 }
