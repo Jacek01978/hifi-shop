@@ -206,6 +206,44 @@ export default function AudiophilerPC({ onNavigate }) {
           </div>
         </section>
 
+        {/* Topping Netzteil – Foto */}
+        <section className="py-10 border-b border-obsidian-200">
+          <div className="flex items-center gap-4 mb-6">
+            <span className="block w-6 h-px bg-gold/60" />
+            <span className="font-mono text-[0.6rem] tracking-[0.3em] uppercase text-gold/70">Topping Lineares 5V-Netzteil</span>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-start">
+            <div
+              className="overflow-hidden border border-obsidian-200 cursor-zoom-in relative group"
+              style={{ height: '300px' }}
+              onClick={() => openLightbox('/Topping.jpg', 'Topping Lineares 5V-Netzteil – Rückseite mit AC-Eingang und DC-Ausgängen')}
+            >
+              <img
+                src="/Topping.jpg"
+                alt="Topping Lineares 5V-Netzteil"
+                className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
+              />
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ background: 'rgba(0,0,0,0.25)' }}>
+                <span className="font-mono text-[0.6rem] tracking-[0.25em] uppercase text-white border border-white/50 px-3 py-1.5">
+                  🔍 Vergrößern
+                </span>
+              </div>
+            </div>
+            <div className="font-mono text-[0.8rem] leading-[2] text-stone tracking-[0.02em] py-2">
+              <p>
+                Das <strong className="text-cream font-medium">Topping Linearnetzteil</strong> versorgt
+                das Douk Audio U2 Pro Interface mit sauberem 5V-Gleichstrom über den USB-Ausgang
+                (OUTPUT1: DC 5V/1A×2). Ein zweiter Ausgang (OUTPUT2: DC 15V/1A) steht für weitere
+                Komponenten zur Verfügung.
+              </p>
+              <p className="mt-4">
+                Der C14-Kaltgeräteeingang (AC INPUT) ermöglicht den Anschluss eines audiophilen
+                Netzkabels – ein weiterer Tuning-Schritt für noch saubereren Strom.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* USB Digital Interface – Fotos */}
         <section className="py-10 border-b border-obsidian-200">
           <div className="flex items-center gap-4 mb-6">
