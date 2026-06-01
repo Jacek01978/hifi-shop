@@ -321,12 +321,13 @@ export default function AudiophilerPC({ onNavigate }) {
             Wer noch weiter gehen möchte, findet in dedizierten Audio-Streamern und High-End-USB-Interfaces
             die Königsklasse des digitalen Transports:
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
             {[
               { src: '/Lumin.jpg',   alt: 'Lumin Streamer' },
               { src: '/Mutec.jpg',   alt: 'Mutec USB Interface' },
               { src: '/Chord.jpg',   alt: 'Chord Electronics' },
               { src: '/chord1.jpg',  alt: 'Chord DAC Detail' },
+              { src: '/Keces.jpg',   alt: 'Keces P8 Ultra Low Noise Linear Power Supply' },
             ].map(({ src, alt }) => (
               <div
                 key={src}
@@ -342,7 +343,7 @@ export default function AudiophilerPC({ onNavigate }) {
             ))}
           </div>
           <p className="font-mono text-[0.72rem] text-muted mt-3 leading-relaxed">
-            Lumin Streamer, Mutec USB-Interface, Chord Electronics – High-End Referenzgeräte für den anspruchsvollen Musikhörer.
+            Lumin Streamer, Mutec USB-Interface, Chord Electronics, Keces P8 Ultra Low Noise Linear Power Supply – High-End Referenzgeräte für den anspruchsvollen Musikhörer.
           </p>
         </section>
 
