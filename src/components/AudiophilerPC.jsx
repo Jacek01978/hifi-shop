@@ -324,10 +324,10 @@ export default function AudiophilerPC({ onNavigate }) {
           <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
             {[
               { src: '/Lumin.jpg',   alt: 'Lumin Streamer' },
+              { src: '/Keces.jpg',   alt: 'Keces P8 Ultra Low Noise Linear Power Supply' },
               { src: '/Mutec.jpg',   alt: 'Mutec USB Interface' },
               { src: '/Chord.jpg',   alt: 'Chord Electronics' },
               { src: '/chord1.jpg',  alt: 'Chord DAC Detail' },
-              { src: '/Keces.jpg',   alt: 'Keces P8 Ultra Low Noise Linear Power Supply' },
             ].map(({ src, alt }) => (
               <div
                 key={src}
