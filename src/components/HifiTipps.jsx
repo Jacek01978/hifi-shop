@@ -212,7 +212,7 @@ Regelmäßige Pflege erhält nicht nur den Klang – sie verlängert die Lebensd
 
 const CATEGORIES = ['Alle', ...new Set(TIPPS.map(t => t.category))]
 
-export default function HifiTipps() {
+export default function HifiTipps({ onNavigate }) {
   const [activeCategory, setActiveCategory] = useState('Alle')
   const [openId, setOpenId] = useState(null)
   const sectionRef = useRef(null)
@@ -245,6 +245,35 @@ export default function HifiTipps() {
           Praxiswissen für audiophile Ansprüche. Von Kabelphysik über Raumakustik bis zur richtigen Pflege Ihrer Schallplatten.
         </p>
       </div>
+
+      {/* Featured Artikel */}
+      {onNavigate && (
+        <div
+          className="relative overflow-hidden border border-gold/30 mb-10 cursor-pointer group"
+          onClick={() => onNavigate('audiophiler-pc')}
+        >
+          <div className="absolute inset-0">
+            <img src="/AudiophilerPC2.jpg" alt="Audiophiler PC" className="w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-500" />
+          </div>
+          <div className="relative z-10 p-7 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+            <div className="flex-1">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="block w-3 h-px bg-gold/60" />
+                <span className="font-mono text-[0.6rem] tracking-[0.3em] uppercase text-gold/80">Neuer Artikel</span>
+              </div>
+              <h2 className="font-display text-[1.5rem] font-light text-cream leading-snug group-hover:text-gold transition-colors duration-300">
+                Wie baue ich einen audiophilen PC?
+              </h2>
+              <p className="font-mono text-[0.75rem] leading-[1.8] text-stone mt-2 max-w-lg">
+                Mini-PC, lineares Netzteil, USB-Interface und JitterBug – mit den richtigen Komponenten wird ein günstiger Mini-Computer zur High-End Audioquelle.
+              </p>
+            </div>
+            <span className="font-mono text-[0.7rem] tracking-[0.15em] uppercase border border-gold/50 text-gold px-4 py-2 group-hover:bg-gold group-hover:text-obsidian transition-all duration-300 whitespace-nowrap flex-shrink-0">
+              Artikel lesen →
+            </span>
+          </div>
+        </div>
+      )}
 
       {/* Kategorie-Filter */}
       <div className="flex gap-2 flex-wrap mb-10 border-b border-obsidian-200 pb-5">

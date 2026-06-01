@@ -8,6 +8,7 @@ import HifiTipps from './components/HifiTipps'
 import Impressum from './components/Impressum'
 import Datenschutz from './components/Datenschutz'
 import HifiTuning from './components/HifiTuning'
+import AudiophilerPC from './components/AudiophilerPC'
 import CookieBanner from './components/CookieBanner'
 import Footer from './components/Footer'
 
@@ -27,13 +28,15 @@ export default function App() {
             <AffiliateDisclaimer />
           </>
         ) : page === 'tipps' ? (
-          <HifiTipps />
+          <HifiTipps onNavigate={setPage} />
         ) : page === 'impressum' ? (
           <Impressum onNavigate={setPage} />
         ) : page === 'datenschutz' ? (
           <Datenschutz onNavigate={setPage} />
         ) : page === 'tuning' ? (
           <HifiTuning onNavigate={setPage} />
+        ) : page === 'audiophiler-pc' ? (
+          <AudiophilerPC onNavigate={setPage} />
         ) : null}
       </main>
       <Footer onNavigate={setPage} />
