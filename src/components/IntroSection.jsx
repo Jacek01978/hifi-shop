@@ -50,27 +50,6 @@ export default function IntroSection() {
             zur Aufstellung der Lautsprecher.
           </p>
         </div>
-
-        {/* Keyword chips / quick links */}
-        <div className="flex flex-wrap gap-2.5 mt-10">
-          {[
-            'HiFi Kabel',
-            'Lineare Netzteile',
-            'HiFi Sicherungen',
-            'Absorber & Dämpfer',
-            'Netzleisten',
-            'Phasendetektor',
-            'HiFi Tuning',
-            'HiFi-Checkliste',
-          ].map((label) => (
-            <span
-              key={label}
-              className="font-mono text-[0.62rem] tracking-[0.12em] uppercase text-gold/70 border border-gold/25 px-3 py-1.5"
-            >
-              {label}
-            </span>
-          ))}
-        </div>
       </div>
     </section>
   )
