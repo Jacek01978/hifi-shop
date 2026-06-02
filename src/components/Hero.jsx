@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from 'react'
+import { useLang } from '../context/LanguageContext'
 
 const BARS = [3,5,8,12,7,10,14,9,6,11,8,5,13,7,4,10,12,6,9,3,11,8,14,5,7]
 
 export default function Hero() {
+  const { t } = useLang()
   const waveRef = useRef(null)
 
   useEffect(() => {
@@ -154,7 +156,7 @@ export default function Hero() {
         <div className="flex items-center gap-4 mb-8 animate-fade-up" style={{ animationDelay: '0.1s' }}>
           <span className="block w-10 h-px bg-gold/60" />
           <span className="font-mono text-[0.55rem] tracking-[0.4em] uppercase text-gold/70">
-            Curated HiFi Accessories
+            {t.hero.eyebrow}
           </span>
           <span className="block w-10 h-px bg-gold/60" />
         </div>
@@ -164,10 +166,10 @@ export default function Hero() {
           className="font-display font-light leading-[1.04] text-cream mb-8 animate-fade-up"
           style={{ fontSize: 'clamp(3.2rem, 6.5vw, 6rem)', animationDelay: '0.2s' }}
         >
-          Der Klang<br />
-          liegt im{' '}
+          {t.hero.headline1}<br />
+          {t.hero.headline2}{' '}
           <em className="text-gradient-gold not-italic relative">
-            Detail.
+            {t.hero.headline3}
             <span
               className="absolute -bottom-2 left-0 h-px w-full opacity-60"
               style={{ background: 'linear-gradient(90deg, #c9a84c, transparent)' }}
@@ -180,9 +182,9 @@ export default function Hero() {
           className="font-mono text-[0.82rem] leading-[2] text-stone tracking-[0.04em] max-w-md mb-12 animate-fade-up"
           style={{ animationDelay: '0.35s' }}
         >
-          Handverlesenes HiFi-Zubehör für audiophile Ansprüche.<br />
-          Kabel, Sicherungen, Absorber & Reinigungsmittel –<br />
-          sorgfältig kuratiert, direkt verlinkt.
+          {t.hero.subline.split('\n').map((line, i, arr) => (
+            <React.Fragment key={i}>{line}{i < arr.length - 1 && <br />}</React.Fragment>
+          ))}
         </p>
 
         {/* CTA row */}
@@ -191,13 +193,13 @@ export default function Hero() {
             href="#products"
             className="group inline-flex items-center gap-3 font-mono text-[0.78rem] font-bold tracking-[0.16em] uppercase bg-gold text-obsidian px-7 py-3.5 no-underline transition-all duration-300 hover:bg-gold-light hover:shadow-[0_0_30px_rgba(201,168,76,0.4)]"
           >
-            Produkte entdecken
+            {t.hero.cta}
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5">
               <path d="M1 11L11 1M11 1H4M11 1V8" />
             </svg>
           </a>
           <span className="font-mono text-[0.68rem] tracking-[0.15em] uppercase text-muted">
-            {25} Premium-Produkte
+            {25} {t.hero.products}
           </span>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { useLang } from '../context/LanguageContext'
 
 const TIPPS = [
   {
@@ -213,6 +214,7 @@ Regelmäßige Pflege erhält nicht nur den Klang – sie verlängert die Lebensd
 const CATEGORIES = ['Alle', ...new Set(TIPPS.map(t => t.category))]
 
 export default function HifiTipps({ onNavigate }) {
+  const { t } = useLang()
   const [activeCategory, setActiveCategory] = useState('Alle')
   const [openId, setOpenId] = useState(null)
   const sectionRef = useRef(null)
@@ -242,7 +244,7 @@ export default function HifiTipps({ onNavigate }) {
           HiFi <em className="text-gradient-gold not-italic">Tipps</em>
         </h1>
         <p className="font-mono font-medium text-[0.82rem] leading-[1.8] text-stone tracking-[0.03em] max-w-lg">
-          Praxiswissen für audiophile Ansprüche. Von Kabelphysik über Raumakustik bis zur richtigen Pflege Ihrer Schallplatten.
+          {t.tipps.subline}
         </p>
       </div>
 
@@ -259,17 +261,17 @@ export default function HifiTipps({ onNavigate }) {
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-3">
                 <span className="block w-3 h-px bg-gold/60" />
-                <span className="font-mono text-[0.6rem] tracking-[0.3em] uppercase text-gold/80">Neuer Artikel</span>
+                <span className="font-mono text-[0.6rem] tracking-[0.3em] uppercase text-gold/80">{t.tipps.featuredLabel}</span>
               </div>
               <h2 className="font-display text-[1.5rem] font-light text-cream leading-snug group-hover:text-gold transition-colors duration-300">
-                Wie baue ich einen audiophilen PC?
+                {t.tipps.featuredTitle}
               </h2>
               <p className="font-mono text-[0.75rem] leading-[1.8] text-stone mt-2 max-w-lg">
-                Mini-PC, lineares Netzteil, USB-Interface und JitterBug – mit den richtigen Komponenten wird ein günstiger Mini-Computer zur High-End Audioquelle.
+                {t.tipps.featuredTeaser}
               </p>
             </div>
             <span className="font-mono text-[0.7rem] tracking-[0.15em] uppercase border border-gold/50 text-gold px-4 py-2 group-hover:bg-gold group-hover:text-obsidian transition-all duration-300 whitespace-nowrap flex-shrink-0">
-              Artikel lesen →
+              {t.tipps.featuredCta}
             </span>
           </div>
         </div>

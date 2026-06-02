@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import * as Icons from '../icons'
+import { useLang } from '../context/LanguageContext'
 
 const CAT_COLORS = {
   kabel:          { text: 'text-gold',       border: 'border-gold',       bar: 'bg-gold', glow: 'rgba(201,168,76,0.15)' },
@@ -12,6 +13,7 @@ const CAT_COLORS = {
 }
 
 export default function ProductCard({ product, style, onClick }) {
+  const { t } = useLang()
   const cardRef = useRef(null)
   const colors  = CAT_COLORS[product.cat] ?? CAT_COLORS.kabel
 
@@ -64,7 +66,7 @@ export default function ProductCard({ product, style, onClick }) {
             </span>
             <span className="font-mono text-[0.8rem] text-muted ml-1">€</span>
             <p className="font-mono text-[0.74rem] text-stone tracking-[0.06em] mt-0.5">
-              * Affiliate-Link
+              * {t.grid.affiliateLink}
             </p>
           </div>
 

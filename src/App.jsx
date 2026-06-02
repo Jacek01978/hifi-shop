@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { LanguageProvider } from './context/LanguageContext'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import IntroSection from './components/IntroSection'
@@ -16,6 +17,7 @@ export default function App() {
   const [page, setPage] = useState('shop')
 
   return (
+    <LanguageProvider>
     <div className="min-h-screen bg-obsidian text-stone overflow-x-hidden">
       <div className="grain-overlay" aria-hidden="true" />
       <Header page={page} onNavigate={setPage} />
@@ -42,5 +44,6 @@ export default function App() {
       <Footer onNavigate={setPage} />
       <CookieBanner onNavigate={setPage} />
     </div>
+    </LanguageProvider>
   )
 }

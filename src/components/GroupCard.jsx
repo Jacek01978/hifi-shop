@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import * as Icons from '../icons'
+import { useLang } from '../context/LanguageContext'
 
 const CAT_COLORS = {
   kabel:          { text: 'text-gold',       border: 'border-gold',       bar: 'bg-gold', glow: 'rgba(201,168,76,0.15)'  },
@@ -10,6 +11,7 @@ const CAT_COLORS = {
 }
 
 export default function GroupCard({ products, groupLabel, style, onShowVariants }) {
+  const { t } = useLang()
   const cardRef = useRef(null)
   const colors  = CAT_COLORS[products[0].cat] ?? CAT_COLORS.kabel
   const first   = products[0]
@@ -33,7 +35,7 @@ export default function GroupCard({ products, groupLabel, style, onShowVariants 
             </span>
           </div>
           <span className={`font-mono text-[0.5rem] tracking-[0.15em] uppercase px-2.5 py-1 border ${colors.border} ${colors.text} bg-gold/[0.06]`}>
-            {products.length} Varianten
+            {products.length} {t.grid.variants}
           </span>
         </div>
 
@@ -64,12 +66,12 @@ export default function GroupCard({ products, groupLabel, style, onShowVariants 
 
         {/* Footer */}
         <div className="flex items-center justify-between">
-          <p className="font-mono text-[0.62rem] text-stone tracking-[0.06em]">* Affiliate-Links</p>
+          <p className="font-mono text-[0.62rem] text-stone tracking-[0.06em]">* {t.grid.affiliateLink}s</p>
           <button
             onClick={onShowVariants}
             className={`shimmer-sweep relative inline-flex items-center gap-2 font-mono text-[0.58rem] tracking-[0.18em] uppercase bg-obsidian-100 ${colors.text} ${colors.border} border px-4 py-2.5 transition-all duration-300 hover:bg-gold/10 overflow-hidden`}
           >
-            Alle anzeigen
+            {t.grid.showAll}
             <svg width="9" height="9" viewBox="0 0 10 10" fill="none" stroke="currentColor" strokeWidth="1.5">
               <path d="M1 9L9 1M9 1H3M9 1V7" />
             </svg>

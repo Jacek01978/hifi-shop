@@ -1,5 +1,6 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react'
 import { PRODUCTS, KABEL_SUBCATEGORIES, REINIGUNG_SUBCATEGORIES } from '../data/products'
+import { useLang } from '../context/LanguageContext'
 import CategoryFilter from './CategoryFilter'
 import ProductCard from './ProductCard'
 import GroupCard from './GroupCard'
@@ -25,6 +26,7 @@ const parsePrice = (price) => {
 }
 
 export default function ProductGrid() {
+  const { t } = useLang()
   const [activeCategory, setActiveCategory] = useState('all')
   const [activeSub, setActiveSub]           = useState('all')
   const gridRef = useRef(null)
@@ -98,17 +100,17 @@ export default function ProductGrid() {
       {/* Affiliate-Hinweis unter dem Filter */}
       <div className="px-8 lg:px-14 py-2.5 border-b border-obsidian-200 bg-obsidian-50">
         <p className="font-mono text-[0.58rem] text-stone/60 tracking-[0.04em]">
-          Hinweis: * Diese Seite enthält Affiliate-Links zu Amazon und weiteren Partnershops (u. a. soundimports.eu, AWIN-Partner). Bei einem Kauf erhalten wir eine kleine Provision – für Sie entstehen keine Mehrkosten.
+          {t.grid.affiliateNote}
         </p>
       </div>
 
       {/* Section header */}
       <div className="flex items-baseline gap-6 px-8 lg:px-14 pt-14 pb-10">
         <h2 className="font-display text-[2rem] font-light text-cream tracking-[0.03em]">
-          Unsere Produkte
+          {t.grid.title}
         </h2>
         <span className="font-mono text-[0.68rem] tracking-[0.2em] uppercase text-muted">
-          {filtered.length} Artikel
+          {filtered.length} {t.grid.items}
         </span>
         <div className="flex-1 h-px bg-obsidian-200 ml-4" />
       </div>

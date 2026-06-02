@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState, useCallback } from 'react'
 import { CATEGORIES, KABEL_SUBCATEGORIES, REINIGUNG_SUBCATEGORIES } from '../data/products'
+import { useLang } from '../context/LanguageContext'
 
 function ScrollArrow({ direction, onClick, visible }) {
   if (!visible) return null
@@ -99,18 +100,37 @@ function FilterRow({ items, active, onChange, small = false }) {
 }
 
 export default function CategoryFilter({ active, onChangeCategory, activeSub, onChangeSub }) {
+  const { t } = useLang()
+
   const showKabelSubs     = active === 'kabel'
   const showReinigungSubs = active === 'reinigung'
   const showSubs = showKabelSubs || showReinigungSubs
 
-  const subLabel = showKabelSubs ? 'Kabeltyp' : 'Kategorie'
-  const subItems = showKabelSubs ? KABEL_SUBCATEGORIES : REINIGUNG_SUBCATEGORIES
+  const subLabel = showKabelSubs ? (t.lang === 'en' ? 'Cable Type' : 'Kabeltyp') : (t.lang === 'en' ? 'Category' : 'Kategorie')
+
+  // Build translated category items
+  const translatedCategories = CATEGORIES.map(c => ({
+    ...c,
+    label: t.categories[c.id] ?? c.label,
+  }))
+
+  const translatedKabelSubs = KABEL_SUBCATEGORIES.map(c => ({
+    ...c,
+    label: t.kabelSub[c.id] ?? c.label,
+  }))
+
+  const translatedReinigungSubs = REINIGUNG_SUBCATEGORIES.map(c => ({
+    ...c,
+    label: t.reinigungSub[c.id] ?? c.label,
+  }))
+
+  const subItems = showKabelSubs ? translatedKabelSubs : translatedReinigungSubs
 
   return (
     <div id="products">
       {/* Hauptkategorien */}
       <div className="flex items-center gap-2 px-8 lg:px-14 py-5 border-b border-obsidian-200">
-        <FilterRow items={CATEGORIES} active={active} onChange={onChangeCategory} />
+        <FilterRow items={translatedCategories} active={active} onChange={onChangeCategory} />
       </div>
 
       {/* Unterkategorien – bei Kabel und Reinigung */}

@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react'
-
+import { useLang } from '../context/LanguageContext'
 
 export default function Header({ page, onNavigate }) {
+  const { lang, t, toggleLang } = useLang()
   const [scrolled, setScrolled] = useState(false)
   const [visible, setVisible]   = useState(true)
   const lastY = useRef(0)
@@ -55,7 +56,7 @@ export default function Header({ page, onNavigate }) {
               boxShadow: '0 0 16px rgba(201,168,76,0.3)',
             }}
           >
-            ⚙ HiFi Tuning
+            ⚙ {t.nav.hifiTuning}
           </button>
           <button
             onClick={() => onNavigate(page === 'tipps' ? 'shop' : 'tipps')}
@@ -71,7 +72,7 @@ export default function Header({ page, onNavigate }) {
               boxShadow: '0 0 16px rgba(201,168,76,0.3)',
             }}
           >
-            ✦ HiFi Tipps
+            ✦ {t.nav.hifiTipps}
           </button>
           <a
             href="/HiFi-Checkliste.html"
@@ -80,8 +81,18 @@ export default function Header({ page, onNavigate }) {
             className="font-mono text-[0.6rem] tracking-[0.22em] uppercase px-3 py-1.5 border no-underline transition-all duration-300"
             style={{ animation: 'hifi-tipps-glow 3s ease-in-out infinite', animationDelay: '0.75s' }}
           >
-            ☑ HiFi-Checkliste
+            {t.nav.hifiCheckliste}
           </a>
+
+          {/* Language Toggle */}
+          <button
+            onClick={toggleLang}
+            className="font-mono text-[0.6rem] tracking-[0.22em] uppercase px-3 py-1.5 border border-gold/30 text-gold/60 hover:text-gold hover:border-gold/60 transition-all duration-300 flex items-center gap-1.5"
+            title={lang === 'de' ? 'Switch to English' : 'Auf Deutsch wechseln'}
+          >
+            <span className="text-[0.75rem]">{lang === 'de' ? '🇬🇧' : '🇩🇪'}</span>
+            {lang === 'de' ? 'EN' : 'DE'}
+          </button>
         </nav>
       </div>
 
