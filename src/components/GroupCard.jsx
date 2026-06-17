@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import * as Icons from '../icons'
 import { useLang } from '../context/LanguageContext'
+import { PRODUCT_TRANSLATIONS } from '../data/productTranslations'
 
 const CAT_COLORS = {
   kabel:          { text: 'text-gold',       border: 'border-gold',       bar: 'bg-gold', glow: 'rgba(201,168,76,0.15)'  },
@@ -11,7 +12,9 @@ const CAT_COLORS = {
 }
 
 export default function GroupCard({ products, groupLabel, style, onShowVariants }) {
-  const { t } = useLang()
+  const { lang, t } = useLang()
+  const trName  = (p) => (lang === 'en' ? PRODUCT_TRANSLATIONS[p.id]?.name : null) ?? p.name
+  const trPrice = (p) => (lang === 'en' ? p.price.replace(/^ab /, 'from ') : p.price)
   const cardRef = useRef(null)
   const colors  = CAT_COLORS[products[0].cat] ?? CAT_COLORS.kabel
   const first   = products[0]
@@ -56,8 +59,8 @@ export default function GroupCard({ products, groupLabel, style, onShowVariants 
           {products.map((p) => (
             <li key={p.id} className="flex items-center gap-2.5">
               <span className="block w-2 h-px bg-gold/40 shrink-0" />
-              <span className="font-mono text-[0.74rem] text-stone tracking-[0.02em]">{p.name}</span>
-              <span className="font-mono text-[0.72rem] font-semibold text-gold ml-auto shrink-0">{p.price} €</span>
+              <span className="font-mono text-[0.74rem] text-stone tracking-[0.02em]">{trName(p)}</span>
+              <span className="font-mono text-[0.72rem] font-semibold text-gold ml-auto shrink-0">{trPrice(p)} €</span>
             </li>
           ))}
         </ul>

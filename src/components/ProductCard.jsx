@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import * as Icons from '../icons'
 import { useLang } from '../context/LanguageContext'
+import { PRODUCT_TRANSLATIONS } from '../data/productTranslations'
 
 const CAT_COLORS = {
   kabel:          { text: 'text-gold',       border: 'border-gold',       bar: 'bg-gold', glow: 'rgba(201,168,76,0.15)' },
@@ -13,9 +14,16 @@ const CAT_COLORS = {
 }
 
 export default function ProductCard({ product, style, onClick }) {
-  const { t } = useLang()
+  const { lang, t } = useLang()
   const cardRef = useRef(null)
   const colors  = CAT_COLORS[product.cat] ?? CAT_COLORS.kabel
+
+  // English overrides (name/desc) when available
+  const tr = lang === 'en' ? PRODUCT_TRANSLATIONS[product.id] : null
+  const displayName = tr?.name ?? product.name
+  const displayDesc = tr?.desc ?? product.desc
+  const displayCat  = t.categories[product.cat] ?? product.cat
+  const displayPrice = lang === 'en' ? product.price.replace(/^ab /, 'from ') : product.price
 
   return (
     <article
@@ -34,7 +42,7 @@ export default function ProductCard({ product, style, onClick }) {
         <div className="flex items-center gap-2.5">
           <span className={`block w-4 h-px ${colors.bar}`} />
           <span className={`font-mono text-[0.52rem] tracking-[0.3em] uppercase ${colors.text}`}>
-            {product.cat}
+            {displayCat}
           </span>
         </div>
 
@@ -47,12 +55,12 @@ export default function ProductCard({ product, style, onClick }) {
 
         {/* Title */}
         <h3 className="font-display text-[1.6rem] font-semibold text-cream leading-snug tracking-[0.01em]">
-          {product.name}
+          {displayName}
         </h3>
 
         {/* Description */}
         <p className="font-mono text-[0.75rem] leading-[1.8] text-stone tracking-[0.02em] flex-1">
-          {product.desc}
+          {displayDesc}
         </p>
 
         {/* Divider */}
@@ -62,7 +70,7 @@ export default function ProductCard({ product, style, onClick }) {
         <div className="flex items-center justify-between">
           <div>
             <span className={`font-display text-[2.1rem] font-semibold ${colors.text}`}>
-              {product.price}
+              {displayPrice}
             </span>
             <span className="font-mono text-[0.8rem] text-muted ml-1">€</span>
             <p className="font-mono text-[0.74rem] text-stone tracking-[0.06em] mt-0.5">
@@ -76,7 +84,7 @@ export default function ProductCard({ product, style, onClick }) {
             rel="noopener sponsored"
             className={`shimmer-sweep relative inline-flex items-center gap-2 font-mono text-[0.72rem] font-bold tracking-[0.14em] uppercase bg-obsidian-100 ${colors.text} ${colors.border} border px-5 py-3 no-underline transition-all duration-300 hover:bg-gold/10 overflow-hidden`}
           >
-            Zum Angebot
+            {t.grid.toOffer}
             <svg width="9" height="9" viewBox="0 0 10 10" fill="none" stroke="currentColor" strokeWidth="1.5">
               <path d="M1 9L9 1M9 1H3M9 1V7" />
             </svg>

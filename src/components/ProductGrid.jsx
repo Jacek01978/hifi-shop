@@ -5,21 +5,6 @@ import CategoryFilter from './CategoryFilter'
 import ProductCard from './ProductCard'
 import GroupCard from './GroupCard'
 
-const SUBCAT_LABELS = Object.fromEntries(
-  [...KABEL_SUBCATEGORIES, ...REINIGUNG_SUBCATEGORIES].map(s => [s.id, s.label])
-)
-
-const GROUP_LABELS = {
-  cinch:       'Cinch / RCA Kabel',
-  netz:        'Netzkabel',
-  xlr:         'XLR Kabel',
-  netzleisten:    'Netzleisten',
-  lautsprecher:   'Lautsprecherkabel',
-  dynavox_absorber: 'Absorber & Dämpfer',
-  reinigung:      'Reinigungsmittel',
-  phasendetektor: 'Phasendetektor',
-}
-
 const parsePrice = (price) => {
   const s = price.replace('ab ', '').replace(',–', '').replace('–', '').replace(',', '.')
   return parseFloat(s) || 0
@@ -27,6 +12,8 @@ const parsePrice = (price) => {
 
 export default function ProductGrid() {
   const { t } = useLang()
+  const SUBCAT_LABELS = { ...t.kabelSub, ...t.reinigungSub }
+  const GROUP_LABELS = t.groupLabels
   const [activeCategory, setActiveCategory] = useState('all')
   const [activeSub, setActiveSub]           = useState('all')
   const gridRef = useRef(null)

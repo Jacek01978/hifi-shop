@@ -70,6 +70,18 @@ export const translations = {
       affiliateNote: 'Hinweis: * Diese Seite enthält Affiliate-Links zu Amazon und weiteren Partnershops (u. a. soundimports.eu, AWIN-Partner). Bei einem Kauf erhalten wir eine kleine Provision – für Sie entstehen keine Mehrkosten.',
     },
 
+    groupLabels: {
+      cinch:            'Cinch / RCA Kabel',
+      netz:             'Netzkabel',
+      xlr:              'XLR Kabel',
+      digital:          'Digitalkabel',
+      netzleisten:      'Netzleisten',
+      lautsprecher:     'Lautsprecherkabel',
+      dynavox_absorber: 'Absorber & Dämpfer',
+      reinigung:        'Reinigungsmittel',
+      phasendetektor:   'Phasendetektor',
+    },
+
     // Footer
     footer: {
       impressum:   'Impressum',
@@ -167,6 +179,18 @@ export const translations = {
       showAll:       'VIEW ALL',
       affiliateLink: 'Affiliate Link',
       affiliateNote: 'Note: * This page contains affiliate links to Amazon and other partner shops (incl. soundimports.eu, AWIN partners). We may earn a small commission on purchases – at no extra cost to you.',
+    },
+
+    groupLabels: {
+      cinch:            'Cinch / RCA Cables',
+      netz:             'Power Cables',
+      xlr:              'XLR Cables',
+      digital:          'Digital Cables',
+      netzleisten:      'Power Strips',
+      lautsprecher:     'Speaker Cables',
+      dynavox_absorber: 'Absorbers & Dampers',
+      reinigung:        'Cleaning Products',
+      phasendetektor:   'Phase Detector',
     },
 
     // Footer
