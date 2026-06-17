@@ -41,7 +41,7 @@ export default function Header({ page, onNavigate }) {
     },
     {
       label: t.nav.hifiCheckliste,
-      href: '/HiFi-Checkliste.html',
+      href: lang === 'en' ? '/HiFi-Checklist-EN.html' : '/HiFi-Checkliste.html',
       active: false,
     },
   ]
