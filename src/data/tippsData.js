@@ -38,6 +38,8 @@ Ein gutes Kabel muss nicht teuer sein – aber billiges Kabel kann eine audiophi
 
 Ein Nachhall von 0,3–0,5 Sekunden gilt im Wohnzimmer als ideal.`,
       readTime: '4 min',
+      video: '0EFzEwXBQn8',
+      videoCaption: 'Roland Hoffmann: „Raumakustik und Lautsprecheraufstellung einfach erklärt" (High End 2023).',
     },
     {
       id: 3,
@@ -279,6 +281,8 @@ A good cable doesn't have to be expensive – but a cheap cable can significantl
 
 A reverberation time of 0.3–0.5 seconds is considered ideal in a living room.`,
       readTime: '4 min',
+      video: '0EFzEwXBQn8',
+      videoCaption: 'Roland Hoffmann: "Room acoustics and speaker placement simply explained" (High End 2023, in German).',
     },
     {
       id: 3,
