@@ -144,6 +144,8 @@ In einem HiFi-Gerät liegt der Transformator direkt an der Netzspannung. Je nach
 
 Die korrekte Phasenlage kostet nichts – und kann das Klangbild spürbar ruhiger und transparenter machen.`,
       readTime: '4 min',
+      video: '1vKg2xJ7fkw',
+      videoCaption: '„Kurz und knackig – Phase ermitteln": Anleitung zur Bestimmung der korrekten Netzphase.',
     },
     {
       id: 8,
@@ -383,6 +385,8 @@ In a HiFi device the transformer is connected directly to the mains voltage. Dep
 
 Correct phase position costs nothing – and can make the soundstage noticeably calmer and more transparent.`,
       readTime: '4 min',
+      video: '1vKg2xJ7fkw',
+      videoCaption: '"Kurz und knackig – Phase ermitteln": a guide to determining the correct mains phase (in German).',
     },
     {
       id: 8,
