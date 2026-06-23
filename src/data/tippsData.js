@@ -18,8 +18,6 @@ export const TIPPS_DATA = {
 
 Ein gutes Kabel muss nicht teuer sein – aber billiges Kabel kann eine audiophile Kette erheblich limitieren.`,
       readTime: '3 min',
-      video: 'DhYAESCIEU0',
-      videoCaption: 'Dipl.-Ing. Manfred Strassner erläutert, warum hochwertige Kabel einen klanglichen Unterschied machen.',
     },
     {
       id: 2,
@@ -97,6 +95,8 @@ Eine sauber gepflegte Plattensammlung klingt auch nach Jahrzehnten noch makellos
 
 Qualitätsstrom ist die Grundlage für das volle Potential jeder HiFi-Anlage.`,
       readTime: '4 min',
+      video: 'DhYAESCIEU0',
+      videoCaption: 'Dipl.-Ing. Manfred Strassner: „Verunreinigungen im Stromnetz – was hilft gegen die Klangkiller?"',
     },
     {
       id: 6,
@@ -212,6 +212,30 @@ Eine gründliche Kontaktreinigung kostet wenig Zeit und kann klanglich so viel b
 Regelmäßige Pflege erhält nicht nur den Klang – sie verlängert die Lebensdauer Ihrer wertvollen Geräte um Jahre.`,
       readTime: '5 min',
     },
+    {
+      id: 10,
+      category: 'Aufstellung & Raumakustik',
+      title: 'Warum die Raumakustik für guten Klang sehr wichtig ist',
+      teaser: 'Der Hörraum ist die letzte – und am meisten unterschätzte – Komponente jeder HiFi-Kette. Selbst die beste Anlage klingt im falschen Raum mittelmäßig.',
+      body: `Viele Audiophile investieren tausende Euro in Geräte und Kabel – und vergessen dabei den Raum. Dabei wird ein erheblicher Teil dessen, was wir hören, gar nicht vom Lautsprecher, sondern von den Reflexionen im Raum bestimmt.
+
+**Warum der Raum so entscheidend ist:**
+- Ein großer Teil des wahrgenommenen Klangs entsteht durch Reflexionen von Wänden, Decke und Boden
+- Harte, kahle Flächen erzeugen Reflexionen, die Stimmen und Instrumente verwaschen
+- Parallele Wände führen zu stehenden Wellen (Raummoden) und dröhnenden Bässen
+
+**Die wichtigsten Maßnahmen:**
+- **Erstreflexionen behandeln:** Absorber an den seitlichen Wänden zwischen Lautsprecher und Hörplatz – mit dem „Spiegeltrick" findet man die richtigen Stellen
+- **Bassfallen (Bass Traps):** in den Raumecken gegen dröhnende, undefinierte Bässe
+- **Diffusoren:** streuen den Schall an der Rückwand, ohne den Raum klanglich „tot" zu machen
+- **Teppich & Vorhänge:** dämpfen Reflexionen am Boden und an Fensterflächen
+- **Symmetrie:** Lautsprecher und Hörplatz möglichst symmetrisch im Raum anordnen
+
+**Faustregel:** Erst den Raum optimieren, dann über teure Geräte-Upgrades nachdenken. Gezielte Akustikmaßnahmen bringen oft mehr Klanggewinn als jede neue Komponente.`,
+      readTime: '4 min',
+      video: 'h8I60SYZSOk',
+      videoCaption: 'Roland Hoffmann erklärt im Video „Den Raum verstehen", wie der Hörraum den Klang beeinflusst.',
+    },
   ],
 
   en: [
@@ -230,8 +254,6 @@ Regelmäßige Pflege erhält nicht nur den Klang – sie verlängert die Lebensd
 
 A good cable doesn't have to be expensive – but a cheap cable can significantly limit an audiophile chain.`,
       readTime: '3 min',
-      video: 'DhYAESCIEU0',
-      videoCaption: 'Dipl.-Ing. Manfred Strassner explains why high-quality cables make an audible difference (in German).',
     },
     {
       id: 2,
@@ -309,6 +331,8 @@ A well-maintained record collection still sounds flawless after decades.`,
 
 Quality power is the foundation for the full potential of any HiFi system.`,
       readTime: '4 min',
+      video: 'DhYAESCIEU0',
+      videoCaption: 'Dipl.-Ing. Manfred Strassner: "Contamination in the power grid – what helps against the sound killers?" (in German)',
     },
     {
       id: 6,
@@ -423,6 +447,30 @@ A thorough contact cleaning takes little time and can do as much for the sound a
 
 Regular care not only preserves the sound – it extends the lifespan of your valuable devices by years.`,
       readTime: '5 min',
+    },
+    {
+      id: 10,
+      category: 'Placement & Room Acoustics',
+      title: 'Why room acoustics are so important for good sound',
+      teaser: 'The listening room is the final – and most underrated – component of any HiFi chain. Even the best system sounds mediocre in the wrong room.',
+      body: `Many audiophiles invest thousands on devices and cables – and forget the room. Yet a considerable part of what we hear is determined not by the speaker, but by the reflections in the room.
+
+**Why the room is so crucial:**
+- A large part of the perceived sound is created by reflections from walls, ceiling and floor
+- Hard, bare surfaces create reflections that smear voices and instruments
+- Parallel walls lead to standing waves (room modes) and booming bass
+
+**The most important measures:**
+- **Treat first reflections:** absorbers on the side walls between speaker and listening position – the "mirror trick" helps you find the right spots
+- **Bass traps:** in the room corners against booming, undefined bass
+- **Diffusers:** scatter the sound on the rear wall without making the room sound "dead"
+- **Carpet & curtains:** dampen reflections on the floor and window surfaces
+- **Symmetry:** arrange speakers and listening position as symmetrically as possible in the room
+
+**Rule of thumb:** Optimise the room first, then think about expensive device upgrades. Targeted acoustic treatment often brings more sonic improvement than any new component.`,
+      readTime: '4 min',
+      video: 'h8I60SYZSOk',
+      videoCaption: 'In the video "Understanding the Room", Roland Hoffmann explains how the listening room shapes the sound (in German).',
     },
   ],
 }
