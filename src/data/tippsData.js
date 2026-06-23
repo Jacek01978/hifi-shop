@@ -93,6 +93,11 @@ Eine sauber gepflegte Plattensammlung klingt auch nach Jahrzehnten noch makellos
 
 **Einfacher Test:** Legen Sie die Hand auf Ihr Metallgehäuse. Kribbelt es leicht, ist die Polung falsch. Stecker umdrehen!
 
+**Die wichtigsten Punkte aus dem Video von Dipl.-Ing. Manfred Strassner:**
+- Typische Störquellen im Stromnetz: LEDs, Elektrosmog und Funkwellen
+- Hörbare Auswirkungen: Verzerrungen und Unschärfe im Klangbild
+- Wirksame Gegenmaßnahme: hochwertige Filterleisten, z.B. von HMS
+
 Qualitätsstrom ist die Grundlage für das volle Potential jeder HiFi-Anlage.`,
       readTime: '4 min',
       video: 'DhYAESCIEU0',
@@ -328,6 +333,11 @@ A well-maintained record collection still sounds flawless after decades.`,
 - **Star wiring:** Connect all HiFi devices to the same power strip, not spread around
 
 **Simple test:** Place your hand on the metal chassis. If it tingles slightly, the polarity is wrong. Turn the plug around!
+
+**Key points from the video by Dipl.-Ing. Manfred Strassner:**
+- Typical sources of interference in the grid: LEDs, electrosmog and radio waves
+- Audible effects: distortion and a loss of focus in the sound
+- Effective countermeasure: high-quality filter strips, e.g. from HMS
 
 Quality power is the foundation for the full potential of any HiFi system.`,
       readTime: '4 min',
