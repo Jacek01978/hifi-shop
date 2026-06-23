@@ -146,7 +146,7 @@ export default function HifiTipps({ onNavigate }) {
                     <div className="relative w-full overflow-hidden border border-obsidian-200" style={{ paddingTop: '56.25%' }}>
                       <iframe
                         className="absolute inset-0 w-full h-full"
-                        src={`https://www.youtube-nocookie.com/embed/${tipp.video}`}
+                        src={`https://www.youtube-nocookie.com/embed/${tipp.video}${tipp.videoStart ? `?start=${tipp.videoStart}` : ''}`}
                         title={tipp.title}
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

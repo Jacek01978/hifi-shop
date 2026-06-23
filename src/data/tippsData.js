@@ -19,6 +19,7 @@ export const TIPPS_DATA = {
 Ein gutes Kabel muss nicht teuer sein – aber billiges Kabel kann eine audiophile Kette erheblich limitieren.`,
       readTime: '3 min',
       video: 'e-3qkwLKdd4',
+      videoStart: 719,
       videoCaption: 'High End Audio Magazin: Lautsprecher-Kabel von HMS Elektronik – mit Branko Glisović.',
     },
     {
@@ -257,6 +258,7 @@ Regelmäßige Pflege erhält nicht nur den Klang – sie verlängert die Lebensd
 A good cable doesn't have to be expensive – but a cheap cable can significantly limit an audiophile chain.`,
       readTime: '3 min',
       video: 'e-3qkwLKdd4',
+      videoStart: 719,
       videoCaption: 'High End Audio Magazin: speaker cables by HMS Elektronik – with Branko Glisović (in German).',
     },
     {
