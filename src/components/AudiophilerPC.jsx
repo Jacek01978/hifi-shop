@@ -19,8 +19,9 @@ const CONTENT = {
     chain: ['MCRU 12V Linearnetzteil', 'Intel Mini PC', 'JitterBug FMJ', 'AQ Carbon USB', 'Douk Audio U2 Pro', 'DAC / Verstärker'],
     chainNote: 'Das Topping 5V-Linearnetzteil versorgt das Douk Audio Interface separat (nicht im Diagramm) – damit ist der Interface komplett vom USB-Bus des PC getrennt.',
     componentsLabel: 'Die Komponenten im Detail',
+    viewOnAmazon: 'Auf Amazon ansehen →',
     components: [
-      { title: 'Intel Mini PC (Intel Atom)', icon: '🖥️', desc: 'Das Herzstück: Ein kompakter Mini-PC mit Intel-Atom-Prozessor, 4 USB-Anschlüssen und 12V-Gleichstromeingang. Geringer Stromverbrauch, keine beweglichen Teile (kein Lüfter im Betrieb), geringe Wärmeentwicklung – ideal für eine rauschfreie digitale Audioquelle.' },
+      { title: 'Intel Mini PC (Intel Atom)', icon: '🖥️', desc: 'Das Herzstück: Ein kompakter Mini-PC mit Intel-Atom-Prozessor, 4 USB-Anschlüssen und 12V-Gleichstromeingang. Geringer Stromverbrauch, keine beweglichen Teile (kein Lüfter im Betrieb), geringe Wärmeentwicklung – ideal für eine rauschfreie digitale Audioquelle.', href: 'https://www.amazon.de/AWOW-AK10-512GB-Bluetooth-Gigabit/dp/B0GQLCNGWN/ref=sr_1_1_sspa?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3GF1JZ2E9CVBS&keywords=mini%2Bpc%2Bl%C3%BCfterlos%2B12v&qid=1782232323&sr=8-1-spons&th=1&tag=hifisok-21' },
       { title: 'MCRU Lineares 12V-Netzteil', icon: '⚡', desc: 'Anstelle des mitgelieferten Schaltnetzteils kommt ein hochwertiges Linear-Netzteil von MCRU zum Einsatz. Lineare Netzteile erzeugen deutlich weniger Hochfrequenzstörungen (HF-Rauschen) als Schaltnetzteile und versorgen den Mini-PC mit sauberem, stabilem Gleichstrom – ein spürbarer Klanggewinn.' },
       { title: 'Douk Audio U2 Pro USB Digital Interface', icon: '🔌', desc: 'Das USB-Audio-Interface von Douk Audio (Modell U2 Pro) wandelt das USB-Signal des Mini-PC in hochwertige digitale Ausgangssignale um: SPDIF (Koaxial), optisch (TOSLINK) und I²S. Es wird über ein separates 5V-Netzteil von Topping gespeist, was die Stromversorgung vom Computer-USB-Bus trennt und so Störungen eliminiert.' },
       { title: 'AudioQuest Carbon USB-Kabel', icon: '🔗', desc: 'Die Verbindung zwischen Mini-PC und Douk Audio Interface erfolgt über ein AudioQuest Carbon USB-Kabel. Dieses audiophile USB-Kabel verfügt über getrennte Leiter für Daten und Stromversorgung, eine Carbon-Abschirmung sowie Kaltschweißverbindungen – für eine sauberere digitale Signalübertragung.' },
@@ -91,8 +92,9 @@ const CONTENT = {
     chain: ['MCRU 12V linear PSU', 'Intel Mini PC', 'JitterBug FMJ', 'AQ Carbon USB', 'Douk Audio U2 Pro', 'DAC / Amplifier'],
     chainNote: 'The Topping 5V linear power supply feeds the Douk Audio interface separately (not in the diagram) – completely isolating the interface from the PC\'s USB bus.',
     componentsLabel: 'The Components in Detail',
+    viewOnAmazon: 'View on Amazon →',
     components: [
-      { title: 'Intel Mini PC (Intel Atom)', icon: '🖥️', desc: 'The heart of the system: a compact mini PC with an Intel Atom processor, 4 USB ports and a 12V DC input. Low power consumption, no moving parts (no fan in operation) and little heat generation – ideal for a noise-free digital audio source.' },
+      { title: 'Intel Mini PC (Intel Atom)', icon: '🖥️', desc: 'The heart of the system: a compact mini PC with an Intel Atom processor, 4 USB ports and a 12V DC input. Low power consumption, no moving parts (no fan in operation) and little heat generation – ideal for a noise-free digital audio source.', href: 'https://www.amazon.de/AWOW-AK10-512GB-Bluetooth-Gigabit/dp/B0GQLCNGWN/ref=sr_1_1_sspa?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3GF1JZ2E9CVBS&keywords=mini%2Bpc%2Bl%C3%BCfterlos%2B12v&qid=1782232323&sr=8-1-spons&th=1&tag=hifisok-21' },
       { title: 'MCRU 12V Linear Power Supply', icon: '⚡', desc: 'Instead of the supplied switching power supply, a high-quality linear power supply from MCRU is used. Linear power supplies generate far less high-frequency interference (RF noise) than switching supplies and feed the mini PC with clean, stable DC power – a noticeable sonic gain.' },
       { title: 'Douk Audio U2 Pro USB Digital Interface', icon: '🔌', desc: 'The Douk Audio USB audio interface (model U2 Pro) converts the mini PC\'s USB signal into high-quality digital output signals: SPDIF (coaxial), optical (TOSLINK) and I²S. It is fed by a separate 5V power supply from Topping, which isolates the power supply from the computer\'s USB bus and thus eliminates interference.' },
       { title: 'AudioQuest Carbon USB Cable', icon: '🔗', desc: 'The connection between the mini PC and the Douk Audio interface is made with an AudioQuest Carbon USB cable. This audiophile USB cable has separate conductors for data and power, carbon shielding and cold-welded connections – for cleaner digital signal transmission.' },
@@ -300,6 +302,16 @@ export default function AudiophilerPC({ onNavigate }) {
                 <div>
                   <h2 className="font-display text-[1.3rem] font-light text-cream mb-3">{comp.title}</h2>
                   <p className="font-mono text-[0.8rem] leading-[2] text-stone tracking-[0.02em]">{comp.desc}</p>
+                  {comp.href && (
+                    <a
+                      href={comp.href}
+                      target="_blank"
+                      rel="noopener sponsored"
+                      className="inline-block mt-3 font-mono text-[0.68rem] tracking-[0.12em] uppercase text-gold/80 hover:text-gold border border-gold/30 hover:border-gold/60 px-4 py-2 no-underline transition-all duration-300"
+                    >
+                      {c.viewOnAmazon}
+                    </a>
+                  )}
                 </div>
               </div>
             ))}
