@@ -18,6 +18,8 @@ export const TIPPS_DATA = {
 
 Ein gutes Kabel muss nicht teuer sein – aber billiges Kabel kann eine audiophile Kette erheblich limitieren.`,
       readTime: '3 min',
+      video: 'DhYAESCIEU0',
+      videoCaption: 'Dipl.-Ing. Manfred Strassner erläutert, warum hochwertige Kabel einen klanglichen Unterschied machen.',
     },
     {
       id: 2,
@@ -228,6 +230,8 @@ Regelmäßige Pflege erhält nicht nur den Klang – sie verlängert die Lebensd
 
 A good cable doesn't have to be expensive – but a cheap cable can significantly limit an audiophile chain.`,
       readTime: '3 min',
+      video: 'DhYAESCIEU0',
+      videoCaption: 'Dipl.-Ing. Manfred Strassner explains why high-quality cables make an audible difference (in German).',
     },
     {
       id: 2,

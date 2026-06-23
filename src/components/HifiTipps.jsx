@@ -119,7 +119,7 @@ export default function HifiTipps({ onNavigate }) {
             </p>
 
             {/* Aufklapp-Inhalt */}
-            <div className={`overflow-hidden transition-all duration-500 ${openId === tipp.id ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'}`}>
+            <div className={`overflow-hidden transition-all duration-500 ${openId === tipp.id ? (tipp.video ? 'max-h-[1600px]' : 'max-h-[800px]') + ' opacity-100' : 'max-h-0 opacity-0'}`}>
               <div className="pt-4 border-t border-obsidian-200">
                 {tipp.body.split('\n\n').map((block, j) => (
                   block.startsWith('**') && block.endsWith('**') ? (
@@ -139,6 +139,27 @@ export default function HifiTipps({ onNavigate }) {
                     />
                   )
                 ))}
+
+                {/* YouTube-Video */}
+                {tipp.video && (
+                  <div className="mt-5" onClick={(e) => e.stopPropagation()}>
+                    <div className="relative w-full overflow-hidden border border-obsidian-200" style={{ paddingTop: '56.25%' }}>
+                      <iframe
+                        className="absolute inset-0 w-full h-full"
+                        src={`https://www.youtube-nocookie.com/embed/${tipp.video}`}
+                        title={tipp.title}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                    {tipp.videoCaption && (
+                      <p className="font-mono text-[0.66rem] leading-[1.7] text-muted tracking-[0.02em] mt-2.5">
+                        ▶ {tipp.videoCaption}
+                      </p>
+                    )}
+                  </div>
+                )}
               </div>
             </div>
 
