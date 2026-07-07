@@ -48,6 +48,7 @@ export const translations = {
       subline:    'Handverlesenes HiFi-Zubehör für audiophile Ansprüche.\nKabel, Sicherungen, Absorber & Reinigungsmittel –\nsorgfältig kuratiert, direkt verlinkt.',
       cta:        'Produkte entdecken',
       products:   'Premium-Produkte',
+      youtube:    'YouTube-Kanal',
     },
 
     // Intro Section
@@ -161,6 +162,7 @@ export const translations = {
       subline:    'Handpicked HiFi accessories for audiophile standards.\nCables, fuses, absorbers & cleaning products –\ncarefully curated, directly linked.',
       cta:        'Discover Products',
       products:   'Premium Products',
+      youtube:    'YouTube Channel',
     },
 
     // Intro Section
