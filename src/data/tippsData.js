@@ -243,34 +243,6 @@ Regelmäßige Pflege erhält nicht nur den Klang – sie verlängert die Lebensd
       video: 'h8I60SYZSOk',
       videoCaption: 'Roland Hoffmann erklärt im Video „Den Raum verstehen", wie der Hörraum den Klang beeinflusst.',
     },
-    {
-      id: 11,
-      category: 'Aufstellung & Raumakustik',
-      title: 'Bass dröhnt? Raumakustik messen und analysieren',
-      teaser: 'Dröhnende, undefinierte Bässe gehören zu den häufigsten Problemen im Hörraum – und lassen sich mit dem Gehör allein kaum zuverlässig beheben. Eine Messung schafft objektive Klarheit.',
-      body: `Wer seinen Raum wirklich optimieren will, kommt um eine Messung nicht herum. Erst sie zeigt schwarz auf weiß, wo Überhöhungen, Auslöschungen und Raummoden liegen – und ob die eigenen Maßnahmen tatsächlich wirken.
-
-**Was Sie zum Messen brauchen:**
-- Ein Mess-Mikrofon (z.B. miniDSP UMIK-1)
-- Eine kostenlose Mess-Software wie CARMA oder REW (Room EQ Wizard)
-- Einen Laptop und Ihre HiFi-Anlage zur Wiedergabe des Testsignals
-
-**So gehen Sie vor:**
-- Mikrofon am Hörplatz auf Ohrhöhe positionieren
-- Sweep-/Testsignal über die Anlage abspielen und aufzeichnen
-- Frequenzgang und Nachhallzeit auswerten – Überhöhungen und Einbrüche werden sofort sichtbar
-- Besonders im Bass zeigen sich die Raummoden als deutliche Pegelspitzen
-
-**Was Sie mit den Ergebnissen tun:**
-- Lautsprecher- und Hörplatz-Position anpassen (oft der wirksamste Schritt)
-- Bassfallen in den Raumecken einsetzen
-- Bei Bedarf gezielt per Equalizer/DSP korrigieren
-
-Eine Messung nimmt das Rätselraten aus der Raumakustik – Sie sehen genau, wo die Probleme liegen und ob Ihre Maßnahmen den gewünschten Erfolg bringen.`,
-      readTime: '4 min',
-      video: 'Y63xlCF1cb4',
-      videoCaption: 'Im Video: „Der Bass dröhnt? Raumakustik analysieren und auswerten" – Messung und Auswertung mit der Software CARMA.',
-    },
   ],
 
   en: [
@@ -513,34 +485,6 @@ Regular care not only preserves the sound – it extends the lifespan of your va
       readTime: '4 min',
       video: 'h8I60SYZSOk',
       videoCaption: 'In the video "Understanding the Room", Roland Hoffmann explains how the listening room shapes the sound (in German).',
-    },
-    {
-      id: 11,
-      category: 'Placement & Room Acoustics',
-      title: 'Booming bass? Measuring and analysing room acoustics',
-      teaser: 'Booming, undefined bass is one of the most common problems in the listening room – and can hardly be fixed reliably by ear alone. A measurement provides objective clarity.',
-      body: `Anyone who really wants to optimise their room cannot avoid taking a measurement. Only a measurement shows clearly where peaks, dips and room modes lie – and whether your own measures are actually working.
-
-**What you need to measure:**
-- A measurement microphone (e.g. miniDSP UMIK-1)
-- Free measurement software such as CARMA or REW (Room EQ Wizard)
-- A laptop and your HiFi system to play the test signal
-
-**How to proceed:**
-- Position the microphone at the listening seat at ear height
-- Play a sweep/test signal through the system and record it
-- Evaluate the frequency response and reverberation time – peaks and dips become immediately visible
-- Especially in the bass, room modes appear as pronounced level peaks
-
-**What to do with the results:**
-- Adjust speaker and listening positions (often the most effective step)
-- Use bass traps in the room corners
-- If needed, correct specifically with an equaliser/DSP
-
-A measurement takes the guesswork out of room acoustics – you see exactly where the problems are and whether your measures deliver the desired result.`,
-      readTime: '4 min',
-      video: 'Y63xlCF1cb4',
-      videoCaption: 'In the video: "The bass is booming? Analysing and evaluating room acoustics" – measuring and evaluation with the CARMA software (in German).',
     },
   ],
 }

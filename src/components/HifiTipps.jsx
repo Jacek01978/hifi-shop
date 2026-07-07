@@ -73,6 +73,35 @@ export default function HifiTipps({ onNavigate }) {
         </div>
       )}
 
+      {/* Featured Artikel 2 – Raumakustik messen */}
+      {onNavigate && (
+        <div
+          className="relative overflow-hidden border border-gold/30 mb-10 cursor-pointer group"
+          onClick={() => onNavigate('akustik-messung')}
+        >
+          <div className="absolute inset-0">
+            <img src="/hifi-tuning.jpeg" alt="Raumakustik" className="w-full h-full object-cover opacity-[0.12] group-hover:opacity-20 transition-opacity duration-500" />
+          </div>
+          <div className="relative z-10 p-7 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+            <div className="flex-1">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="block w-3 h-px bg-gold/60" />
+                <span className="font-mono text-[0.6rem] tracking-[0.3em] uppercase text-gold/80">{t.tipps.featuredLabel}</span>
+              </div>
+              <h2 className="font-display text-[1.5rem] font-light text-cream leading-snug group-hover:text-gold transition-colors duration-300">
+                {t.tipps.featured2Title}
+              </h2>
+              <p className="font-mono text-[0.75rem] leading-[1.8] text-stone mt-2 max-w-lg">
+                {t.tipps.featured2Teaser}
+              </p>
+            </div>
+            <span className="font-mono text-[0.7rem] tracking-[0.15em] uppercase border border-gold/50 text-gold px-4 py-2 group-hover:bg-gold group-hover:text-obsidian transition-all duration-300 whitespace-nowrap flex-shrink-0">
+              {t.tipps.featuredCta}
+            </span>
+          </div>
+        </div>
+      )}
+
       {/* Kategorie-Filter */}
       <div className="flex gap-2 flex-wrap mb-10 border-b border-obsidian-200 pb-5">
         {CATEGORIES.map(cat => (

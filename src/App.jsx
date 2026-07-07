@@ -10,6 +10,7 @@ import Impressum from './components/Impressum'
 import Datenschutz from './components/Datenschutz'
 import HifiTuning from './components/HifiTuning'
 import AudiophilerPC from './components/AudiophilerPC'
+import AkustikMessung from './components/AkustikMessung'
 import CookieBanner from './components/CookieBanner'
 import Footer from './components/Footer'
 
@@ -39,6 +40,8 @@ export default function App() {
           <HifiTuning onNavigate={setPage} />
         ) : page === 'audiophiler-pc' ? (
           <AudiophilerPC onNavigate={setPage} />
+        ) : page === 'akustik-messung' ? (
+          <AkustikMessung onNavigate={setPage} />
         ) : null}
       </main>
       <Footer onNavigate={setPage} />

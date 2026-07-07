@@ -102,6 +102,8 @@ export const translations = {
       featuredTitle: 'Wie baue ich einen audiophilen PC?',
       featuredTeaser: 'Mini-PC, lineares Netzteil, USB-Interface und JitterBug – mit den richtigen Komponenten wird ein günstiger Mini-Computer zur High-End Audioquelle.',
       featuredCta:    'Artikel lesen →',
+      featured2Title: 'Bass dröhnt? Raumakustik messen und analysieren',
+      featured2Teaser: 'Mit Mess-Mikrofon und kostenloser Software wie CARMA machen Sie Raummoden und Bassprobleme sichtbar – und beheben sie gezielt.',
     },
 
     // Impressum / Datenschutz
@@ -213,6 +215,8 @@ export const translations = {
       featuredTitle: 'How to build an audiophile PC?',
       featuredTeaser: 'Mini PC, linear power supply, USB interface and JitterBug – with the right components a budget mini computer becomes a high-end audio source.',
       featuredCta:    'Read article →',
+      featured2Title: 'Booming bass? Measuring and analysing room acoustics',
+      featured2Teaser: 'With a measurement microphone and free software like CARMA you make room modes and bass problems visible – and fix them precisely.',
     },
 
     // Impressum / Datenschutz
