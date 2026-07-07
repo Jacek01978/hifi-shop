@@ -202,9 +202,9 @@ export default function Hero() {
             href="https://www.youtube.com/@hifi-system"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2.5 font-mono text-[0.68rem] tracking-[0.15em] uppercase text-stone hover:text-white no-underline transition-colors duration-300"
+            className="group inline-flex items-center gap-3 font-mono text-[0.8rem] tracking-[0.15em] uppercase text-stone hover:text-white no-underline transition-colors duration-300"
           >
-            <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" className="transition-transform duration-300 group-hover:scale-110" style={{ filter: 'drop-shadow(0 0 6px rgba(255,0,0,0.45))' }}>
+            <svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true" className="transition-transform duration-300 group-hover:scale-110" style={{ filter: 'drop-shadow(0 0 7px rgba(255,0,0,0.5))' }}>
               <path d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.51A3.02 3.02 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.12 2.14c1.88.51 9.38.51 9.38.51s7.5 0 9.38-.51a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8Z" fill="#FF0000"/>
               <path d="M9.6 15.6V8.4l6.2 3.6-6.2 3.6Z" fill="#FFFFFF"/>
             </svg>
